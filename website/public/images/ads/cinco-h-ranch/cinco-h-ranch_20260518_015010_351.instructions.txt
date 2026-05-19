@@ -1,0 +1,376 @@
+BRAND: cinco-h-ranch (Cinco H Ranch Naturals)
+REF: /data/refs/public/images/refs/cinco-h-ranch/soap/approved/soap_ref_33.jpg
+OUTPUT: /data/refs/output/cinco-h-ranch_20260518_015010_351.png
+PRODUCTS: Detox, La Blanca, Texas Air, Texas Campfire, Chamomile Soothing, Honey Vanilla Soap
+TIMESTAMP: 2026-05-18T01:51:38.560636
+
+=== REVERSE ANALYSIS ===
+## Subject
+The subject is multiple bars of handmade, artisanal soap. The soaps are square-shaped with a slight indentation on the top surface. They are an off-white, creamy color, with visible inclusions of small, darker green and brown flecks, likely herbs and oatmeal. Some bars are unwrapped, showing their texture, while others are packaged. The packaging consists of brown craft paper and a secondary decorative paper band, tied with twine and a handwritten tag. The overall scene is a flat-lay and still-life composition presented as a diptych.
+
+## Product Count
+PRODUCT COUNT: 6
+
+## Product Details
+**Product 1**
+- Container type and shape: A packaged, square bar of soap. It is wrapped first in brown craft paper, with a wide band of decorative paper wrapped around the middle. The decorative paper is white with a green and olive-gold botanical leaf pattern. A kraft paper tag is attached with white and natural-colored baker's twine.
+- Exact position in frame: Foreground of the left panel. Occupies a space from approximately 5% to 48% from the left, and 50% to 90% from the top.
+- Angle: Angled about 30° toward the right, top surface is visible.
+- Size relative to frame: Large.
+- Cap/lid state: Not applicable.
+- Label: A rectangular kraft paper tag with angled corners, attached with twine. It has a handwritten label.
+- Surface: The paper appears matte.
+
+**Product 2**
+- Container type and shape: A packaged, square bar of soap. It is wrapped in brown craft paper with a band of pale green, textured paper around its middle. A kraft paper tag is attached with white and natural-colored baker's twine.
+- Exact position in frame: Midground of the left panel. Occupies a space from approximately 25% to 48% from the left, and 35% to 70% from the top. It is positioned behind and to the right of Product 1.
+- Angle: Angled about 20° toward the right.
+- Size relative to frame: Medium.
+- Cap/lid state: Not applicable.
+- Label: A rectangular kraft paper tag with angled corners.
+- Surface: The paper appears matte.
+
+**Product 3**
+- Container type and shape: An unwrapped, square bar of off-white soap with visible green and brown inclusions.
+- Exact position in frame: Background of the left panel, stacked on top of Product 4. Occupies a space from approximately 15% to 40% from the left, and 10% to 35% from the top.
+- Angle: Angled slightly toward the right, seen from a high angle.
+- Size relative to frame: Medium.
+- Cap/lid state: Not applicable.
+- Label: None.
+- Surface: Matte, slightly textured.
+
+**Product 4**
+- Container type and shape: An unwrapped, square bar of off-white soap with visible green and brown inclusions.
+- Exact position in frame: Background of the left panel, stacked beneath Product 3. Occupies a space from approximately 15% to 40% from the left, and 25% to 45% from the top.
+- Angle: Angled slightly toward the right, seen from a high angle.
+- Size relative to frame: Medium.
+- Cap/lid state: Not applicable.
+- Label: None.
+- Surface: Matte, slightly textured.
+
+**Product 5**
+- Container type and shape: An unwrapped, square bar of creamy white soap with visible yellow and green inclusions (calendula petals and herbs).
+- Exact position in frame: Midground of the right panel, stacked on top of Product 6. Occupies a space from approximately 65% to 98% from the left, and 20% to 55% from the top.
+- Angle: Shown from a low, side-on angle, angled slightly toward the viewer.
+- Size relative to frame: Large.
+- Cap/lid state: Not applicable.
+- Label: None.
+- Surface: Smooth and matte, with a slight sheen on the top edges.
+
+**Product 6**
+- Container type and shape: An unwrapped, square bar of creamy white soap with visible yellow and green inclusions.
+- Exact position in frame: Midground of the right panel, stacked beneath Product 5. Occupies a space from approximately 60% to 98% from the left, and 45% to 80% from the top.
+- Angle: Shown from a low, side-on angle, angled slightly toward the viewer.
+- Size relative to frame: Large.
+- Cap/lid state: Not applicable.
+- Label: None.
+- Surface: Matte and slightly textured from the inclusions.
+
+## Composition
+- Aspect ratio: Approximately 3:2, landscape orientation. The image is a diptych, split vertically down the center into two distinct photos. A thin, white dividing line separates the two panels.
+- Framing: The overall composition is a medium close-up. The left panel is shot from a higher angle, looking down on the soaps. The right panel is a tighter close-up, shot from a lower, side-on angle.
+- Visual hierarchy: The eye is drawn first to the "lavender oatmeal" tag on Product 1 in the left panel due to the readable text and foreground position. The eye then moves to the large, brightly lit stack of soap (Products 5 and 6) in the right panel, which has strong contrast against its background. Finally, the eye moves to the other packaged soap and the unwrapped soaps in the background of the left panel.
+- 3×3 grid:
+    - Top-left: A stack of two unwrapped soaps (Products 3 & 4) on a white surface.
+    - Top-center: The background soaps from the left panel and the top of the "chamomile" soap (Product 2) bleed into this zone. The top edge of the soap stack from the right panel (Product 5) is also visible.
+    - Top-right: The top half of the unwrapped soap stack (Product 5) on a brown background.
+    - Middle-left: The "lavender oatmeal" soap (Product 1) and the "chamomile" soap (Product 2).
+    - Middle-center: The central dividing line runs through here. The right edge of the soaps from the left panel and the left edge of the soaps from the right panel are visible.
+    - Middle-right: The bottom of Product 5 and the top of Product 6, along with the sprig of rosemary.
+    - Bottom-left: The foreground "lavender oatmeal" soap (Product 1) on the white surface.
+    - Bottom-center: The lower edge of the soaps from both panels meet the central dividing line.
+    - Bottom-right: The lower portion of the bottom unwrapped soap (Product 6) on the brown surface.
+- Negative space: Minimal negative space. The top left corner of the left panel and the top right corner of the right panel contain some out-of-focus background, comprising about 15-20% of the total frame. This tight framing emphasizes the product.
+- Depth layers:
+    - Left Panel: Foreground is the "lavender oatmeal" soap. Midground is the "chamomile" soap. Background is the stack of two unwrapped soaps and the bright white surface.
+    - Right Panel: Foreground is the sprig of rosemary. Midground is the stack of two unwrapped soaps. Background is the brown textured surface.
+
+## Produce / Ingredients
+- Name: Rosemary
+- Quantity: One sprig
+- Position in frame: In the right panel, at the base of the soap stack, extending from the bottom left of the panel towards the center. Positioned at approximately 50% from the left and 55% from the top of the full frame.
+- State: Fresh.
+
+- Name: Oatmeal, Herbs (Lavender, Calendula)
+- Quantity: Multiple small flecks
+- Position in frame: Visible as inclusions within all unwrapped soap bars.
+- State: Dried, milled, and mixed into the soap base.
+
+## Text
+**Text Zone 1**
+- Zone label: product_label
+- Exact position: On Product 1, located at approximately 20% from left, 50% from top.
+- Full verbatim text: lavender / oatmeal
+- Font characteristics: A delicate, handwritten script/cursive font. Regular weight, lowercase. Medium size relative to the frame.
+- Color: Black or dark grey ink.
+- Text effects: None.
+
+**Text Zone 2**
+- Zone label: product_label
+- Exact position: On Product 2, located at approximately 35% from left, 40% from top. The text is partially obscured and out of focus.
+- Full verbatim text: chamomile / calendula
+- Font characteristics: Same handwritten script/cursive font as Text Zone 1. Regular weight, lowercase. Small size relative to the frame.
+- Color: Black or dark grey ink.
+- Text effects: None.
+
+## Decorative Elements
+- Type: Baker's twine
+- Description: Thin string made of two twisted strands, one white and one a natural/light grey color. It is wrapped around both packaged soaps (Products 1 and 2) to secure the paper bands and the tags.
+- Type: Decorative paper bands
+- Description: Wraps around the middle of the packaged soaps. Product 1 has a white band with a green and olive-gold botanical leaf print. Product 2 has a solid, pale green, textured paper band.
+- Type: Cast shadows
+- Description: Soft-edged shadows are cast by all soap bars and the rosemary sprig, indicating a single, diffused light source. The shadows fall to the right and slightly towards the back.
+- Type: Central divider
+- Description: A thin, solid white vertical line separating the left and right panels of the diptych.
+
+DECORATIVE ELEMENTS NOT PRESENT: Splashes, drips, sparkles, bubbles, foam, borders, frames (other than the implied diptych frame), arrows, badges, icons, overlays.
+
+## Background
+- Structure: The background is composed of two different surfaces, one for each panel of the diptych.
+- Left Panel: The background is a smooth, solid, bright white surface, possibly a tabletop or studio sweep. It is slightly out of focus in the distance.
+- Right Panel: The background is a textured, warm-toned surface, appearing to be a sheet of brown kraft paper or a light-colored wooden board.
+- Color(s): Left panel is pure white. Right panel is a warm tan/brown.
+- Texture: Left panel is smooth. Right panel has a visible, slightly rough, paper-like or wood-grain texture.
+- Depth: Shallow depth of field in both panels, with the backgrounds softly blurred.
+
+## Lighting
+- Key light direction: From approximately 10 o'clock and slightly above the subject in both panels.
+- Quality: Soft and diffused. There are no harsh, crisp shadow lines.
+- Fill: A subtle fill light is present, likely bounced light from the white surface in the left panel, preventing the shadows from being too dark.
+- Rim/backlight: None.
+- Highlights: Highlights are broad, soft, and not specular. They appear on the top edges and corners of the soap bars, particularly on the stack in the right panel, giving them shape and dimension.
+- Shadows: Soft-edged shadows are cast to the right and away from the camera. They are translucent and do not obscure detail.
+- Overall exposure: Bright and airy, especially in the left panel. The right panel is slightly warmer and has more contrast but is still well-lit.
+
+## Mood
+- Artisanal
+- Natural
+- Handmade
+- Gentle
+- Rustic
+- Soothing
+- Clean
+- Minimalist
+
+=== STRUCTURED AD JSON ===
+{
+  "ad_campaign_name": "Cinco H Ranch Naturals - Artisanal Soap Ad",
+  "platform": "Social Media",
+  "ad_format": "Static Image",
+  "creative_brief": {
+    "reference_ad": "INPUT_1",
+    "brand_name": "Cinco H Ranch Naturals",
+    "logo": "logo.png",
+    "product_count": 6,
+    "products": [
+      {
+        "product_name": "Chamomile Soothing",
+        "source_image": "INPUT_6"
+      },
+      {
+        "product_name": "Honey Vanilla Soap",
+        "source_image": "INPUT_7"
+      },
+      {
+        "product_name": "Texas Air",
+        "source_image": "INPUT_4"
+      },
+      {
+        "product_name": "La Blanca",
+        "source_image": "INPUT_3"
+      },
+      {
+        "product_name": "Detox",
+        "source_image": "INPUT_2"
+      },
+      {
+        "product_name": "Texas Campfire",
+        "source_image": "INPUT_5"
+      }
+    ],
+    "frame_dimensions": "4:5 portrait",
+    "composition": {
+      "PRESERVE": "The reference ad's diptych layout, with two distinct visual panels. The left panel is a high-angle shot showing a foreground product, a midground product, and a stacked pair in the background. The right panel is a tighter, lower-angle shot of two stacked products. Preserve the exact arrangement and relative positions of all six products.",
+      "REPLACE": [
+        {
+          "element_to_replace": "Foreground packaged soap (left panel)",
+          "replacement_details": "Place the 'Chamomile Soothing' soap (INPUT_6) here."
+        },
+        {
+          "element_to_replace": "Midground packaged soap (left panel)",
+          "replacement_details": "Place the 'Honey Vanilla Soap' (INPUT_7) here, partially behind the foreground soap."
+        },
+        {
+          "element_to_replace": "Background unwrapped soap stack (left panel)",
+          "replacement_details": "Create a stack of two soaps: 'Texas Air' (INPUT_4) on top of 'La Blanca' (INPUT_3)."
+        },
+        {
+          "element_to_replace": "Main unwrapped soap stack (right panel)",
+          "replacement_details": "Create a stack of two soaps: 'Detox' (INPUT_2) on top of 'Texas Campfire' (INPUT_5)."
+        }
+      ],
+      "ADAPT": "Adapt the entire composition to a 4:5 portrait aspect ratio. The diptych will be a vertical split. Arrange the elements from the left and right panels of the reference into the corresponding vertical panels of the new 4:5 frame, maintaining their relative scale and positioning. Per brand rules, all soaps must show their paper label since they are sitting on a surface."
+    },
+    "background": {
+      "PRESERVE": "The use of two different, simple, textured surfaces for each panel of the diptych.",
+      "REPLACE": "The left panel background must be a solid, lightly textured surface in brand color Cream #F0E0B0. The right panel background must be a rustic, dark wood surface in brand color Dark Brown #301800.",
+      "ADAPT": "Ensure textures are subtle and do not distract from the products."
+    },
+    "lighting": {
+      "PRESERVE": "The lighting style from the reference ad. Use a single, soft, diffused key light source coming from the top-left (approx. 10 o'clock). This should create gentle, soft-edged shadows to the right of the products, defining their shape without being harsh.",
+      "REPLACE": "N/A",
+      "ADAPT": "The overall color temperature should be warm and natural, complementing the brand palette. Ensure highlights on the soap edges are soft and not blown out."
+    },
+    "text_elements": [
+      {
+        "zone_label": "product_tag_1",
+        "PRESERVE": "A small, rectangular tag made of kraft paper, tied with twine to the main foreground product (Chamomile Soothing soap).",
+        "REPLACE": {
+          "verbatim_text": "Calming cleanse",
+          "font_details": "Use a simple, clean, rustic-style printed font (e.g., a typewriter or a plain sans-serif). Do not use script or handwriting. Color should be Dark Brown #301800.",
+          "text_effects": "None."
+        },
+        "ADAPT": "N/A"
+      },
+      {
+        "zone_label": "product_tag_2",
+        "PRESERVE": "A small, rectangular kraft paper tag, tied with twine to the midground product (Honey Vanilla soap). Position it so it is slightly out of focus compared to the foreground tag.",
+        "REPLACE": {
+          "verbatim_text": "Nourishing lather",
+          "font_details": "Use the same font as product_tag_1. Color should be Dark Brown #301800.",
+          "text_effects": "None."
+        },
+        "ADAPT": "N/A"
+      },
+      {
+        "zone_label": "logo_placement",
+        "PRESERVE": "N/A",
+        "REPLACE": "N/A",
+        "ADAPT": "Place the Cinco H Ranch Naturals logo (logo.png) in the bottom right corner of the entire 4:5 frame. It must be small, unobtrusive, with no boxes or effects."
+      }
+    ],
+    "decorative_elements": {
+      "PRESERVE": "The concept of natural twine tying tags to products, and a rustic, natural garnish placed near the products.",
+      "REPLACE": "Replace the thin, two-tone baker's twine with a single-strand, natural jute or hemp twine. Replace the sprig of rosemary in the right panel with a small, weathered piece of mesquite wood or a sprig of dried Texas sage, placed at the base of the soap stack.",
+      "ADAPT": "The vertical dividing line for the diptych should be a very thin, subtle line in Dark Brown #301800."
+    },
+    "final_instructions": "Create a photorealistic 4:5 portrait diptych ad. The left panel, set against a Cream #F0E0B0 background, features a high-angle view of four Cinco H Ranch soaps as specified. The right panel, on a Dark Brown #301800 wood background, shows a low-angle view of two stacked Cinco H soaps. All soaps must be pasted exactly from their source images and show their labels. Add rustic jute twine and kraft paper tags with the specified text. Lighting must be soft and natural from the top-left. Place the brand logo in the bottom right. The final mood must be rustic, natural, and high-quality, embodying 'The Ranch Standard'. Audit for any competitor elements or text."
+  }
+}
+
+=== ASSEMBLED IMAGE PROMPT ===
+Photorealistic 4:5 portrait ad. Follow this creative brief for a Cinco H Ranch Naturals ad:\n{
+  "ad_campaign_name": "Cinco H Ranch Naturals - Artisanal Soap Ad",
+  "platform": "Social Media",
+  "ad_format": "Static Image",
+  "creative_brief": {
+    "reference_ad": "INPUT_1",
+    "brand_name": "Cinco H Ranch Naturals",
+    "logo": "logo.png",
+    "product_count": 6,
+    "products": [
+      {
+        "product_name": "Chamomile Soothing",
+        "source_image": "INPUT_6"
+      },
+      {
+        "product_name": "Honey Vanilla Soap",
+        "source_image": "INPUT_7"
+      },
+      {
+        "product_name": "Texas Air",
+        "source_image": "INPUT_4"
+      },
+      {
+        "product_name": "La Blanca",
+        "source_image": "INPUT_3"
+      },
+      {
+        "product_name": "Detox",
+        "source_image": "INPUT_2"
+      },
+      {
+        "product_name": "Texas Campfire",
+        "source_image": "INPUT_5"
+      }
+    ],
+    "frame_dimensions": "4:5 portrait",
+    "composition": {
+      "PRESERVE": "The reference ad's diptych layout, with two distinct visual panels. The left panel is a high-angle shot showing a foreground product, a midground product, and a stacked pair in the background. The right panel is a tighter, lower-angle shot of two stacked products. Preserve the exact arrangement and relative positions of all six products.",
+      "REPLACE": [
+        {
+          "element_to_replace": "Foreground packaged soap (left panel)",
+          "replacement_details": "Place the 'Chamomile Soothing' soap (INPUT_6) here."
+        },
+        {
+          "element_to_replace": "Midground packaged soap (left panel)",
+          "replacement_details": "Place the 'Honey Vanilla Soap' (INPUT_7) here, partially behind the foreground soap."
+        },
+        {
+          "element_to_replace": "Background unwrapped soap stack (left panel)",
+          "replacement_details": "Create a stack of two soaps: 'Texas Air' (INPUT_4) on top of 'La Blanca' (INPUT_3)."
+        },
+        {
+          "element_to_replace": "Main unwrapped soap stack (right panel)",
+          "replacement_details": "Create a stack of two soaps: 'Detox' (INPUT_2) on top of 'Texas Campfire' (INPUT_5)."
+        }
+      ],
+      "ADAPT": "Adapt the entire composition to a 4:5 portrait aspect ratio. The diptych will be a vertical split. Arrange the elements from the left and right panels of the reference into the corresponding vertical panels of the new 4:5 frame, maintaining their relative scale and positioning. Per brand rules, all soaps must show their paper label since they are sitting on a surface."
+    },
+    "background": {
+      "PRESERVE": "The use of two different, simple, textured surfaces for each panel of the diptych.",
+      "REPLACE": "The left panel background must be a solid, lightly textured surface in brand color Cream #F0E0B0. The right panel background must be a rustic, dark wood surface in brand color Dark Brown #301800.",
+      "ADAPT": "Ensure textures are subtle and do not distract from the products."
+    },
+    "lighting": {
+      "PRESERVE": "The lighting style from the reference ad. Use a single, soft, diffused key light source coming from the top-left (approx. 10 o'clock). This should create gentle, soft-edged shadows to the right of the products, defining their shape without being harsh.",
+      "REPLACE": "N/A",
+      "ADAPT": "The overall color temperature should be warm and natural, complementing the brand palette. Ensure highlights on the soap edges are soft and not blown out."
+    },
+    "text_elements": [
+      {
+        "zone_label": "product_tag_1",
+        "PRESERVE": "A small, rectangular tag made of kraft paper, tied with twine to the main foreground product (Chamomile Soothing soap).",
+        "REPLACE": {
+          "verbatim_text": "Calming cleanse",
+          "font_details": "Use a simple, clean, rustic-style printed font (e.g., a typewriter or a plain sans-serif). Do not use script or handwriting. Color should be Dark Brown #301800.",
+          "text_effects": "None."
+        },
+        "ADAPT": "N/A"
+      },
+      {
+        "zone_label": "product_tag_2",
+        "PRESERVE": "A small, rectangular kraft paper tag, tied with twine to the midground product (Honey Vanilla soap). Position it so it is slightly out of focus compared to the foreground tag.",
+        "REPLACE": {
+          "verbatim_text": "Nourishing lather",
+          "font_details": "Use the same font as product_tag_1. Color should be Dark Brown #301800.",
+          "text_effects": "None."
+        },
+        "ADAPT": "N/A"
+      },
+      {
+        "zone_label": "logo_placement",
+        "PRESERVE": "N/A",
+        "REPLACE": "N/A",
+        "ADAPT": "Place the Cinco H Ranch Naturals logo (logo.png) in the bottom right corner of the entire 4:5 frame. It must be small, unobtrusive, with no boxes or effects."
+      }
+    ],
+    "decorative_elements": {
+      "PRESERVE": "The concept of natural twine tying tags to products, and a rustic, natural garnish placed near the products.",
+      "REPLACE": "Replace the thin, two-tone baker's twine with a single-strand, natural jute or hemp twine. Replace the sprig of rosemary in the right panel with a small, weathered piece of mesquite wood or a sprig of dried Texas sage, placed at the base of the soap stack.",
+      "ADAPT": "The vertical dividing line for the diptych should be a very thin, subtle line in Dark Brown #301800."
+    },
+    "final_instructions": "Create a photorealistic 4:5 portrait diptych ad. The left panel, set against a Cream #F0E0B0 background, features a high-angle view of four Cinco H Ranch soaps as specified. The right panel, on a Dark Brown #301800 wood background, shows a low-angle view of two stacked Cinco H soaps. All soaps must be pasted exactly from their source images and show their labels. Add rustic jute twine and kraft paper tags with the specified text. Lighting must be soft and natural from the top-left. Place the brand logo in the bottom right. The final mood must be rustic, natural, and high-quality, embodying 'The Ranch Standard'. Audit for any competitor elements or text."
+  }
+}
+
+PRODUCT: Texas skincare product in a jar or tube -- paste the EXACT product label, never redraw it — paste the EXACT product image, never redraw it.
+
+HARD VISUAL RULES — VIOLATING THESE RUINS THE AD:
+- THE ONLY PRODUCTS IN FRAME: Cinco H Ranch soap bars and jars listed in the product config. No boxes, no books, no pamphlets, no tubes, no bottles, no spray bottles unless that exact product is selected for this ad.
+- NO PROMOTIONAL OFFERS: No discounts, no bundle deals, no 'buy X get Y', no 'FREE', no 'GIFT', no '$' pricing, no limited-time offers, no 'ORDER NOW' CTAs.
+- NON-PRODUCT OBJECTS: Decorative props (fabric, rope, wood, stone, plants) are allowed but must be CLEARLY DECORATIVE — never styled to look like a product. If an object has the brand logo on it, viewers will think it's for sale. Do not place the logo on anything except the actual product.
+- TEXT SOURCING: Every word of visible text must come from ONE of these three sources — (1) the EXACT product label artwork pasted from the INPUT image, (2) the TEXT section of this prompt, or (3) the logo image. Invent zero text.
+- COMPETITOR ELEMENTS: No green boxes, no red banners, no white mesh bags, no competitor logos, no competitor product shapes, no competitor text.
+- SOAP LABELS: Soap bars sitting on a surface ALWAYS show their paper label. Soap bars being held/lathered in a hand or shown in active use have NO label — plain tallow texture only.
+

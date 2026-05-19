@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="page-title">Ad Gallery</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif; background: #0a0a0f; color: #e1e1e6; min-height: 100vh; }
+nav { background: #0f0f16; border-bottom: 1px solid #1f1f2a; padding: .75rem 1.5rem; display: flex; align-items: center; gap: 1.5rem; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(12px); }
+nav a { color: #71717a; text-decoration: none; font-size: .9rem; transition: color .15s; }
+nav a:hover { color: #e1e1e6; }
+nav .brand-name { font-weight: 600; font-size: 1rem; color: #f0f0ff; margin-right: auto; }
+nav .nav-links { display: flex; gap: .25rem; }
+nav .nav-links a { padding: .4rem .8rem; border-radius: 8px; }
+nav .nav-links a.active { background: #181825; color: #f0f0ff; }
+.container { max-width: 1440px; margin: 0 auto; padding: 1.5rem; }
+.tab-bar { display: flex; gap: .25rem; margin-bottom: 1rem; }
+.tab-bar button { background: transparent; border: none; color: #71717a; padding: .5rem 1rem; border-radius: 8px; cursor: pointer; font-size: .85rem; transition: all .15s; }
+.tab-bar button:hover { background: #121218; color: #e1e1e6; }
+.tab-bar button.active { background: #181825; color: #f0f0ff; }
+.status-bar { color: #52525b; font-size: .8rem; margin-bottom: 1rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: .75rem; }
+.card { background: #121218; border: 1px solid #1f1f2a; border-radius: 12px; overflow: hidden; transition: all .2s; }
+.card:hover { border-color: #383850; }
+.card img { width: 100%; height: 320px; object-fit: contain; display: block; background: #0a0a0f; }
+.card-body { padding: .65rem .75rem; }
+.card-body .name { font-size: .75rem; color: #52525b; word-break: break-all; margin-bottom: .3rem; }
+.card-body .label { font-size: .95rem; color: #f0f0ff; font-weight: 650; margin-bottom: .25rem; }
+.card-body .meta { font-size: .78rem; color: #71717a; margin-bottom: .5rem; }
+.card-body .actions { display: flex; gap: .35rem; }
+.card-body .actions button { flex: 1; padding: .35rem; border: 1px solid #1f1f2a; border-radius: 8px; cursor: pointer; font-size: .78rem; background: transparent; color: #71717a; transition: all .15s; font-family: inherit; }
+.card-body .actions button.approve { color: #4ade80; border-color: #1a3a1a; }
+.card-body .actions button.approve:hover { background: #14532d; border-color: #4ade80; color: #bbf7d0; }
+.card-body .actions button.bad { color: #f87171; border-color: #3a1a1a; }
+.card-body .actions button.bad:hover { background: #531414; border-color: #f87171; color: #fecaca; }
+.card-body .actions button.pending { color: #a78bfa; border-color: #383850; }
+.card-body .actions button.pending:hover { background: #1a1a2e; border-color: #a78bfa; color: #ddd6fe; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: .7rem; font-weight: 500; }
+.badge.pending { background: #1a1a2e; color: #a78bfa; }
+.badge.approved { background: #0a2e1a; color: #4ade80; }
+.badge.bad { background: #2e0a0a; color: #f87171; }
+.empty { text-align: center; padding: 3rem; color: #52525b; font-size: .9rem; }
+.error { color: #f87171; text-align: center; padding: 2rem; }
+.loading { text-align: center; padding: 3rem; color: #52525b; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.loading::after { content: ''; display: inline-block; width: 20px; height: 20px; border: 2px solid #1f1f2a; border-top-color: #6366f1; border-radius: 50%; animation: spin .6s linear infinite; margin-left: .5rem; vertical-align: middle; }
+.toast { position: fixed; bottom: 1.5rem; right: 1.5rem; background: #181825; border: 1px solid #1f1f2a; border-radius: 12px; padding: .75rem 1.25rem; font-size: .85rem; color: #e1e1e6; display: none; animation: fadeIn .2s; box-shadow: 0 8px 32px rgba(0,0,0,.5); z-index: 200; }
+.toast.show { display: block; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+</head>
+<body>
+<nav>
+  <a href="/">← Brands</a>
+  <span class="brand-name" id="brand-name"></span>
+  <div class="nav-links">
+    <a href="#" id="nav-refs">Refs</a>
+    <a href="#" class="active" id="nav-ads">Ads</a>
+    <a href="#" id="nav-posts">Posts</a>
+  </div>
+</nav>
+<div class="container">
+  <div class="tab-bar" id="tab-bar">
+    <button class="active" data-tab="pending">Pending</button>
+    <button data-tab="approved">Approved</button>
+    <button data-tab="bad">Bad</button>
+  </div>
+  <div class="status-bar" id="status-bar"></div>
+  <div id="gallery"></div>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+// Telegram Mini App init (no-op in browser)
+const tg = window.Telegram?.WebApp;
+if (tg) { tg.ready(); tg.expand(); }
+
+function tgNotify(action, count, brand) {
+  // Deprecated — server sends Telegram notifications directly
+}
+const brand = location.pathname.split('/')[1];
+document.title = `${brand.replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase())} — Ads`;
+document.getElementById('brand-name').textContent = brand.replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase());
+document.getElementById('nav-refs').href = `/${brand}/refs.html`;
+document.getElementById('nav-ads').href = `/${brand}/ads.html`;
+document.getElementById('nav-posts').href = `/${brand}/posts.html`;
+
+let currentTab = 'pending';
+
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2000);
+}
+
+async function loadAds() {
+  const gallery = document.getElementById('gallery');
+  const statusBar = document.getElementById('status-bar');
+  gallery.innerHTML = '<div class="loading">Loading ads</div>';
+  try {
+    const r = await fetch(`/api/ads/${brand}`);
+    if (!r.ok) throw new Error('Not found');
+    const data = await r.json();
+    const items = data[currentTab] || [];
+    statusBar.textContent = `${items.length} ads — ${data.pending?.length || 0} pending, ${data.approved?.length || 0} approved, ${data.bad?.length || 0} bad`;
+    if (items.length === 0) {
+      gallery.innerHTML = '<div class="empty">No ads in this tab</div>';
+      return;
+    }
+    gallery.innerHTML = '<div class="grid"></div>';
+    const grid = gallery.querySelector('.grid');
+    items.forEach(item => {
+      const filename = typeof item === 'string' ? item : item.filename || item.file || item.image || '';
+      const label = typeof item === 'object' && item.label ? item.label : filename;
+      const product = typeof item === 'object' && item.product ? item.product : '';
+      const escaped = filename.replace(/'/g,"\\'");
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `
+        <img src="/thumb/${encodeURIComponent(filename)}" alt="${filename}" loading="lazy" decoding="async" style="cursor:pointer" onclick="window.open('/public/images/ads/${brand}/${encodeURIComponent(filename)}','_blank')" onerror="this.style.display='none'">
+        <div class="card-body">
+          <div class="label">${label}</div>
+          <div class="name">${filename}</div>
+          ${product ? `<div class="meta">${product}</div>` : ''}
+          ${currentTab === 'pending' ? `<div class="actions"><button class="approve" onclick="approveAd('${escaped}')">✓ Approve</button><button class="bad" onclick="badAd('${escaped}')">✗ Bad</button></div>` : (currentTab === 'approved' ? `<div class="actions"><button class="pending" onclick="pendingAd('${escaped}')">↩ Pending</button><button class="bad" onclick="badAd('${escaped}')">✗ Bad</button></div>` : `<span class="badge ${currentTab}">${currentTab}</span>`)}
+        </div>`;
+      grid.appendChild(card);
+    });
+  } catch (e) {
+    gallery.innerHTML = `<div class="error">Failed to load ads: ${e.message}</div>`;
+  }
+}
+
+async function approveAd(filename) {
+  try {
+    await fetch(`/api/ads/${brand}/review`, {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({action: 'approve', files: [filename]})
+    });
+    toast('✓ Approved');
+    loadAds();
+  } catch (e) { alert('Failed: ' + e.message); }
+}
+
+async function badAd(filename) {
+  try {
+    await fetch(`/api/ads/${brand}/review`, {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({action: 'bad', files: [filename]})
+    });
+    toast('✗ Marked as bad');
+    loadAds();
+  } catch (e) { alert('Failed: ' + e.message); }
+}
+
+async function pendingAd(filename) {
+  try {
+    await fetch(`/api/ads/${brand}/review`, {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({action: 'pending', files: [filename]})
+    });
+    toast('↩ Back to pending');
+    loadAds();
+  } catch (e) { alert('Failed: ' + e.message); }
+}
+
+document.querySelectorAll('.tab-bar button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-bar button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentTab = btn.dataset.tab;
+    loadAds();
+  });
+});
+
+loadAds();
+</script>
+</body>
+</html>

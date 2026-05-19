@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title id="page-title">Refs Gallery</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display',sans-serif;background:#0a0a0f;color:#e1e1e6;min-height:100vh}
+nav{background:#0f0f16;border-bottom:1px solid #1f1f2a;padding:.75rem 1.5rem;display:flex;align-items:center;gap:1.5rem;position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)}
+nav a{color:#71717a;text-decoration:none;font-size:.9rem;transition:color .15s}
+nav a:hover{color:#e1e1e6}
+nav .brand-name{font-weight:600;font-size:1rem;color:#f0f0ff;margin-right:auto}
+nav .nav-links{display:flex;gap:.25rem}
+nav .nav-links a{padding:.4rem .8rem;border-radius:8px}
+nav .nav-links a.active{background:#181825;color:#f0f0ff}
+.container{max-width:1440px;margin:0 auto;padding:1.5rem}
+.pool-bar{display:flex;gap:.35rem;margin-bottom:1.25rem;flex-wrap:wrap}
+.pool-bar button{background:#121218;border:1px solid #1f1f2a;color:#71717a;padding:.45rem 1rem;border-radius:10px;cursor:pointer;font-size:.85rem;transition:all .15s}
+.pool-bar button:hover{background:#181825;color:#e1e1e6}
+.pool-bar button.active{background:#1e1e2e;border-color:#383850;color:#f0f0ff}
+.tab-bar{display:flex;gap:.25rem;margin-bottom:1rem}
+.tab-bar button{background:transparent;border:none;color:#71717a;padding:.5rem 1rem;border-radius:8px;cursor:pointer;font-size:.85rem;transition:all .15s}
+.tab-bar button:hover{background:#121218;color:#e1e1e6}
+.tab-bar button.active{background:#181825;color:#f0f0ff}
+.status-bar{color:#52525b;font-size:.8rem;margin-bottom:1rem}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem}
+.card{background:#121218;border:1px solid #1f1f2a;border-radius:12px;overflow:hidden;transition:all .2s;position:relative}
+.card:hover{border-color:#383850}
+.card img{width:100%;height:280px;object-fit:cover;display:block;background:#0a0a0f}
+.card-body{padding:.65rem .75rem}
+.card-body .name{font-size:.75rem;color:#52525b;word-break:break-all;margin-bottom:.5rem}
+.card-body .actions{display:flex;gap:.35rem}
+.card-body .actions button{flex:1;padding:.35rem;border:1px solid #1f1f2a;border-radius:8px;cursor:pointer;font-size:.78rem;background:transparent;color:#71717a;transition:all .15s;font-family:inherit}
+.card-body .actions button.approve{color:#4ade80;border-color:#1a3a1a}
+.card-body .actions button.approve:hover{background:#14532d;border-color:#4ade80;color:#bbf7d0}
+.card-body .actions button.reject{color:#f87171;border-color:#3a1a1a}
+.card-body .actions button.reject:hover{background:#531414;border-color:#f87171;color:#fecaca}
+.card-body .actions button.reset{color:#a78bfa;border-color:#383850}
+.card-body .actions button.reset:hover{background:#1a1a2e;border-color:#a78bfa;color:#ddd6fe}
+.badge{display:inline-block;padding:2px 8px;border-radius:6px;font-size:.7rem;font-weight:500}
+.badge.pending{background:#1a1a2e;color:#a78bfa}
+.badge.approved{background:#0a2e1a;color:#4ade80}
+.badge.used{background:#181825;color:#52525b}
+.card.selected{border-color:#6366f1;box-shadow:0 0 0 1px #6366f1}
+.card .card-img-wrap{position:relative}
+.card .card-img-wrap::before{content:'';position:absolute;top:8px;left:8px;width:22px;height:22px;border-radius:50%;background:rgba(0,0,0,.6);border:2px solid #52525b;z-index:5;transition:all .15s}
+.card.selected .card-img-wrap::before{background:#6366f1;border-color:#6366f1}
+.card.selected .card-img-wrap::after{content:'✓';position:absolute;top:8px;left:8px;width:22px;height:22px;border-radius:50%;z-index:6;display:flex;align-items:center;justify-content:center;font-size:12px;color:#fff}
+.bulk-bar{position:sticky;top:56px;z-index:90;background:#1e1e2e;border:1px solid #383850;border-radius:12px;padding:.6rem 1rem;margin-bottom:1rem;display:none;align-items:center;gap:.75rem}
+.bulk-bar.show{display:flex}
+.bulk-bar .bulk-count{font-size:.85rem;color:#a78bfa;font-weight:500}
+.bulk-bar .bulk-hint{font-size:.78rem;color:#52525b;margin-left:auto}
+.bulk-bar button{padding:.4rem 1rem;border-radius:8px;cursor:pointer;font-size:.82rem;font-family:inherit;transition:all .15s;border:1px solid}
+.bulk-bar button.approve{background:#14532d;border-color:#4ade80;color:#4ade80}
+.bulk-bar button.reject{background:#531414;border-color:#f87171;color:#f87171}
+.bulk-bar button.clear{background:transparent;border-color:#383850;color:#71717a;padding:.4rem .75rem}
+.bulk-bar button.clear:hover{background:#121218;color:#e1e1e6}
+.select-all-btn{background:transparent;border:1px solid #1f1f2a;color:#71717a;padding:.35rem .75rem;border-radius:8px;cursor:pointer;font-size:.78rem;font-family:inherit;transition:all .15s;margin-left:.5rem}
+.select-all-btn:hover{background:#121218;color:#e1e1e6}
+.empty{text-align:center;padding:3rem;color:#52525b;font-size:.9rem}
+.error{color:#f87171;text-align:center;padding:2rem}
+.loading{text-align:center;padding:3rem;color:#52525b}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading::after{content:'';display:inline-block;width:20px;height:20px;border:2px solid #1f1f2a;border-top-color:#6366f1;border-radius:50%;animation:spin .6s linear infinite;margin-left:.5rem;vertical-align:middle}
+.toast{position:fixed;bottom:1.5rem;right:1.5rem;background:#181825;border:1px solid #1f1f2a;border-radius:12px;padding:.75rem 1.25rem;font-size:.85rem;color:#e1e1e6;display:none;animation:fadeIn .2s;box-shadow:0 8px 32px rgba(0,0,0,.5);z-index:200}
+.toast.show{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── Swipe mode (inline) ── */
+.swipe-empty .icon{font-size:48px}
+.swipe-mode{height:calc(100vh - 96px);min-height:560px;display:flex;flex-direction:column;gap:12px;touch-action:none;user-select:none;-webkit-user-select:none}
+.swipe-top{display:flex;align-items:center;gap:12px;color:#71717a;font-size:14px}
+.swipe-back{background:#181825;border:1px solid #1f1f2a;color:#e1e1e6;padding:8px 14px;border-radius:8px;cursor:pointer;font-size:14px;font-family:inherit}
+.swipe-count{margin-left:auto}
+.swipe-count b{color:#e1e1e6}
+.gen-controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.gen-btn,.gen-stop,.gen-link{border:1px solid #383850;background:#1a1a2e;color:#a78bfa;padding:8px 12px;border-radius:8px;cursor:pointer;font-size:13px;font-family:inherit;text-decoration:none;white-space:nowrap}
+.gen-stop{border-color:#3a1a1a;background:#2e0a0a;color:#f87171}
+.gen-link{border-color:#1a3a1a;background:#0a2e1a;color:#4ade80}
+.gen-btn:disabled,.gen-stop:disabled{opacity:.5;cursor:not-allowed}
+.gen-status{color:#71717a;font-size:13px;min-width:80px}
+.swipe-stack{position:relative;flex:1;overflow:hidden;border-radius:16px;touch-action:none}
+.swipe-card{position:absolute;inset:0;background:#121218;border:1px solid #1f1f2a;border-radius:16px;overflow:hidden;will-change:transform,opacity;touch-action:none;cursor:grab}
+.swipe-card.current{z-index:3}
+.swipe-card.behind{z-index:1;transform:translate3d(0,0,0) scale(.96);opacity:.5}
+.swipe-card:active{cursor:grabbing}
+.swipe-card img{width:100%;height:100%;object-fit:contain;background:#0a0a0f;pointer-events:none;display:block}
+.swipe-card .filename{position:absolute;left:0;right:0;bottom:0;padding:36px 16px 14px;background:linear-gradient(transparent,rgba(0,0,0,.82));color:#71717a;font-size:12px;word-break:break-all;pointer-events:none}
+.swipe-overlay{position:absolute;inset:0;z-index:4;pointer-events:none;display:flex;align-items:center;border-radius:16px}
+.swipe-overlay .label{font-size:32px;font-weight:800;letter-spacing:2px;padding:12px 20px;border-radius:10px;border:3px solid;opacity:0;transition:opacity .08s}
+.swipe-overlay.left{justify-content:flex-start;padding-left:30px}
+.swipe-overlay.left .label{color:#f87171;border-color:#f87171;background:rgba(127,29,29,.5);transform:rotate(-8deg)}
+.swipe-overlay.right{justify-content:flex-end;padding-right:30px}
+.swipe-overlay.right .label{color:#4ade80;border-color:#4ade80;background:rgba(20,83,45,.5);transform:rotate(8deg)}
+@media (max-width:700px){
+  .container{padding:1rem}
+  .swipe-mode{height:calc(100vh - 82px);min-height:420px}
+  .swipe-top{align-items:flex-start;flex-wrap:wrap}
+  .swipe-count{margin-left:0}
+  .swipe-overlay .label{font-size:26px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/">← Brands</a>
+  <span class="brand-name" id="brand-name"></span>
+  <div class="nav-links">
+    <a href="#" class="active" id="nav-refs">Refs</a>
+    <a href="#" id="nav-ads">Ads</a>
+    <a href="#" id="nav-posts">Posts</a>
+  </div>
+</nav>
+
+<div class="container" id="main-view">
+  <div class="pool-bar" id="pool-nav"></div>
+  <div class="tab-bar" id="tab-bar">
+    <button class="active" data-tab="pending">Pending</button>
+    <button data-tab="approved">Approved</button>
+    <button data-tab="used">Used</button>
+    <button id="swipe-btn" onclick="startSwipe()" style="background:#1a1a2e;color:#a78bfa;border:1px solid #383850">⚡ Swipe</button>
+    <button class="select-all-btn" id="select-all-btn" style="display:none">Select All</button>
+  </div>
+  <div class="bulk-bar" id="bulk-bar">
+    <span class="bulk-count" id="bulk-count">0 selected</span>
+    <button class="approve" onclick="bulkApprove()">✓ Approve</button>
+    <button class="reject" onclick="bulkReject()">✗ Reject</button>
+    <button class="clear" onclick="clearSelection()">Clear</button>
+    <span class="bulk-hint">or click cards to select</span>
+  </div>
+  <div class="status-bar" id="status-bar"></div>
+  <div id="gallery"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ── Shared state ──
+const brand = location.pathname.split('/')[1] || 'island-splash';
+document.title = brand.replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase()) + ' — Refs';
+document.getElementById('brand-name').textContent = brand.replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase());
+document.getElementById('nav-refs').href = '/' + brand + '/refs.html';
+document.getElementById('nav-ads').href = '/' + brand + '/ads.html';
+document.getElementById('nav-posts').href = '/' + brand + '/posts.html';
+
+const tg = window.Telegram?.WebApp;
+if (tg) { tg.ready(); tg.expand(); }
+
+let brandsData = {}, currentPool = '', currentTab = 'pending', selected = new Set();
+
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2000);
+}
+
+function galleryApiUrl(pool) {
+  return '/api/gallery/' + encodeURIComponent(brand) + '/' + encodeURIComponent(pool) + '?_=' + Date.now();
+}
+
+async function fetchGalleryState(pool) {
+  const r = await fetch(galleryApiUrl(pool), {cache:'no-store'});
+  if (!r.ok) throw new Error('Gallery API returned ' + r.status);
+  const data = await r.json();
+  return {
+    pending: Array.isArray(data.pending) ? data.pending : [],
+    approved: Array.isArray(data.approved) ? data.approved : [],
+    used: Array.isArray(data.used) ? data.used : []
+  };
+}
+
+// ── Pool switching ──
+function selectPool(pool) {
+  currentPool = pool;
+  document.querySelectorAll('#pool-nav button').forEach(b => b.classList.toggle('active', b.dataset.pool === pool));
+  selected.clear(); updateBulkBar(); loadRefs();
+}
+
+// ── Tab switching ──
+document.getElementById('tab-bar').addEventListener('click', e => {
+  const btn = e.target.closest('button[data-tab]');
+  if (!btn) return;
+  document.querySelectorAll('#tab-bar button[data-tab]').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  currentTab = btn.dataset.tab;
+  selected.clear(); updateBulkBar(); loadRefs();
+});
+
+// ── Load refs into grid ──
+let lastRefData = null;
+
+async function loadRefs() {
+  const gallery = document.getElementById('gallery');
+  const statusBar = document.getElementById('status-bar');
+  gallery.innerHTML = '<div class="loading">Loading refs</div>';
+  try {
+    const poolSlug = currentPool || 'default';
+    const data = await fetchGalleryState(poolSlug);
+    lastRefData = data;
+    const files = data[currentTab] || [];
+    statusBar.textContent = files.length + ' refs — ' + (data.pending?.length||0) + ' pending, ' + (data.approved?.length||0) + ' approved, ' + (data.used?.length||0) + ' used';
+    if (files.length === 0) { gallery.innerHTML = '<div class="empty">No refs in this tab</div>'; return; }
+    gallery.innerHTML = '<div class="grid"></div>';
+    const grid = gallery.querySelector('.grid');
+    files.forEach(f => {
+      const card = document.createElement('div');
+      card.className = 'card'; card.dataset.file = f;
+      const esc = f.replace(/'/g,"\\'");
+      card.innerHTML = '<div class="card-img-wrap"><img src="/public/images/refs/' + brand + '/' + poolSlug + '/' + currentTab + '/' + encodeURIComponent(f) + '" alt="' + f + '" loading="lazy" onerror="this.src=\'/public/images/refs/' + brand + '/' + poolSlug + '/' + currentTab + '/' + encodeURIComponent(f) + '\';this.onerror=function(){this.parentElement.innerHTML=\'<div class=empty style=padding:3rem;min-height:280px;display:flex;align-items:center;justify-content:center>Failed</div>\'}"></div><div class="card-body"><div class="name">' + f + '</div>' + (currentTab === 'pending' ? '<div class="actions"><button class="approve" onclick="event.stopPropagation();approveSingle(\'' + poolSlug + '\',\'' + esc + '\')">✓ Approve</button><button class="reject" onclick="event.stopPropagation();rejectSingle(\'' + poolSlug + '\',\'' + esc + '\')">✗ Reject</button></div>' : (currentTab === 'approved' ? '<div class="actions"><button class="reset" onclick="event.stopPropagation();resetSingle(\'' + poolSlug + '\',\'' + esc + '\')">↩ Pending</button></div>' : '<span class="badge ' + currentTab + '">' + currentTab + '</span>')) + '</div>';
+      card.addEventListener('click', () => { if (currentTab === 'pending') toggleSelect(f); });
+      grid.appendChild(card);
+    });
+  } catch (e) { gallery.innerHTML = '<div class="error">Failed: ' + e.message + '</div>'; }
+}
+
+async function approveSingle(pool, filename) { await fetch('/api/gallery/' + brand + '/' + pool + '/approve', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({files:[filename]})}); toast('✓ Approved'); loadRefs(); }
+async function rejectSingle(pool, filename) { await fetch('/api/gallery/' + brand + '/' + pool + '/reject', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({files:[filename]})}); toast('✗ Rejected'); loadRefs(); }
+async function resetSingle(pool, filename) {
+  const r = await fetch('/api/gallery/' + brand + '/' + pool + '/reject', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({files:[filename],action:'reset'}),cache:'no-store'});
+  const data = await r.json().catch(() => ({}));
+  if (!r.ok || !data.rejected) { toast('Not moved'); loadRefs(); return; }
+  toast('↩ Back to pending'); loadRefs();
+}
+
+// ── Bulk select ──
+function toggleSelect(filename) { if (selected.has(filename)) selected.delete(filename); else selected.add(filename); updateBulkBar(); document.querySelectorAll('.card').forEach(c => c.classList.toggle('selected', selected.has(c.dataset.file))); }
+function clearSelection() { selected.clear(); updateBulkBar(); document.querySelectorAll('.card').forEach(c => c.classList.remove('selected')); }
+function updateBulkBar() {
+  const bar = document.getElementById('bulk-bar'), btn = document.getElementById('select-all-btn');
+  if (selected.size > 0 && currentTab === 'pending') { bar.classList.add('show'); document.getElementById('bulk-count').textContent = selected.size + ' selected'; btn.style.display = 'inline-block'; }
+  else { bar.classList.remove('show'); btn.style.display = 'none'; }
+}
+async function bulkApprove() { const files = [...selected]; if (!files.length) return; await fetch('/api/gallery/' + brand + '/' + currentPool + '/approve', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({files})}); toast('✓ Approved ' + files.length); selected.clear(); loadRefs(); }
+async function bulkReject() { const files = [...selected]; if (!files.length) return; await fetch('/api/gallery/' + brand + '/' + currentPool + '/reject', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({files})}); toast('✗ Rejected ' + files.length); selected.clear(); loadRefs(); }
+
+document.getElementById('select-all-btn').addEventListener('click', () => {
+  const cards = [...document.querySelectorAll('.card')];
+  if (selected.size === cards.length) selected.clear(); else cards.forEach(c => selected.add(c.dataset.file));
+  updateBulkBar(); document.querySelectorAll('.card').forEach(c => c.classList.toggle('selected', selected.has(c.dataset.file)));
+});
+
+// ── Swipe mode (inline, replaces gallery content) ──
+let swipeCards = [], swipeIdx = 0, swipeCount = {approve:0, reject:0};
+let swipePool = '';  // Track which pool we're swiping
+let swipeStack = null, currentSwipeCard = null, swipeLeftOverlay = null, swipeRightOverlay = null;
+let swipeDragging = false, swipeLocked = false, swipePointerId = null;
+let swipeStartX = 0, swipeCurrentX = 0, swipeLastX = 0, swipeLastTime = 0, swipeVelocity = 0;
+const SWIPE_THRESHOLD = 0.15;
+const SWIPE_MAX_ROTATION = 18;
+const SWIPE_FLY_DURATION = 160;
+const SWIPE_SPRING_DURATION = 220;
+const SWIPE_PRELOAD_AHEAD = 3;
+let generationPoll = null;
+let generationState = {running:false,status:'idle',generated:0,approved_left:0};
+let pendingSwipePosts = [];
+
+function startSwipe() {
+  var activeBtn = document.querySelector('#pool-nav button.active');
+  var pool = activeBtn ? activeBtn.dataset.pool : (currentPool || '');
+  if (!pool) { document.getElementById('gallery').innerHTML = '<div class="empty">Pick a pool first, then swipe</div>'; return; }
+  swipePool = pool;  // Lock the pool for the entire swipe session
+  var gallery = document.getElementById('gallery');
+  gallery.innerHTML = '<div class="loading">Loading swipe for ' + pool + '</div>';
+  
+  fetchGalleryState(pool)
+    .then(function(data) {
+      var pending = data.pending || [];
+      if (pending.length === 0 && currentPool === pool && lastRefData && lastRefData.pending && lastRefData.pending.length > 0) {
+        pending = lastRefData.pending;
+      }
+      if (pending.length === 0) {
+        gallery.innerHTML = '<div class="empty">No pending refs in ' + pool + ' — <a href="#" onclick="stopSwipe();return false">back to grid</a></div>';
+        return;
+      }
+      swipeCards = pending.map(function(f) {
+        return {
+          filename: f,
+          url: '/public/images/refs/' + brand + '/' + pool + '/pending/' + encodeURIComponent(f)
+        };
+      });
+      swipeIdx = 0; swipeCount = {approve:0, reject:0};
+      
+      document.getElementById('pool-nav').style.display = 'none';
+      document.getElementById('tab-bar').style.display = 'none';
+      document.getElementById('status-bar').style.display = 'none';
+      renderSwipeUI();
+    })
+    .catch(function(e) { gallery.innerHTML = '<div class="error">' + e.message + '</div>'; });
+}
+
+function renderSwipeUI() {
+  var gallery = document.getElementById('gallery');
+  gallery.innerHTML = '';
+  
+  if (swipeIdx >= swipeCards.length) {
+    document.getElementById('pool-nav').style.display = '';
+    document.getElementById('tab-bar').style.display = '';
+    document.getElementById('status-bar').style.display = '';
+    gallery.innerHTML = '<div class="empty"><div style="font-size:48px">🎉</div><div>All done!</div><div style="font-size:13px;color:#3a3a3f;margin-bottom:14px">' + swipeCount.approve + ' kept · ' + swipeCount.reject + ' skipped</div><div class="gen-controls" style="justify-content:center;margin-bottom:14px">' + generationControlsHTML() + '</div><button onclick="stopSwipe()" style="margin-top:2px;padding:8px 20px;border-radius:8px;border:1px solid #1f1f2a;background:#181825;color:#e1e1e6;cursor:pointer;font-family:inherit">← Back to Grid</button></div>';
+    pollGenerationStatus();
+    return;
+  }
+  
+  var total = swipeCards.length;
+  var done = swipeCount.approve + swipeCount.reject;
+  
+  gallery.innerHTML = 
+    '<div class="swipe-mode">' +
+    '<div class="swipe-top">' +
+      '<button class="swipe-back" onclick="stopSwipe()">← Grid</button>' +
+      '<div class="gen-controls">' + generationControlsHTML() + '</div>' +
+      '<span class="swipe-count"><b id="swipe-done">' + done + '</b>/' + total + ' · <b id="swipe-left">' + (total - swipeIdx) + '</b> left</span>' +
+    '</div>' +
+    '<div class="swipe-stack" id="swipe-stack"></div>' +
+    '</div>';
+  swipeStack = document.getElementById('swipe-stack');
+  pollGenerationStatus();
+  for (var i = Math.min(swipeIdx + SWIPE_PRELOAD_AHEAD, swipeCards.length - 1); i > swipeIdx; i--) renderSwipeBehind(i);
+  renderSwipeCard(swipeIdx);
+}
+
+function generationControlsHTML() {
+  return '<button class="gen-btn" id="gen-btn" onclick="startGeneration()">Generate Ads</button>' +
+    '<button class="gen-stop" id="gen-stop" onclick="stopGeneration()" style="display:none">Stop</button>' +
+    '<a class="gen-link" id="gen-link" href="/' + brand + '/ads" style="display:none">View Ads</a>' +
+    '<span class="gen-status" id="gen-status"></span>';
+}
+
+function generationApi(path) {
+  return '/api/gallery/' + encodeURIComponent(brand) + '/' + encodeURIComponent(swipePool || currentPool) + '/' + path;
+}
+
+async function startGeneration() {
+  if (!(swipePool || currentPool)) return;
+  const btn = document.getElementById('gen-btn');
+  if (btn) btn.disabled = true;
+  try {
+    if (pendingSwipePosts.length) await Promise.allSettled([...pendingSwipePosts]);
+    const r = await fetch(generationApi('generate'), {method:'POST',headers:{'Content-Type':'application/json'},body:'{}',cache:'no-store'});
+    generationState = await r.json();
+    updateGenerationUI();
+    startGenerationPolling();
+  } catch (e) {
+    generationState = {running:false,status:'idle',generated:0,approved_left:0};
+    updateGenerationUI();
+  }
+}
+
+async function stopGeneration() {
+  try {
+    const r = await fetch(generationApi('generate-stop'), {method:'POST',headers:{'Content-Type':'application/json'},body:'{}',cache:'no-store'});
+    generationState = await r.json();
+  } catch (e) {}
+  updateGenerationUI();
+}
+
+function startGenerationPolling() {
+  if (generationPoll) clearInterval(generationPoll);
+  pollGenerationStatus();
+  generationPoll = setInterval(pollGenerationStatus, 4000);
+}
+
+async function pollGenerationStatus() {
+  if (!(swipePool || currentPool)) return;
+  try {
+    const r = await fetch(generationApi('generate-status') + '?_=' + Date.now(), {cache:'no-store'});
+    generationState = await r.json();
+    updateGenerationUI();
+    if (!generationState.running && generationPoll) {
+      clearInterval(generationPoll);
+      generationPoll = null;
+    }
+  } catch (e) {}
+}
+
+function updateGenerationUI() {
+  const btn = document.getElementById('gen-btn');
+  const stop = document.getElementById('gen-stop');
+  const link = document.getElementById('gen-link');
+  const status = document.getElementById('gen-status');
+  if (!btn || !stop || !link || !status) return;
+
+  const running = !!generationState.running;
+  const stopping = generationState.status === 'stopping';
+  btn.disabled = running;
+  btn.textContent = running ? 'Generating...' : 'Generate Ads';
+  stop.style.display = running ? 'inline-block' : 'none';
+  stop.disabled = stopping;
+  stop.textContent = stopping ? 'Stopping...' : 'Stop';
+  link.style.display = generationState.generated > 0 ? 'inline-block' : 'none';
+
+  if (running) {
+    status.textContent = (generationState.generated || 0) + ' done · ' + (generationState.approved_left || 0) + ' left';
+  } else if (generationState.status === 'done') {
+    status.textContent = 'Done';
+  } else if (generationState.status === 'empty') {
+    status.textContent = 'No approved refs';
+  } else if (generationState.status === 'stopped') {
+    status.textContent = 'Stopped';
+  } else {
+    status.textContent = '';
+  }
+}
+
+function createSwipeCard(card, cls, idx) {
+  var el = document.createElement('div');
+  el.className = 'swipe-card ' + cls;
+  el.dataset.idx = idx;
+  el.innerHTML = '<img src="' + card.url + '" draggable="false" alt="' + card.filename.replace(/"/g, '&quot;') + '"><div class="filename">' + card.filename + '</div>';
+  return el;
+}
+
+function renderSwipeCard(idx) {
+  if (!swipeStack || !swipeCards[idx]) return;
+  currentSwipeCard?.remove();
+  swipeLeftOverlay?.remove();
+  swipeRightOverlay?.remove();
+
+  var existing = swipeStack.querySelector('[data-idx="' + idx + '"]');
+  currentSwipeCard = existing || createSwipeCard(swipeCards[idx], 'current', idx);
+  currentSwipeCard.className = 'swipe-card current';
+  currentSwipeCard.style.transform = 'translate3d(0,0,0) rotate(0deg)';
+  currentSwipeCard.style.transition = 'none';
+  currentSwipeCard.style.opacity = '1';
+  currentSwipeCard.style.pointerEvents = '';
+  if (!existing) swipeStack.appendChild(currentSwipeCard);
+
+  swipeLeftOverlay = document.createElement('div');
+  swipeLeftOverlay.className = 'swipe-overlay left';
+  swipeLeftOverlay.innerHTML = '<div class="label">NOPE</div>';
+  swipeRightOverlay = document.createElement('div');
+  swipeRightOverlay.className = 'swipe-overlay right';
+  swipeRightOverlay.innerHTML = '<div class="label">KEEP</div>';
+  swipeStack.appendChild(swipeLeftOverlay);
+  swipeStack.appendChild(swipeRightOverlay);
+
+  currentSwipeCard.addEventListener('pointerdown', swipePointerStart);
+  swipeLocked = false;
+
+  for (var i = idx + 1; i <= Math.min(idx + SWIPE_PRELOAD_AHEAD, swipeCards.length - 1); i++) renderSwipeBehind(i);
+  updateSwipeCounts();
+}
+
+function renderSwipeBehind(idx) {
+  if (!swipeStack || !swipeCards[idx] || swipeStack.querySelector('[data-idx="' + idx + '"]')) return;
+  var el = createSwipeCard(swipeCards[idx], 'behind', idx);
+  swipeStack.insertBefore(el, swipeStack.firstChild);
+}
+
+function swipePointerStart(e) {
+  if (!currentSwipeCard || swipeLocked) return;
+  swipeDragging = true;
+  swipePointerId = e.pointerId;
+  swipeStartX = e.clientX;
+  swipeCurrentX = e.clientX;
+  swipeLastX = e.clientX;
+  swipeLastTime = performance.now();
+  swipeVelocity = 0;
+  currentSwipeCard.setPointerCapture?.(e.pointerId);
+  currentSwipeCard.style.transition = 'none';
+  e.preventDefault();
+}
+
+document.addEventListener('pointermove', swipePointerMove);
+document.addEventListener('pointerup', swipePointerEnd);
+document.addEventListener('pointercancel', swipePointerEnd);
+
+function swipePointerMove(e) {
+  if (!swipeDragging || !currentSwipeCard || (swipePointerId !== null && e.pointerId !== swipePointerId)) return;
+  var x = e.clientX;
+  var dx = x - swipeStartX;
+  var now = performance.now();
+  var dt = now - swipeLastTime;
+  if (dt > 0) swipeVelocity = (x - swipeLastX) / dt;
+  swipeLastX = x;
+  swipeLastTime = now;
+  swipeCurrentX = x;
+
+  var w = Math.max(1, swipeStack.clientWidth);
+  var pct = dx / (w * SWIPE_THRESHOLD);
+  var clamped = Math.max(-1, Math.min(1, pct));
+  currentSwipeCard.style.transform = 'translate3d(' + dx + 'px,0,0) rotate(' + (clamped * SWIPE_MAX_ROTATION) + 'deg)';
+
+  if (swipeLeftOverlay && swipeRightOverlay) {
+    swipeLeftOverlay.querySelector('.label').style.opacity = clamped < -0.05 ? Math.abs(clamped) : 0;
+    swipeRightOverlay.querySelector('.label').style.opacity = clamped > 0.05 ? clamped : 0;
+  }
+
+  var absClamp = Math.abs(clamped);
+  swipeStack.querySelectorAll('.swipe-card.behind').forEach(function(card, j) {
+    card.style.transform = 'translate3d(0,0,0) scale(' + Math.min(1, 0.94 + absClamp * 0.06 + j * 0.005) + ')';
+    card.style.opacity = Math.min(1, 0.4 + absClamp * 0.6 + j * 0.05);
+  });
+  e.preventDefault();
+}
+
+function swipePointerEnd(e) {
+  if (!swipeDragging || !currentSwipeCard || swipeLocked || (swipePointerId !== null && e.pointerId !== swipePointerId)) {
+    swipeDragging = false;
+    swipePointerId = null;
+    return;
+  }
+  swipeDragging = false;
+  swipePointerId = null;
+
+  var w = Math.max(1, swipeStack.clientWidth);
+  var dx = swipeCurrentX - swipeStartX;
+  var pct = dx / (w * SWIPE_THRESHOLD);
+  var direction = Math.abs(swipeVelocity) > 0.3 || Math.abs(pct) >= 1 ? (pct > 0 ? 1 : -1) : 0;
+
+  if (direction === 0) {
+    currentSwipeCard.style.transition = 'transform ' + SWIPE_SPRING_DURATION + 'ms cubic-bezier(.25,.8,.25,1.2)';
+    currentSwipeCard.style.transform = 'translate3d(0,0,0) rotate(0deg)';
+    if (swipeLeftOverlay) swipeLeftOverlay.querySelector('.label').style.opacity = '0';
+    if (swipeRightOverlay) swipeRightOverlay.querySelector('.label').style.opacity = '0';
+    swipeStack.querySelectorAll('.swipe-card.behind').forEach(function(card) {
+      card.style.transition = 'transform .15s ease, opacity .15s ease';
+      card.style.transform = 'translate3d(0,0,0) scale(.96)';
+      card.style.opacity = '.5';
+    });
+    return;
+  }
+
+  commitSwipe(direction);
+}
+
+function commitSwipe(direction) {
+  if (!currentSwipeCard || !swipeCards[swipeIdx]) return;
+  swipeLocked = true;
+  var action = direction > 0 ? 'approve' : 'reject';
+  var w = Math.max(1, swipeStack.clientWidth);
+  var oldCard = currentSwipeCard;
+  var oldLeft = swipeLeftOverlay;
+  var oldRight = swipeRightOverlay;
+
+  oldCard.style.transition = 'transform ' + SWIPE_FLY_DURATION + 'ms cubic-bezier(.4,0,0,1), opacity ' + SWIPE_FLY_DURATION + 'ms linear';
+  oldCard.style.transform = 'translate3d(' + (direction * w * 1.3) + 'px,0,0) rotate(' + (direction * SWIPE_MAX_ROTATION * 2) + 'deg)';
+  oldCard.style.opacity = '0';
+  oldCard.style.pointerEvents = 'none';
+
+  swipePost(action, swipeCards[swipeIdx].filename);
+  swipeCount[action]++;
+  swipeIdx++;
+  updateSwipeCounts();
+
+  currentSwipeCard = null;
+  swipeLeftOverlay = null;
+  swipeRightOverlay = null;
+  if (swipeIdx < swipeCards.length) {
+    renderSwipeCard(swipeIdx);
+  } else {
+    setTimeout(function() {
+      renderSwipeUI();
+    }, SWIPE_FLY_DURATION);
+  }
+
+  setTimeout(function() {
+    oldCard?.remove();
+    oldLeft?.remove();
+    oldRight?.remove();
+  }, SWIPE_FLY_DURATION + 50);
+}
+
+function updateSwipeCounts() {
+  var done = document.getElementById('swipe-done');
+  var left = document.getElementById('swipe-left');
+  if (done) done.textContent = swipeCount.approve + swipeCount.reject;
+  if (left) left.textContent = Math.max(0, swipeCards.length - swipeIdx);
+}
+
+function swipePost(action, filename) {
+  const p = fetch('/api/gallery/' + encodeURIComponent(brand) + '/' + encodeURIComponent(swipePool) + '/' + (action === 'approve' ? 'approve' : 'reject'), {
+    method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({files:[filename]}),cache:'no-store'
+  }).catch(function() {
+    toast('Failed to save swipe for ' + filename);
+  });
+  pendingSwipePosts.push(p);
+  p.finally(function() {
+    pendingSwipePosts = pendingSwipePosts.filter(function(item) { return item !== p; });
+  });
+}
+
+function stopSwipe() {
+  swipeDragging = false;
+  swipeLocked = false;
+  swipePointerId = null;
+  if (generationPoll) {
+    clearInterval(generationPoll);
+    generationPoll = null;
+  }
+  document.getElementById('pool-nav').style.display = 'flex';
+  document.getElementById('tab-bar').style.display = 'flex';
+  document.getElementById('status-bar').style.display = '';
+  swipePool = '';
+  loadRefs();
+}
+
+// Keyboard
+// Init
+async function loadBrands() {
+  try {
+    const r = await fetch('/api/brands?_=' + Date.now(), {cache:'no-store'});
+    brandsData = await r.json();
+    const pools = brandsData[brand]?.pools || {};
+    const poolNav = document.getElementById('pool-nav');
+    poolNav.innerHTML = '';
+    Object.entries(pools).forEach(([key, label]) => {
+      const btn = document.createElement('button');
+      btn.textContent = typeof label === 'string' ? label : key;
+      btn.dataset.pool = key;
+      btn.onclick = () => selectPool(key);
+      poolNav.appendChild(btn);
+    });
+    if (Object.keys(pools).length > 0) selectPool(Object.keys(pools)[0]);
+  } catch (e) { loadRefs(); }
+}
+loadBrands();
+</script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+BRAND: cinco-h-ranch (Cinco H Ranch Naturals)
+REF: /data/refs/public/images/refs/cinco-h-ranch/soap/approved/soap_ref_51.jpg
+OUTPUT: /data/refs/output/cinco-h-ranch_20260518_052901_748.png
+PRODUCTS: Honey Vanilla Soap, Honey Vanilla Soap, Honey Vanilla Soap, Honey Vanilla Soap, Honey Vanilla Soap
+TIMESTAMP: 2026-05-18T05:30:21.953932
+
+=== REVERSE ANALYSIS ===
+## Subject
+The subject is a stack of five rectangular, handmade-style soap bars. The bars are stacked vertically and slightly offset, angled towards the right side of the frame. The stack is viewed from a slightly high-angle, close-up perspective. From top to bottom:
+- The top bar is a solid, light-brown/caramel color. Only its top half is visible.
+- The second bar is a solid, muted, dusty green color.
+- The third bar is an off-white/cream color with dried, dark brown/purple botanicals (possibly lavender buds or seeds) sprinkled across its top surface.
+- The fourth bar has a prominent marbled or swirled pattern, with a thick, textured, medium-brown layer sandwiched between two off-white layers.
+- The bottom bar is a solid off-white/cream color with a slightly uneven, wavy top edge.
+The overall condition of the soaps is rustic and artisanal, with slightly uneven edges and surfaces. They are positioned filling the majority of the right side of the frame, from top to bottom.
+
+## Product Count
+PRODUCT COUNT: 5 (Five visually distinct bars of soap are present.)
+
+## Product Details
+**Product 1: Light Brown Soap Bar**
+- **Container type and shape:** Rectangular bar of soap with sharp-cut edges.
+- **Exact position in frame:** Top of the stack, occupying the top 0% to ~15% of the frame's height. It is cropped at the top edge.
+- **Angle:** Lying flat, viewed from the front.
+- **Size relative to frame:** Small, as only a portion is visible.
+- **Cap/lid state:** Not applicable.
+- **Label:** None.
+- **Surface:** Matte, opaque.
+
+**Product 2: Green Soap Bar**
+- **Container type and shape:** Rectangular bar of soap with sharp-cut edges.
+- **Exact position in frame:** Second from the top, occupying ~15% to ~35% of the frame's height.
+- **Angle:** Lying flat, viewed from the front.
+- **Size relative to frame:** Medium.
+- **Cap/lid state:** Not applicable.
+- **Label:** None.
+- **Surface:** Matte, opaque, with a slightly mottled color.
+
+**Product 3: Botanical Soap Bar**
+- **Container type and shape:** Rectangular bar of soap with sharp-cut edges. Topped with scattered dried botanicals.
+- **Exact position in frame:** Third from the top, centered vertically in the frame, from ~35% to ~50% of the frame's height.
+- **Angle:** Lying flat, viewed from the front.
+- **Size relative to frame:** Medium.
+- **Cap/lid state:** Not applicable.
+- **Label:** None.
+- **Surface:** Matte, opaque off-white base. The top is textured with the dried botanicals.
+
+**Product 4: Swirled Soap Bar**
+- **Container type and shape:** Rectangular bar of soap with a prominent swirl pattern.
+- **Exact position in frame:** Fourth from the top, from ~50% to ~75% of the frame's height.
+- **Angle:** Lying flat, viewed from the front.
+- **Size relative to frame:** Large.
+- **Cap/lid state:** Not applicable.
+- **Label:** None.
+- **Surface:** Matte, opaque. The brown layer appears slightly more textured than the off-white layers.
+
+**Product 5: Off-White Soap Bar**
+- **Container type and shape:** Rectangular bar of soap with a slightly uneven, wavy top edge.
+- **Exact position in frame:** Bottom of the stack, from ~75% to the bottom of the frame. It is cropped at the bottom edge.
+- **Angle:** Lying flat, viewed from the front.
+- **Size relative to frame:** Large.
+- **Cap/lid state:** Not applicable.
+- **Label:** None.
+- **Surface:** Matte, opaque.
+
+## Composition
+- **Aspect ratio:** Portrait, approximately 2:3.
+- **Framing:** Tight close-up on the stack of soap bars.
+- **Visual hierarchy:** The eye is drawn first to the text overlay due to its high contrast and central placement. Second, to the botanical-topped soap bar (Product 3) because of its textural detail. Third, to the swirled pattern of the soap bar below it (Product 4).
+- **3×3 grid:**
+    - **Top-left:** Background, top left corner of the top soap bar.
+    - **Top-center:** Top soap bar and the words "The Best."
+    - **Top-right:** Top soap bar and the second (green) soap bar.
+    - **Mid-left:** Background, left edge of the soap stack.
+    - **Mid-center:** Text overlay "Essential Oil Blends / For soapmaking" over the green and botanical-topped soaps.
+    - **Mid-right:** The botanical and swirled soap bars.
+    - **Bottom-left:** Background, bottom edge of the swirled soap, top edge of the bottom soap.
+    - **Bottom-center:** The bottom (off-white) soap bar and the watermark.
+    - **Bottom-right:** The swirled and bottom soap bars.
+- **Negative space:** Approximately 20% of the frame on the left is occupied by the background, which serves to frame the subject and provide a dark contrast to the soaps.
+- **Depth layers:**
+    - **Foreground:** The stack of five soap bars.
+    - **Midground:** None.
+    - **Background:** A single, textured dark surface directly behind the soap. The depth of field is very shallow.
+
+## Produce / Ingredients
+- **Name:** Dried botanicals. They appear to be dried lavender buds and/or seeds.
+- **Quantity:** A scattered handful.
+- **Position in frame:** Sprinkled across the top surface of the third soap bar from the top.
+- **State:** Dried.
+
+## Text
+**Zone 1: center_overlay**
+- **Position:** Starts at approx. 10% from top, 15% from left. Spans horizontally across the center of the frame.
+- **Full verbatim text:**
+The Best.
+Essential Oil Blends
+For soapmaking
+- **Font characteristics:**
+    - "The Best.": Serif font (similar to a classic Times New Roman), regular weight, title case. Large size.
+    - "Essential Oil Blends": A different serif font, more modern and condensed, regular weight, title case. Hero size, the largest text on the image.
+    - "For soapmaking": A cursive/script font, light weight, lowercase. Medium size.
+- **Color:** Black (#000000).
+- **Any text effects:** None.
+
+**Zone 2: watermark**
+- **Position:** Bottom right corner, starting at approx. 95% from top, 70% from left. Right-aligned.
+- **Full verbatim text:** frugalfarmwife.com
+- **Font characteristics:** Script font, light weight, lowercase. Small size.
+- **Color:** White (#FFFFFF).
+- **Any text effects:** None.
+
+## Decorative Elements
+- **Overlays:** A semi-transparent white rectangular banner sits behind the main text. It starts near the top edge of the green soap bar and ends near the bottom edge of the green soap bar. Its opacity is approximately 70-80%, allowing the color and texture of the soap behind it to be faintly visible.
+
+## Background
+- **Structure:** A solid, single surface.
+- **Color(s):** A dark, desaturated blue-grey or slate color.
+- **Texture:** There is a subtle vertical grain or texture, suggesting a painted wood surface or a piece of slate. It is mostly smooth but not glossy.
+- **Depth:** Flat, providing a shallow background for the subject.
+- **Any background objects:** None.
+
+## Lighting
+- **Key light direction:** From the front-left, at approximately 10 o'clock, positioned slightly above the subject.
+- **Quality:** Soft and diffused. Shadows have soft, indistinct edges.
+- **Fill:** A subtle fill light appears to be present from the front-right, softening shadows on the right side of the soap stack.
+- **Rim/backlight:** No rim or backlight is visible.
+- **Highlights:** Soft, broad highlights are visible on the top-left edges of the soap bars, particularly on the prominent edges of the bottom two bars. There are no harsh, specular highlights.
+- **Shadows:** Soft shadows are cast by each bar onto the one below it. The background is darker on the right, suggesting the subject is casting a very subtle shadow onto it. The overall lighting is even and balanced.
+- **Overall exposure:** Balanced, natural exposure. Neither overly bright nor dark and moody.
+
+## Mood
+- Artisanal workshop
+- Natural & handmade
+- Rustic simplicity
+- Aromatic & clean
+- Textural & tactile
+- Gentle & calming
+
+=== STRUCTURED AD JSON ===
+{
+  "ad_type": "social_media_ad",
+  "aspect_ratio": "4:5",
+  "description": "A rustic, high-angle close-up shot of five 'Honey Vanilla Soap' bars from Cinco H Ranch Naturals, stacked vertically and slightly offset. Each bar is identical, featuring its paper label prominently. The stack is set against a dark brown, textured wooden background, illuminated by soft, warm light. Overlaid text reads 'THE RANCH STANDARD' in the center.",
+  "scene": {
+    "background": {
+      "description": "A dark, rustic wooden surface with a visible grain, providing a warm and natural backdrop for the products.",
+      "color_palette": [
+        {
+          "name": "Dark Brown",
+          "hex": "#301800"
+        }
+      ]
+    },
+    "products": [
+      {
+        "id": "p1",
+        "product_name": "Honey Vanilla Soap",
+        "description": "The top bar in a vertical stack of five, cropped at the top edge. The 'Cinco H Ranch Naturals' paper label is visible and facing forward.",
+        "position": {
+          "top": "0%",
+          "left": "25%",
+          "width": "60%",
+          "height": "20%"
+        }
+      },
+      {
+        "id": "p2",
+        "product_name": "Honey Vanilla Soap",
+        "description": "The second bar from the top of the stack. The 'Cinco H Ranch Naturals' paper label is visible and facing forward.",
+        "position": {
+          "top": "18%",
+          "left": "28%",
+          "width": "60%",
+          "height": "20%"
+        }
+      },
+      {
+        "id": "p3",
+        "product_name": "Honey Vanilla Soap",
+        "description": "The third bar from the top, centered in the frame. The 'Cinco H Ranch Naturals' paper label is visible and facing forward.",
+        "position": {
+          "top": "36%",
+          "left": "30%",
+          "width": "60%",
+          "height": "20%"
+        }
+      },
+      {
+        "id": "p4",
+        "product_name": "Honey Vanilla Soap",
+        "description": "The fourth bar from the top. The 'Cinco H Ranch Naturals' paper label is visible and facing forward.",
+        "position": {
+          "top": "54%",
+          "left": "32%",
+          "width": "60%",
+          "height": "20%"
+        }
+      },
+      {
+        "id": "p5",
+        "product_name": "Honey Vanilla Soap",
+        "description": "The bottom bar of the stack, cropped at the bottom edge. The 'Cinco H Ranch Naturals' paper label is visible and facing forward.",
+        "position": {
+          "top": "72%",
+          "left": "35%",
+          "width": "60%",
+          "height": "28%"
+        }
+      }
+    ],
+    "lighting": {
+      "description": "Soft, warm, and directional light coming from the front-left. It creates gentle highlights on the edges of the soap bars and soft shadows between them, emphasizing their rustic, handmade quality."
+    }
+  },
+  "color_palette": [
+    {
+      "name": "dark brown",
+      "hex": "#301800"
+    },
+    {
+      "name": "cream",
+      "hex": "#F0E0B0"
+    },
+    {
+      "name": "navy",
+      "hex": "#204050"
+    },
+    {
+      "name": "accent red",
+      "hex": "#B03030"
+    }
+  ],
+  "overlays": [
+    {
+      "type": "decorative_element",
+      "shape": "rectangle",
+      "color": "#F0E0B0",
+      "opacity": "0.10",
+      "position": {
+        "top": "35%",
+        "left": "0%",
+        "width": "100%",
+        "height": "30%"
+      },
+      "description": "A very subtle, semi-transparent cream-colored banner behind the headline text to ensure legibility."
+    },
+    {
+      "type": "text_box",
+      "text": "THE RANCH STANDARD",
+      "font": "Bold, rustic serif font",
+      "font_size": "Large",
+      "color": "#F0E0B0",
+      "position": {
+        "vertical": "center",
+        "horizontal": "center",
+        "offset_y": "-2%"
+      }
+    },
+    {
+      "type": "text_box",
+      "text": "Honest Skincare",
+      "font": "Simple, clean sans-serif font",
+      "font_size": "Medium",
+      "color": "#F0E0B0",
+      "position": {
+        "vertical": "center",
+        "horizontal": "center",
+        "offset_y": "4%"
+      }
+    },
+    {
+      "type": "logo",
+      "brand_name": "Cinco H Ranch Naturals",
+      "position": "bottom-right corner",
+      "style": "small, no box, no banner",
+      "opacity": "0.9"
+    }
+  ]
+}
+
+=== ASSEMBLED IMAGE PROMPT ===
+Photorealistic 4:5 portrait ad. {'background': {'description': 'A dark, rustic wooden surface with a visible grain, providing a warm and natural backdrop for the products.', 'color_palette': [{'name': 'Dark Brown', 'hex': '#301800'}]}, 'products': [{'id': 'p1', 'product_name': 'Honey Vanilla Soap', 'description': "The top bar in a vertical stack of five, cropped at the top edge. The 'Cinco H Ranch Naturals' paper label is visible and facing forward.", 'position': {'top': '0%', 'left': '25%', 'width': '60%', 'height': '20%'}}, {'id': 'p2', 'product_name': 'Honey Vanilla Soap', 'description': "The second bar from the top of the stack. The 'Cinco H Ranch Naturals' paper label is visible and facing forward.", 'position': {'top': '18%', 'left': '28%', 'width': '60%', 'height': '20%'}}, {'id': 'p3', 'product_name': 'Honey Vanilla Soap', 'description': "The third bar from the top, centered in the frame. The 'Cinco H Ranch Naturals' paper label is visible and facing forward.", 'position': {'top': '36%', 'left': '30%', 'width': '60%', 'height': '20%'}}, {'id': 'p4', 'product_name': 'Honey Vanilla Soap', 'description': "The fourth bar from the top. The 'Cinco H Ranch Naturals' paper label is visible and facing forward.", 'position': {'top': '54%', 'left': '32%', 'width': '60%', 'height': '20%'}}, {'id': 'p5', 'product_name': 'Honey Vanilla Soap', 'description': "The bottom bar of the stack, cropped at the bottom edge. The 'Cinco H Ranch Naturals' paper label is visible and facing forward.", 'position': {'top': '72%', 'left': '35%', 'width': '60%', 'height': '28%'}}], 'lighting': {'description': 'Soft, warm, and directional light coming from the front-left. It creates gentle highlights on the edges of the soap bars and soft shadows between them, emphasizing their rustic, handmade quality.'}}
+
+PRODUCT: Texas skincare product in a jar or tube -- paste the EXACT product label, never redraw it — paste the EXACT product image, never redraw it.
+
+HARD VISUAL RULES — VIOLATING THESE RUINS THE AD:
+- THE ONLY PRODUCTS IN FRAME: Cinco H Ranch soap bars and jars listed in the product config. No boxes, no books, no pamphlets, no tubes, no bottles, no spray bottles unless that exact product is selected for this ad.
+- NO PROMOTIONAL OFFERS: No discounts, no bundle deals, no 'buy X get Y', no 'FREE', no 'GIFT', no '$' pricing, no limited-time offers, no 'ORDER NOW' CTAs.
+- NON-PRODUCT OBJECTS: Decorative props (fabric, rope, wood, stone, plants) are allowed but must be CLEARLY DECORATIVE — never styled to look like a product. If an object has the brand logo on it, viewers will think it's for sale. Do not place the logo on anything except the actual product.
+- - TEXT SOURCING: Every visible word must come from the product label artwork, the text specified in this prompt, or the logo. Zero invented text.
+- COMPETITOR ELEMENTS: No green boxes, no red banners, no white mesh bags, no competitor logos, no competitor product shapes, no competitor text.
+- SOAP LABELS: Soap bars sitting on a surface ALWAYS show their paper label. Soap bars being held/lathered in a hand or shown in active use have NO label — plain tallow texture only.
+

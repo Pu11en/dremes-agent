@@ -1,0 +1,247 @@
+BRAND: cinco-h-ranch (Cinco H Ranch Naturals)
+REF: /data/refs/public/images/refs/cinco-h-ranch/soap/approved/soap_ref_6.jpg
+OUTPUT: /data/refs/output/cinco-h-ranch_20260518_053605_497.png
+PRODUCTS: La Blanca
+TIMESTAMP: 2026-05-18T05:37:19.137780
+
+=== REVERSE ANALYSIS ===
+## Subject
+The subject is a stack of three rectangular, hand-cut bars of soap. The bars are a muted, dusty sage green color with fine, darker green or black speckles throughout. The top and edges of the bars are uneven and textured, suggesting a rustic, handcrafted origin. The top bar is stamped with a brand name and logo. The bars are garnished with clusters of small, dried reddish-brown spherical botanicals (possibly seeds or berries) and small, dried, light-colored leafy fragments. The stack is positioned slightly off-center in the frame, resting on a small, circular slice of wood. The arrangement is clean and minimalist.
+
+## Product Count
+PRODUCT COUNT: 1
+
+## Product Details
+**Product 1:**
+- **Container type and shape:** Three solid, rectangular bars of soap stacked vertically. The edges are roughly cut and textured, not smooth or beveled.
+- **Exact position in frame:** The stack's center is located at approximately 55% from the left and 55% from the top.
+- **Angle:** The stack is facing forward, angled slightly towards the right of the frame, so the front and right sides of the bars are visible.
+- **Size relative to frame:** The stack of three bars occupies approximately 50% of the frame's height (large).
+- **Cap/lid state:** Not applicable.
+- **Label:** There is no paper or plastic label. The top bar is physically stamped. The stamp is debossed into the soap.
+- **Surface:** The surface of the soap is matte and appears slightly chalky or powdery. It is opaque.
+
+## Composition
+- **Aspect ratio:** 1:1 (Square).
+- **Framing:** Tight close-up on the product.
+- **Visual hierarchy:** The eye is drawn first to the top soap bar, specifically the stamped brand name and the cluster of botanicals, due to its position and detail. Second, the eye follows the stack down to the wood slice it rests upon. Third, the eye scans the surrounding pine cones and scattered botanicals in the foreground.
+- **3×3 grid:**
+    - **Top-left:** Out-of-focus, bright white/grey background.
+    - **Top-center:** The top of the highest soap bar and the bright background behind it.
+    - **Top-right:** Out-of-focus, bright white/grey background.
+    - **Middle-left:** The left edge of the soap stack and the bright background.
+    - **Middle-center:** The main body of the three stacked soap bars.
+    - **Middle-right:** The right edge of the soap stack and the bright background.
+    - **Bottom-left:** A small pine cone, scattered botanicals, and the edge of the wood slice.
+    - **Bottom-center:** The wood slice supporting the soap, with scattered botanicals in front of it.
+    - **Bottom-right:** A small pine cone and scattered botanicals.
+- **Negative space:** Approximately 40% of the frame is negative space, primarily in the top half and upper corners. This isolates the product stack and contributes to a clean, airy aesthetic.
+- **Depth layers:**
+    - **Foreground:** Two small pine cones and scattered reddish-brown botanicals on a white surface.
+    - **Midground:** The stack of three soap bars resting on a circular wood slice.
+    - **Background:** A bright, softly textured, out-of-focus white and light grey surface.
+
+## Produce / Ingredients
+- **Ingredient 1:**
+    - **Name:** Dried reddish-brown berries or seeds.
+    - **Quantity:** Multiple small clusters and a scattered handful. Clusters are visible on the top and sides of the soap bars, and individual pieces are scattered in the foreground.
+    - **Position:** Garnishing the soap bars and scattered in the foreground at the bottom of the frame.
+    - **State:** Dried, whole.
+- **Ingredient 2:**
+    - **Name:** Small pine cones.
+    - **Quantity:** Two are clearly visible, with a partial third visible on the far left.
+    - **Position:** One in the bottom-left foreground, one in the bottom-right foreground.
+    - **State:** Dried, whole.
+- **Ingredient 3:**
+    - **Name:** Dried leafy fragments.
+    - **Quantity:** A small amount, mixed in with the berries/seeds.
+    - **Position:** On the soap bars.
+    - **State:** Dried, fragmented.
+
+## Text
+- **Zone label:** product_label
+- **Exact position:** Stamped on the face of the top soap bar, centered horizontally on the bar, at approximately 55% from the left and 35% from the top of the overall frame.
+- **Full verbatim text:**
+CHALKE VALLEY / Soaps
+- **Font characteristics:**
+    - "CHALKE VALLEY": A serif font, regular weight, all-caps. Small size relative to frame.
+    - "Soaps": A script font, regular weight, title case. Small size relative to frame.
+    - A small, stylized illustration of plant leaves is centered above the text.
+- **Color:** The text is the same sage green color as the soap itself. It appears darker due to shadowing within the debossed letters.
+- **Any text effects:** The text is debossed (stamped into) the soap.
+
+## Decorative Elements
+DECORATIVE: NONE
+
+## Background
+- **Structure:** The background appears to be a solid, physical surface, likely a studio sweep or tabletop scene.
+- **Color(s):** The dominant color is off-white, with subtle cool grey tones and variations in brightness, suggesting texture.
+- **Texture:** The texture is soft and slightly uneven, resembling plaster, stone, or unpolished concrete. It is entirely out of focus, creating a soft bokeh effect.
+- **Depth:** The depth of field is very shallow, with only the midground (the soap stack) in sharp focus.
+- **Any background objects:** A small, circular slice of wood with rough bark edges is in the midground, acting as a pedestal for the soap stack.
+
+## Lighting
+- **Key light direction:** From the front-left, at approximately 10 o'clock, and positioned slightly above the subject.
+- **Quality:** Soft and diffused. The light wraps gently around the subjects.
+- **Fill:** A significant amount of soft fill light is present, likely from a large reflector or a second source positioned front-right, which softens the shadows considerably.
+- **Rim/backlight:** No discernible rim or backlight is present.
+- **Highlights:** Soft, broad highlights are visible on the top-left edges of the soap bars and on the upper surfaces of the pine cones. They are not specular or harsh.
+- **Shadows:** Shadows are cast to the right and behind the soap stack and the foreground elements. They are very soft-edged, with gentle falloff and low opacity, indicating a highly diffused light source.
+- **Overall exposure:** Bright and airy, with a slightly high-key feel. The whites are bright but not clipped.
+
+## Mood
+- Rustic handcrafted elegance
+- Quiet, earthy apothecary
+- Natural, serene minimalism
+- Artisanal botanical calm
+- Clean and organic purity
+
+=== STRUCTURED AD JSON ===
+{
+  "scene_description": "A rustic, studio product shot of three La Blanca soap bars stacked vertically on a circular slice of dark wood. The bars are creamy white and hand-cut, each wrapped in its brown paper 'Cinco H Ranch Naturals' label. The stack is surrounded by small, natural pine cones and a few scattered dried botanicals on a dark, textured surface. The overall mood is warm, earthy, and artisanal.",
+  "product_shot_type": "Artisanal Product Still Life",
+  "output_format": {
+    "aspect_ratio": "4:5"
+  },
+  "composition": {
+    "framing": "A tight, centered shot focusing on the product stack. The 4:5 aspect ratio allows for space at the top for the headline.",
+    "focus": "Shallow depth of field with the front of the soap stack in sharp focus, while the foreground and background are softly blurred.",
+    "angle": "Shot from a straight-on, eye-level perspective, angled slightly to the right to feature the front and side of the soap bars and their labels."
+  },
+  "props": [
+    {
+      "item": "Wood slice",
+      "description": "A single, circular slice of dark wood with rough bark, used as a pedestal for the soap stack.",
+      "position": "Centered in the lower third of the frame, beneath the soap."
+    },
+    {
+      "item": "Pine cones",
+      "description": "Two small, natural pine cones.",
+      "position": "Placed in the foreground, one to the bottom-left and one to the bottom-right of the wood slice."
+    },
+    {
+      "item": "Dried botanicals",
+      "description": "A sparse scattering of small, dried natural elements like oat sprigs or wheat heads.",
+      "position": "Arranged subtly on the soap bars and in the foreground around the wood slice."
+    }
+  ],
+  "lighting": {
+    "style": "Dramatic and soft",
+    "source": "A single key light, soft and diffused, positioned at the top-left (around 10 o'clock).",
+    "effect": "Creates gentle highlights on the top-left edges of the soap bars and casts soft, natural shadows to the right and back, enhancing the product's texture against the dark background."
+  },
+  "background": {
+    "description": "A dark, textured surface, similar to weathered wood or a dark burlap cloth, in a deep brand-compliant brown.",
+    "color": "Dark Brown #301800"
+  },
+  "color_palette": {
+    "dominant_color": "Dark Brown #301800",
+    "secondary_color": "Cream #F0E0B0",
+    "accent_color": "Navy #204050",
+    "notes": "The overall scene is warm and high-contrast, graded to match the brand palette. The white soap and cream labels pop against the dark brown background."
+  },
+  "mood": "Honest, rustic, natural, handcrafted, rugged.",
+  "brand_elements": {
+    "headline": {
+      "text": "THE RANCH STANDARD",
+      "font": "A bold, rustic serif typeface.",
+      "color": "Cream #F0E0B0",
+      "position": "Top-center of the frame."
+    },
+    "logo": {
+      "image": "Cinco H Ranch Naturals logo",
+      "position": "Bottom-right corner",
+      "size": "Small and unobtrusive",
+      "effects": "No box or banner"
+    }
+  },
+  "product_details": {
+    "product_name": "La Blanca",
+    "product_type": "soap-bar",
+    "count": 3,
+    "appearance": "Three solid, rectangular, hand-cut bars of creamy white tallow soap with textured, uneven edges. Each bar is wrapped in its 'La Blanca' paper label.",
+    "placement": "Stacked vertically, slightly off-center, on the wood slice. The top bar's label is clearly visible."
+  }
+}
+
+=== ASSEMBLED IMAGE PROMPT ===
+Photorealistic 4:5 portrait ad. Generate a Cinco H Ranch Naturals ad. Creative brief:
+{
+  "scene_description": "A rustic, studio product shot of three La Blanca soap bars stacked vertically on a circular slice of dark wood. The bars are creamy white and hand-cut, each wrapped in its brown paper 'Cinco H Ranch Naturals' label. The stack is surrounded by small, natural pine cones and a few scattered dried botanicals on a dark, textured surface. The overall mood is warm, earthy, and artisanal.",
+  "product_shot_type": "Artisanal Product Still Life",
+  "output_format": {
+    "aspect_ratio": "4:5"
+  },
+  "composition": {
+    "framing": "A tight, centered shot focusing on the product stack. The 4:5 aspect ratio allows for space at the top for the headline.",
+    "focus": "Shallow depth of field with the front of the soap stack in sharp focus, while the foreground and background are softly blurred.",
+    "angle": "Shot from a straight-on, eye-level perspective, angled slightly to the right to feature the front and side of the soap bars and their labels."
+  },
+  "props": [
+    {
+      "item": "Wood slice",
+      "description": "A single, circular slice of dark wood with rough bark, used as a pedestal for the soap stack.",
+      "position": "Centered in the lower third of the frame, beneath the soap."
+    },
+    {
+      "item": "Pine cones",
+      "description": "Two small, natural pine cones.",
+      "position": "Placed in the foreground, one to the bottom-left and one to the bottom-right of the wood slice."
+    },
+    {
+      "item": "Dried botanicals",
+      "description": "A sparse scattering of small, dried natural elements like oat sprigs or wheat heads.",
+      "position": "Arranged subtly on the soap bars and in the foreground around the wood slice."
+    }
+  ],
+  "lighting": {
+    "style": "Dramatic and soft",
+    "source": "A single key light, soft and diffused, positioned at the top-left (around 10 o'clock).",
+    "effect": "Creates gentle highlights on the top-left edges of the soap bars and casts soft, natural shadows to the right and back, enhancing the product's texture against the dark background."
+  },
+  "background": {
+    "description": "A dark, textured surface, similar to weathered wood or a dark burlap cloth, in a deep brand-compliant brown.",
+    "color": "Dark Brown #301800"
+  },
+  "color_palette": {
+    "dominant_color": "Dark Brown #301800",
+    "secondary_color": "Cream #F0E0B0",
+    "accent_color": "Navy #204050",
+    "notes": "The overall scene is warm and high-contrast, graded to match the brand palette. The white soap and cream labels pop against the dark brown background."
+  },
+  "mood": "Honest, rustic, natural, handcrafted, rugged.",
+  "brand_elements": {
+    "headline": {
+      "text": "THE RANCH STANDARD",
+      "font": "A bold, rustic serif typeface.",
+      "color": "Cream #F0E0B0",
+      "position": "Top-center of the frame."
+    },
+    "logo": {
+      "image": "Cinco H Ranch Naturals logo",
+      "position": "Bottom-right corner",
+      "size": "Small and unobtrusive",
+      "effects": "No box or banner"
+    }
+  },
+  "product_details": {
+    "product_name": "La Blanca",
+    "product_type": "soap-bar",
+    "count": 3,
+    "appearance": "Three solid, rectangular, hand-cut bars of creamy white tallow soap with textured, uneven edges. Each bar is wrapped in its 'La Blanca' paper label.",
+    "placement": "Stacked vertically, slightly off-center, on the wood slice. The top bar's label is clearly visible."
+  }
+}
+
+Paste product images exactly. Never redraw labels. Use ONLY the brand colors listed above.
+
+PRODUCT: Texas skincare product in a jar or tube -- paste the EXACT product label, never redraw it — paste the EXACT product image, never redraw it.
+
+HARD VISUAL RULES — VIOLATING THESE RUINS THE AD:
+- THE ONLY PRODUCTS IN FRAME: Cinco H Ranch soap bars and jars listed in the product config. No boxes, no books, no pamphlets, no tubes, no bottles, no spray bottles unless that exact product is selected for this ad.
+- NO PROMOTIONAL OFFERS: No discounts, no bundle deals, no 'buy X get Y', no 'FREE', no 'GIFT', no '$' pricing, no limited-time offers, no 'ORDER NOW' CTAs.
+- NON-PRODUCT OBJECTS: Decorative props (fabric, rope, wood, stone, plants) are allowed but must be CLEARLY DECORATIVE — never styled to look like a product. If an object has the brand logo on it, viewers will think it's for sale. Do not place the logo on anything except the actual product.
+- - TEXT SOURCING: Every visible word must come from the product label artwork, the text specified in this prompt, or the logo. Zero invented text.
+- COMPETITOR ELEMENTS: No green boxes, no red banners, no white mesh bags, no competitor logos, no competitor product shapes, no competitor text.
+- SOAP LABELS: Soap bars sitting on a surface ALWAYS show their paper label. Soap bars being held/lathered in a hand or shown in active use have NO label — plain tallow texture only.
+

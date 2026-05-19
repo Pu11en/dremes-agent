@@ -1,0 +1,11 @@
+{
+  "mode": "local_embedded",
+  "bank_id": "dremes",
+  "bank_mission": "Dremes ad generation agent for brand marketing on Telegram",
+  "llm_provider": "openrouter",
+  "llm_model": "deepseek/deepseek-chat-v4",
+  "auto_recall": true,
+  "auto_retain": true,
+  "memory_mode": "hybrid",
+  "recall_budget": "mid"
+}

@@ -1,0 +1,290 @@
+BRAND: cinco-h-ranch (Cinco H Ranch Naturals)
+REF: /data/refs/public/images/refs/cinco-h-ranch/soap/approved/soap_ref_48.jpg
+OUTPUT: /data/refs/output/cinco-h-ranch_20260518_041734_603.png
+PRODUCTS: Texas Campfire, Chamomile Soothing
+TIMESTAMP: 2026-05-18T04:18:43.838533
+
+=== REVERSE ANALYSIS ===
+## Subject
+The subject is two stacked bars of handmade-style soap. The bars are a light beige, opaque, and speckled with small, dark brown or black flecks. The top bar is positioned directly on the bottom bar, but slightly offset towards the back and right. A decorative paper band is wrapped vertically around the middle of the stack, holding them together. The soap is positioned in the lower half of the frame, slightly right of center, and is angled to show the top, front, and left side of the stack.
+
+## Product Count
+PRODUCT COUNT: 2
+
+## Product Details
+**1. Top Soap Bar**
+- Container type and shape: A solid, rectangular bar of soap with slightly rounded edges.
+- Exact position in frame: Centered at approximately 60% from the left and 65% from the top.
+- Angle: Resting flat on the bottom bar, viewed from a high front-left angle.
+- Size relative to frame: Medium, its height is approximately 25% of the frame height.
+- Cap/lid state: Not applicable.
+- Label: No label is on the soap bar itself. It is partially covered by a decorative paper band.
+- Surface: Matte, solid, and appears slightly textured due to the included specks.
+
+**2. Bottom Soap Bar**
+- Container type and shape: A solid, rectangular bar of soap with slightly rounded edges.
+- Exact position in frame: Positioned underneath the top bar, centered at approximately 60% from the left and 80% from the top.
+- Angle: Resting flat on the surface, viewed from a high front-left angle.
+- Size relative to frame: Medium, similar in size to the top bar.
+- Cap/lid state: Not applicable.
+- Label: No label is on the soap bar itself. It is partially covered by a decorative paper band.
+- Surface: Matte, solid, and speckled, identical in appearance to the top bar.
+
+## Composition
+- Aspect ratio: Portrait, approximately 2:3.
+- Framing: Medium close-up on the product.
+- Visual hierarchy: The eye is first drawn to the large, high-contrast text in the top banner. Second, the eye moves down to the stack of soap, with the orange patterned band acting as a strong focal point. Third, the eye notices the out-of-focus pumpkins in the background, which provide context.
+- 3×3 grid:
+    - Top-left: Orange banner with the word "10" and the beginning of "Minute".
+    - Top-center: Orange banner with "Minute" and "PUMPKIN".
+    - Top-right: Orange banner with the end of "Minute" and "PUMPKIN".
+    - Mid-left: A large, out-of-focus orange pumpkin.
+    - Mid-center: The top soap bar, wrapped in its orange paper band.
+    - Mid-right: The edge of the top soap bar against a plain white background.
+    - Bottom-left: The front-left corner of the bottom soap bar on a wood surface.
+    - Bottom-center: The front of the bottom soap bar and the bottom of the paper band.
+    - Bottom-right: The front-right corner of the bottom soap bar, the paper band's watermark, and the wood surface.
+- Negative space: The upper right quadrant of the image is primarily empty white space, which balances the composition and isolates the subject. This constitutes approximately 20% of the frame.
+- Depth layers:
+    - Foreground: A distressed wood surface.
+    - Midground: The two stacked bars of soap.
+    - Background: Two out-of-focus orange pumpkins and a plain white vertical surface.
+
+## Produce / Ingredients
+- Name the ingredient: Pumpkin.
+- Quantity: A cluster of 2. One is mostly visible, the other is partially cropped on the left edge.
+- Position in frame: In the background, to the left of the soap stack.
+- State: Whole, fresh, small decorative pumpkins. They are intentionally blurred due to a shallow depth of field.
+
+## Text
+**1. top_banner**
+- Exact position: Occupies the top third of the image, with text centered horizontally.
+- Full verbatim text:
+10 Minute
+PUMPKIN
+SPICE SOAP
+- Font characteristics:
+    - "10 Minute": Sans-serif. "10" is heavy weight and dark orange. "Minute" is heavy weight and white. Both are Title Case. Headline size.
+    - "PUMPKIN / SPICE SOAP": A bold, all-caps, slab-serif or stencil-style display font. Hero size.
+- Color: "10" is a dark, burnt orange. "Minute", "PUMPKIN", "SPICE", and "SOAP" are white.
+- Any text effects: The white text has a very thin, dark outline which helps it separate from the light orange background.
+
+**2. watermark**
+- Exact position: On the bottom right corner of the orange paper band, at approximately 85% from the top and 80% from the left. Right-aligned.
+- Full verbatim text: HAPPINESS IS HOMEMADE
+- Font characteristics: Sans-serif, regular weight, all-caps. Fine-print size.
+- Color: Dark brown.
+- Any text effects: None.
+
+## Decorative Elements
+- Geometric Shape: A large, light orange rectangular banner fills the top third of the image, serving as a container for the main text.
+- Geometric Pattern: A paper band is wrapped around the soap. The band's color is a solid coral-orange, overprinted with a repeating pattern of thin, white, diagonal intersecting lines that form a diamond grid.
+- Shadows: A soft cast shadow from the soap stack is visible on the wood surface to the left and back. There is no decorative drop shadow on the text.
+
+## Background
+- Structure: A two-part scene consisting of a horizontal surface and a vertical backdrop.
+- Color(s): The vertical backdrop is solid, bright white. The horizontal surface is painted wood with streaks of off-white, light brown, and dark brown.
+- Texture: The backdrop is smooth and non-reflective. The horizontal surface is a rustic wood texture, with visible grain and a distressed paint finish.
+- Depth: Shallow depth of field. The immediate foreground and the background elements (pumpkins, wall) are soft and out of focus.
+- Any background objects: Two small, whole orange pumpkins are placed in the background on the left side.
+
+## Lighting
+- Key light direction: From the front and high right, approximately 2 o'clock.
+- Quality: Soft and diffused. The light creates gentle gradients and soft-edged shadows.
+- Fill: A subtle fill light is present from the front, preventing deep shadows on the front faces of the soap.
+- Rim/backlight: None is present.
+- Highlights: Broad, soft highlights appear on the top-right edges of the soap bars and the top curve of the main pumpkin. There are no sharp, specular highlights.
+- Shadows: A soft, diffused shadow is cast by the soap stack onto the wood surface behind it and to its left. The top bar casts a short, soft shadow onto the bottom bar.
+- Overall exposure: Bright and airy.
+
+## Mood
+- Rustic Homemade
+- Autumnal Craft
+- Warm Spice Scent
+- Bright & Airy DIY
+- Simple & Clean
+- Cozy Morning Light
+
+=== STRUCTURED AD JSON ===
+{
+  "type": "social_ad",
+  "aspect_ratio": "4:5",
+  "layers": [
+    {
+      "type": "background",
+      "description": "A dark, subtly textured background.",
+      "color": "#204050"
+    },
+    {
+      "type": "surface",
+      "description": "A rustic, dark wood surface that the soap rests on, occupying the bottom half of the frame.",
+      "texture": "distressed wood grain",
+      "color": "#301800"
+    },
+    {
+      "type": "product",
+      "name": "Texas Campfire",
+      "count": 2,
+      "placement": {
+        "description": "Two bars of 'Texas Campfire' soap are stacked in the center of the frame. The top bar is slightly offset from the bottom bar, mirroring the reference image layout. A soft shadow is cast onto the wood surface.",
+        "elements": [
+          {
+            "id": "bottom_bar",
+            "position": "Centered horizontally, lower half of the frame.",
+            "label": {
+              "artwork": "Texas Campfire label",
+              "visibility": "visible",
+              "wrapping": "Wrapped around the middle of the bar."
+            }
+          },
+          {
+            "id": "top_bar",
+            "position": "Stacked directly on top of the bottom bar, slightly offset.",
+            "label": {
+              "artwork": "Texas Campfire label",
+              "visibility": "visible",
+              "wrapping": "Wrapped around the middle of the bar."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "shape",
+      "shape": "rectangle",
+      "description": "A solid rectangular banner across the top third of the ad, serving as a background for the headline.",
+      "position": {
+        "top": "0%",
+        "left": "0%",
+        "width": "100%",
+        "height": "25%"
+      },
+      "color": "#301800"
+    },
+    {
+      "type": "text",
+      "content": "BUILT FOR THE RANCH",
+      "font": {
+        "family": "Slab Serif, Bold",
+        "color": "#F0E0B0",
+        "size": "Hero",
+        "case": "UPPERCASE"
+      },
+      "position": {
+        "description": "Centered horizontally and vertically within the top banner.",
+        "top": "12.5%",
+        "left": "50%",
+        "anchor": "center"
+      }
+    },
+    {
+      "type": "logo",
+      "description": "The Cinco H Ranch Naturals logo is placed in the bottom-right corner of the image.",
+      "asset": "Cinco H Ranch Naturals logo",
+      "position": {
+        "bottom": "5%",
+        "right": "5%",
+        "width": "15%"
+      }
+    }
+  ]
+}
+
+=== ASSEMBLED IMAGE PROMPT ===
+Photorealistic 4:5 portrait ad. Generate a Cinco H Ranch Naturals ad. Creative brief:
+{
+  "type": "social_ad",
+  "aspect_ratio": "4:5",
+  "layers": [
+    {
+      "type": "background",
+      "description": "A dark, subtly textured background.",
+      "color": "#204050"
+    },
+    {
+      "type": "surface",
+      "description": "A rustic, dark wood surface that the soap rests on, occupying the bottom half of the frame.",
+      "texture": "distressed wood grain",
+      "color": "#301800"
+    },
+    {
+      "type": "product",
+      "name": "Texas Campfire",
+      "count": 2,
+      "placement": {
+        "description": "Two bars of 'Texas Campfire' soap are stacked in the center of the frame. The top bar is slightly offset from the bottom bar, mirroring the reference image layout. A soft shadow is cast onto the wood surface.",
+        "elements": [
+          {
+            "id": "bottom_bar",
+            "position": "Centered horizontally, lower half of the frame.",
+            "label": {
+              "artwork": "Texas Campfire label",
+              "visibility": "visible",
+              "wrapping": "Wrapped around the middle of the bar."
+            }
+          },
+          {
+            "id": "top_bar",
+            "position": "Stacked directly on top of the bottom bar, slightly offset.",
+            "label": {
+              "artwork": "Texas Campfire label",
+              "visibility": "visible",
+              "wrapping": "Wrapped around the middle of the bar."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "shape",
+      "shape": "rectangle",
+      "description": "A solid rectangular banner across the top third of the ad, serving as a background for the headline.",
+      "position": {
+        "top": "0%",
+        "left": "0%",
+        "width": "100%",
+        "height": "25%"
+      },
+      "color": "#301800"
+    },
+    {
+      "type": "text",
+      "content": "BUILT FOR THE RANCH",
+      "font": {
+        "family": "Slab Serif, Bold",
+        "color": "#F0E0B0",
+        "size": "Hero",
+        "case": "UPPERCASE"
+      },
+      "position": {
+        "description": "Centered horizontally and vertically within the top banner.",
+        "top": "12.5%",
+        "left": "50%",
+        "anchor": "center"
+      }
+    },
+    {
+      "type": "logo",
+      "description": "The Cinco H Ranch Naturals logo is placed in the bottom-right corner of the image.",
+      "asset": "Cinco H Ranch Naturals logo",
+      "position": {
+        "bottom": "5%",
+        "right": "5%",
+        "width": "15%"
+      }
+    }
+  ]
+}
+
+Paste product images exactly. Never redraw labels. Use ONLY the brand colors listed above.
+
+PRODUCT: Texas skincare product in a jar or tube -- paste the EXACT product label, never redraw it — paste the EXACT product image, never redraw it.
+
+HARD VISUAL RULES — VIOLATING THESE RUINS THE AD:
+- THE ONLY PRODUCTS IN FRAME: Cinco H Ranch soap bars and jars listed in the product config. No boxes, no books, no pamphlets, no tubes, no bottles, no spray bottles unless that exact product is selected for this ad.
+- NO PROMOTIONAL OFFERS: No discounts, no bundle deals, no 'buy X get Y', no 'FREE', no 'GIFT', no '$' pricing, no limited-time offers, no 'ORDER NOW' CTAs.
+- NON-PRODUCT OBJECTS: Decorative props (fabric, rope, wood, stone, plants) are allowed but must be CLEARLY DECORATIVE — never styled to look like a product. If an object has the brand logo on it, viewers will think it's for sale. Do not place the logo on anything except the actual product.
+- - TEXT SOURCING: Every visible word must come from the product label artwork, the text specified in this prompt, or the logo. Zero invented text.
+- COMPETITOR ELEMENTS: No green boxes, no red banners, no white mesh bags, no competitor logos, no competitor product shapes, no competitor text.
+- SOAP LABELS: Soap bars sitting on a surface ALWAYS show their paper label. Soap bars being held/lathered in a hand or shown in active use have NO label — plain tallow texture only.
+

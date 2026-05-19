@@ -1,0 +1,285 @@
+BRAND: cinco-h-ranch (Cinco H Ranch Naturals)
+REF: /data/refs/public/images/refs/cinco-h-ranch/soap/approved/soap_ref_34.jpg
+OUTPUT: /data/refs/output/cinco-h-ranch_20260518_032833_404.png
+PRODUCTS: La Blanca, Texas Air, Texas Campfire, Chamomile Soothing, Detox, Honey Vanilla Soap, La Blanca
+TIMESTAMP: 2026-05-18T03:30:20.461332
+
+=== REVERSE ANALYSIS ===
+## Subject
+The subject is a collection of fourteen rectangular, handmade-style soap bars. The bars are of various colors, textures, and patterns, including solid colors, layered designs, marbled swirls, and textured tops. They are arranged in a tightly clustered, overlapping stack of varying heights, creating a sense of depth and abundance. The overall arrangement is angled slightly towards the right side of the frame.
+
+## Product Count
+PRODUCT COUNT: 14
+
+## Product Details
+1.  **Container:** Bar soap, rectangular block.
+    **Position:** Top left; centered at 20% from left, 20% from top.
+    **Angle:** Angled slightly toward the viewer, top surface visible.
+    **Size:** Medium; occupies ~25% of frame height.
+    **Surface:** Matte finish. Dusty rose color with subtle, lighter pink mottling. Top edge shows some slight reddish discoloration.
+2.  **Container:** Bar soap, rectangular block.
+    **Position:** Below product 1; centered at 25% from left, 40% from top. Mostly obscured.
+    **Angle:** Lying flat, used as a riser.
+    **Size:** Small; visible portion occupies ~15% of frame height.
+    **Surface:** Matte finish. Mottled light brown and tan.
+3.  **Container:** Bar soap, rectangular block.
+    **Position:** Mid-left; centered at 35% from left, 50% from top.
+    **Angle:** Angled toward the viewer and slightly to the right.
+    **Size:** Medium; occupies ~25% of frame height.
+    **Surface:** Matte finish. Lavender base color with dramatic white swirls across the top surface.
+4.  **Container:** Bar soap, rectangular block.
+    **Position:** Top-center back; centered at 50% from left, 15% from top.
+    **Angle:** Angled toward the viewer and to the left.
+    **Size:** Medium; occupies ~25% of frame height.
+    **Surface:** Matte finish. Dark brown with lighter brown and tan swirls creating a wood-grain or chocolate-like pattern.
+5.  **Container:** Bar soap, rectangular block.
+    **Position:** Below product 4; centered at 50% from left, 28% from top. Mostly obscured.
+    **Angle:** Angled slightly to the left.
+    **Size:** Small; visible portion occupies ~10% of frame height.
+    **Surface:** Matte finish. Dark reddish-brown.
+6.  **Container:** Bar soap, rectangular block.
+    **Position:** High-center; centered at 55% from left, 30% from top.
+    **Angle:** Angled toward the viewer and slightly to the left.
+    **Size:** Medium; occupies ~20% of frame height.
+    **Surface:** Matte finish. Pale yellow-green base with blue and pale yellow swirls.
+7.  **Container:** Bar soap, rectangular block.
+    **Position:** Mid-center; centered at 55% from left, 50% from top.
+    **Angle:** Angled toward the viewer.
+    **Size:** Medium; occupies ~18% of frame height.
+    **Surface:** Matte finish. Solid teal-blue with subtle green and lighter blue marbling.
+8.  **Container:** Bar soap, rectangular block.
+    **Position:** Low-center; centered at 55% from left, 70% from top.
+    **Angle:** Lying flat, used as a riser.
+    **Size:** Medium; occupies ~20% of frame height.
+    **Surface:** Matte finish. Solid pale yellow or cream color.
+9.  **Container:** Bar soap, rectangular block.
+    **Position:** Top right; centered at 75% from left, 20% from top.
+    **Angle:** Angled toward the viewer and slightly to the left.
+    **Size:** Medium; occupies ~20% of frame height.
+    **Surface:** Matte finish. Off-white base with prominent swirls of dark red, navy blue, and black.
+10. **Container:** Bar soap, rectangular block.
+     **Position:** Below product 9; centered at 70% from left, 40% from top.
+     **Angle:** Lying flat, used as a riser.
+     **Size:** Medium; occupies ~15% of frame height.
+     **Surface:** Matte finish. Solid light beige or tan color.
+11. **Container:** Bar soap, rectangular block.
+     **Position:** Mid-right; centered at 75% from left, 55% from top.
+     **Angle:** Angled steeply toward the viewer.
+     **Size:** Medium; occupies ~20% of frame height.
+     **Surface:** Matte finish. Pink base with darker reddish-pink marbling.
+12. **Container:** Bar soap, rectangular block.
+     **Position:** Foreground, left; centered at 20% from left, 80% from top.
+     **Angle:** Angled toward the viewer and to the right.
+     **Size:** Large; occupies ~30% of frame height.
+     **Surface:** Matte finish. Pale, fleshy pink with subtle white swirls.
+13. **Container:** Bar soap, rectangular block.
+     **Position:** Foreground, center; centered at 50% from left, 85% from top.
+     **Angle:** Angled toward the viewer.
+     **Size:** Medium; occupies ~25% of frame height.
+     **Surface:** Two distinct layers. The bottom layer is a solid tan color with a matte finish. The top layer is off-white with a rough, uneven, textured surface.
+14. **Container:** Bar soap, rectangular block.
+     **Position:** Foreground, right; centered at 80% from left, 75% from top.
+     **Angle:** Angled toward the viewer and to the left.
+     **Size:** Large; occupies ~35% of frame height.
+     **Surface:** The base is a solid beige with a matte finish. The top surface is entirely covered with a dense layer of a crumbly, textured, light-brown topping, resembling crushed oats or nuts.
+
+## Composition
+- **Aspect Ratio:** Landscape, approximately 4:3.
+- **Framing:** Tight close-up on the arrangement of soap bars. The products fill the majority of the frame.
+- **Visual Hierarchy:** The eye is drawn first to the bright, centrally-located yellow and blue swirled soap bar (#6) due to its high color contrast and central placement. Second, the eye moves to the uniquely textured bar in the bottom right (#14) because its crumbly surface stands out from the others. Third, the eye scans the other bars, particularly the highly contrasted swirled bar at the top right (#9) and the lavender bar on the left (#3).
+- **3×3 Grid:**
+    - **Top-left:** Dominated by the dusty rose soap bar (#1).
+    - **Top-center:** Contains the dark brown swirled bar (#4) and the top of the yellow/blue bar (#6).
+    - **Top-right:** Features the white, red, and blue swirled bar (#9).
+    - **Middle-left:** Contains the lavender swirled bar (#3) and the side of the dusty rose bar (#1).
+    - **Middle-center:** The visual center, containing the yellow/blue bar (#6) and the teal bar (#7) below it.
+    - **Middle-right:** Contains the pink marbled bar (#11) and the tan riser bar (#10).
+    - **Bottom-left:** Features the pale pink marbled bar (#12) and the white/tan layered bar (#13).
+    - **Bottom-center:** Dominated by the white/tan layered bar (#13) and the beige/oatmeal bar (#14).
+    - **Bottom-right:** Entirely filled by the beige soap bar with the textured top (#14).
+- **Negative Space:** Minimal, approximately 5-10% of the frame. It consists of small areas of the white background visible in the top left, top right, and between some of the bars. It serves to define the edges of the product cluster.
+- **Depth Layers:**
+    - **Foreground:** The pale pink bar on the left (#12), the layered bar in the center (#13), and the textured bar on the right (#14).
+    - **Midground:** The lavender bar (#3), the teal bar (#7), and the pink marbled bar (#11). The central yellow/blue bar (#6) bridges the midground and background.
+    - **Background:** The dusty rose bar (#1), the dark brown bar (#4), the top right swirled bar (#9), and the various solid-colored riser bars.
+
+## Produce / Ingredients
+PRODUCE: NONE
+
+## Text
+TEXT: NONE
+
+## Decorative Elements
+DECORATIVE: NONE
+
+## Background
+- **Structure:** Appears to be a solid surface with texture.
+- **Color(s):** Off-white to a very light cool gray.
+- **Texture:** A fine, crinkled or embossed texture, similar to handmade paper or a fabric surface. The texture is subtle and visible throughout.
+- **Depth:** Flat, providing a shallow depth of field behind the subjects.
+
+## Lighting
+- **Key Light Direction:** From the front-left, high, at approximately 10 o'clock. This is evident from the highlights on the top-left edges of the bars and the cast shadows falling to the right and back.
+- **Quality:** Soft and diffused. Shadow edges are soft and there are no harsh, specular highlights.
+- **Fill:** A subtle fill light is present from the front or front-right, which lightens the shadows on the right sides of the soap bars, ensuring detail is not lost.
+- **Rim/backlight:** No discernible rim or backlight is present.
+- **Highlights:** Broad, soft highlights are visible on the top surfaces of most bars, particularly the yellow/blue bar (#6), the lavender bar (#3), and the top right bar (#9). The highlights are not clipped or overly bright.
+- **Shadows:** Soft cast shadows are visible between and behind the bars, for example, to the right of the lavender bar (#3) and behind the textured bar (#14). The shadows are translucent, not deep black.
+- **Overall Exposure:** Balanced and bright, creating a clean, professional look without being washed out.
+
+## Mood
+- Artisanal variety
+- Handcrafted textures
+- Natural ingredient showcase
+- Clean and wholesome appeal
+- Small-batch aesthetic
+- Tactile and sensory collection
+
+=== STRUCTURED AD JSON ===
+{
+  "ad_id": "cinco_h_soap_stack_01",
+  "brand_name": "Cinco H Ranch Naturals",
+  "product_name": "Handcrafted Tallow Soaps",
+  "creative_brief": {
+    "objective": "To create a visually rich and appealing ad that showcases the variety and handcrafted nature of the Cinco H Ranch Naturals soap collection, based on a provided competitor layout.",
+    "target_audience": "Consumers who value natural, artisanal, and locally-made skincare products with a rustic, Texan aesthetic. They appreciate simple, high-quality ingredients.",
+    "ad_format": "4:5 aspect ratio, vertical image for social media platforms like Instagram and Facebook.",
+    "visual_elements": {
+      "prompt": "A photorealistic, tightly framed overhead shot of a large, artfully arranged cluster of 14 Cinco H Ranch Naturals soap bars. The composition is preserved exactly from the reference image, with bars stacked and overlapping at various heights and angles to create depth and texture. The entire scene is adapted to a 4:5 portrait format. The lighting is soft and diffused, coming from the upper left (around 10 o'clock), creating gentle shadows to the right of the bars. The background is a textured, Cream (#F0E0B0) colored linen surface. The overall color grade is warm and natural, emphasizing the colors of the soaps and aligning with the brand's rustic feel. The Cinco H Ranch Naturals logo is placed subtly in the bottom right corner.",
+      "composition": {
+        "framing": "A tight close-up on the arrangement of soap bars, which fills the frame. The 4:5 portrait aspect ratio is achieved by cropping the sides of the original reference layout and extending the background vertically.",
+        "arrangement": "Fourteen bars of Cinco H Ranch Naturals soap are stacked and clustered, mirroring the exact positions and angles of the bars in the reference image. This creates a sense of abundance and variety. The visual hierarchy draws the eye across the different colors and textures of the soaps.",
+        "logo_placement": "The Cinco H Ranch Naturals logo is placed in the bottom right corner, small and unobtrusive.",
+        "negative_space": "Minimal, with the soap arrangement dominating the frame. Small gaps of the cream-colored background are visible between some bars."
+      },
+      "lighting": {
+        "style": "Soft, diffused studio lighting.",
+        "direction": "Key light from the upper-left (10 o'clock) to create soft highlights on the top-left edges and cast gentle shadows to the right and back of the soap bars.",
+        "quality": "Shadows are soft-edged and not overly dark, ensuring all product details are visible. Highlights are broad and not specular, giving a matte, natural finish to the soaps."
+      },
+      "color_palette": {
+        "primary": "Cream (#F0E0B0) for the background surface.",
+        "secondary": "Dark Brown (#301800) for subtle shadow tones.",
+        "accent": "Navy (#204050) and Accent Red (#B03030) from the product labels.",
+        "overall_grade": "Warm, natural, and slightly desaturated to create a rustic, wholesome feel."
+      },
+      "mood_board": [
+        "Artisanal variety",
+        "Handcrafted textures",
+        "Natural ingredient showcase",
+        "Clean and wholesome appeal",
+        "Small-batch aesthetic",
+        "Tactile and sensory collection"
+      ],
+      "text_elements": [],
+      "asset_instructions": {
+        "background": "Use a high-resolution texture of cream-colored linen or handmade paper, color-matched to #F0E0B0.",
+        "logo": {
+          "source": "INPUT_9",
+          "placement": "Bottom right corner. Size should be small, approximately 5% of the total ad width. No effects or boxes.",
+          "opacity": 90
+        },
+        "products": [
+          {
+            "id": "prod_1",
+            "source": "INPUT_2",
+            "placement": "Positioned at top left, corresponding to the dusty rose bar in the reference.",
+            "notes": "Bar is angled toward the viewer. Must show 'La Blanca' label."
+          },
+          {
+            "id": "prod_2",
+            "source": "INPUT_3",
+            "placement": "Positioned below prod_1 as a riser, corresponding to the mottled light brown bar in the reference.",
+            "notes": "Mostly obscured, use the 'Texas Air' bar. Side view might be needed."
+          },
+          {
+            "id": "prod_3",
+            "source": "INPUT_4",
+            "placement": "Positioned at mid-left, corresponding to the lavender swirled bar in the reference.",
+            "notes": "Angled toward viewer and slightly right. Use 'Texas Campfire'."
+          },
+          {
+            "id": "prod_4",
+            "source": "INPUT_5",
+            "placement": "Positioned at top-center back, corresponding to the dark brown swirled bar in the reference.",
+            "notes": "Angled toward viewer and left. Use 'Chamomile Soothing' for color contrast."
+          },
+          {
+            "id": "prod_5",
+            "source": "INPUT_6",
+            "placement": "Positioned below prod_4, corresponding to the dark reddish-brown bar in the reference.",
+            "notes": "Partially obscured. Use the dark 'Detox' bar."
+          },
+          {
+            "id": "prod_6",
+            "source": "INPUT_7",
+            "placement": "Positioned at high-center, corresponding to the yellow/blue swirled bar in the reference.",
+            "notes": "Visually central. Use 'Honey Vanilla' for its warm color."
+          },
+          {
+            "id": "prod_7",
+            "source": "INPUT_8",
+            "placement": "Positioned at mid-center, corresponding to the solid teal-blue bar in the reference.",
+            "notes": "Use 'La Blanca' for a bright, clean contrast."
+          },
+          {
+            "id": "prod_8",
+            "source": "INPUT_3",
+            "placement": "Positioned at low-center as a riser, corresponding to the pale yellow bar in the reference.",
+            "notes": "Lying flat. Use 'Texas Air' for its light color."
+          },
+          {
+            "id": "prod_9",
+            "source": "INPUT_4",
+            "placement": "Positioned at top right, corresponding to the white/red/blue swirled bar in the reference.",
+            "notes": "Use 'Texas Campfire' for textural interest."
+          },
+          {
+            "id": "prod_10",
+            "source": "INPUT_7",
+            "placement": "Positioned below prod_9 as a riser, corresponding to the light beige bar in the reference.",
+            "notes": "Lying flat. Use 'Honey Vanilla'."
+          },
+          {
+            "id": "prod_11",
+            "source": "INPUT_5",
+            "placement": "Positioned at mid-right, corresponding to the pink marbled bar in the reference.",
+            "notes": "Angled steeply. Use 'Chamomile Soothing'."
+          },
+          {
+            "id": "prod_12",
+            "source": "INPUT_2",
+            "placement": "Positioned at foreground left, corresponding to the pale pink bar in the reference.",
+            "notes": "Large in frame. Use 'La Blanca'."
+          },
+          {
+            "id": "prod_13",
+            "source": "INPUT_6",
+            "placement": "Positioned at foreground center, corresponding to the layered tan/white bar in the reference.",
+            "notes": "Use the dark 'Detox' bar for strong foreground contrast."
+          },
+          {
+            "id": "prod_14",
+            "source": "INPUT_3",
+            "placement": "Positioned at foreground right, corresponding to the textured-top bar in the reference.",
+            "notes": "Large in frame. Use 'Texas Air' for its light, speckled appearance."
+          }
+        ]
+      }
+    }
+  }
+}
+
+=== ASSEMBLED IMAGE PROMPT ===
+Photorealistic 4:5 portrait ad. {"ad_id": "cinco_h_soap_stack_01", "brand_name": "Cinco H Ranch Naturals", "product_name": "Handcrafted Tallow Soaps", "creative_brief": {"objective": "To create a visually rich and appealing ad that showcases the variety and handcrafted nature of the Cinco H Ranch Naturals soap collection, based on a provided competitor layout.", "target_audience": "Consumers who value natural, artisanal, and locally-made skincare products with a rustic, Texan aesthetic. They appreciate simple, high-quality ing
+
+PRODUCT: Texas skincare product in a jar or tube -- paste the EXACT product label, never redraw it — paste the EXACT product image, never redraw it.
+
+HARD VISUAL RULES — VIOLATING THESE RUINS THE AD:
+- THE ONLY PRODUCTS IN FRAME: Cinco H Ranch soap bars and jars listed in the product config. No boxes, no books, no pamphlets, no tubes, no bottles, no spray bottles unless that exact product is selected for this ad.
+- NO PROMOTIONAL OFFERS: No discounts, no bundle deals, no 'buy X get Y', no 'FREE', no 'GIFT', no '$' pricing, no limited-time offers, no 'ORDER NOW' CTAs.
+- NON-PRODUCT OBJECTS: Decorative props (fabric, rope, wood, stone, plants) are allowed but must be CLEARLY DECORATIVE — never styled to look like a product. If an object has the brand logo on it, viewers will think it's for sale. Do not place the logo on anything except the actual product.
+- TEXT SOURCING: Every word of visible text must come from ONE of these three sources — (1) the EXACT product label artwork pasted from the INPUT image, (2) the TEXT section of this prompt, or (3) the logo image. Invent zero text.
+- COMPETITOR ELEMENTS: No green boxes, no red banners, no white mesh bags, no competitor logos, no competitor product shapes, no competitor text.
+- SOAP LABELS: Soap bars sitting on a surface ALWAYS show their paper label. Soap bars being held/lathered in a hand or shown in active use have NO label — plain tallow texture only.
+

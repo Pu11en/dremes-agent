@@ -1,0 +1,254 @@
+BRAND: cinco-h-ranch (Cinco H Ranch Naturals)
+REF: /data/refs/public/images/refs/cinco-h-ranch/soap/approved/soap_ref_38.jpg
+OUTPUT: /data/refs/output/cinco-h-ranch_20260518_040012_889.png
+PRODUCTS: Texas Air, Texas Campfire, Chamomile Soothing
+TIMESTAMP: 2026-05-18T04:01:41.140966
+
+=== REVERSE ANALYSIS ===
+## Subject
+The subject is a stack of three handmade soap bars. The bars are light beige or tan, with a matte finish and visibly speckled with fine dark brown particles, consistent with ground coffee. Their shape is a rectangular prism with slightly uneven, rustic edges. The stack of three bars is arranged vertically and tied with a piece of natural, light-brown twine that wraps around the stack once vertically and is tied in a simple knot on the top surface. The entire stack rests on a small, round, white plate.
+
+The image is a diptych, showing the subject from two slightly different angles.
+- In the top panel, the soap stack is in the mid-right of the frame, angled slightly away from the viewer.
+- In the bottom panel, the soap stack is centered and shot from a slightly lower angle, appearing more prominent.
+
+## Product Count
+PRODUCT COUNT: 3
+
+## Product Details
+The three products are visually identical bars of soap, stacked together.
+
+*   **Product 1 (Top Bar)**
+    *   **Container type and shape:** A solid, rectangular prism bar of soap.
+    *   **Exact position in frame:** (Top panel) Centered at 75% from left, 30% from top. (Bottom panel) Centered at 50% from left, 70% from top (using the full image height for reference).
+    *   **Angle:** In both views, angled slightly to the right, showing the front face and left side.
+    *   **Size relative to frame:** Medium. The stack's height is approximately 20% of the total frame height.
+    *   **Cap/lid state:** Not applicable.
+    *   **Label:** No label is present.
+    *   **Surface:** Matte, slightly rough, with visible dark speckles throughout. Appears solid and opaque.
+
+*   **Product 2 (Middle Bar)**
+    *   **Container type and shape:** A solid, rectangular prism bar of soap.
+    *   **Exact position in frame:** Directly below Product 1 in the stack.
+    *   **Angle:** Same as Product 1.
+    *   **Size relative to frame:** Same as Product 1.
+    *   **Cap/lid state:** Not applicable.
+    *   **Label:** No label is present.
+    *   **Surface:** Matte, slightly rough, with visible dark speckles throughout.
+
+*   **Product 3 (Bottom Bar)**
+    *   **Container type and shape:** A solid, rectangular prism bar of soap.
+    *   **Exact position in frame:** At the base of the stack, resting on the white plate.
+    *   **Angle:** Same as Product 1.
+    *   **Size relative to frame:** Same as Product 1.
+    *   **Cap/lid state:** Not applicable.
+    *   **Label:** No label is present.
+    *   **Surface:** Matte, slightly rough, with visible dark speckles throughout.
+
+## Composition
+*   **Aspect ratio:** A long vertical rectangle, approximately 1:2.
+*   **Framing:** The image is a composite of two medium close-up shots of the subject, separated by a central text banner.
+*   **Visual hierarchy:** The eye is drawn first to the large text in the central banner due to its size and contrast. Second, the eye goes to the larger, more centered soap stack in the bottom panel. Third, the eye moves to the smaller depiction of the soap in the top panel and the surrounding coffee beans.
+*   **3×3 grid:**
+    *   **Top Row:** The top-left zone contains a white text watermark. The top-center and top-right zones are filled with the out-of-focus wooden background.
+    *   **Middle Row:** A solid cream-colored banner containing large brown text fills the entire middle row, from left to right.
+    *   **Bottom Row:** The bottom-left and bottom-right zones are filled with the wooden background and scattered coffee beans. The bottom-center zone contains the main subject: the soap stack on a white plate, surrounded by coffee beans.
+*   **Negative space:** The warm-toned, blurred wooden background constitutes the negative space, occupying approximately 50% of the total image area. It provides a rustic context and helps the subject and text stand out.
+*   **Depth layers:**
+    *   **Foreground:** Scattered coffee beans on the wood surface and around the plate.
+    *   **Midground:** The stack of soap bars on the white plate.
+    *   **Background:** The wooden tabletop surface, which softens into a blur away from the subject.
+
+## Produce / Ingredients
+*   **Ingredient:** Coffee beans
+*   **Quantity:** A scattered handful.
+*   **Position in frame:** Arranged around the base of the white plate and scattered across the wooden surface in both the top and bottom photo panels.
+*   **State:** Whole, roasted, dark brown, with a subtle sheen.
+
+## Text
+*   **Zone label:** Watermark
+    *   **Position:** Top panel, located in the top-left corner.
+    *   **Verbatim text:** HAPPINESS IS / Homemade
+    *   **Font characteristics:** "HAPPINESS IS" is a lightweight, all-caps sans-serif font. "Homemade" is a larger, flowing script font in title case.
+    *   **Color:** White.
+    *   **Text effects:** None.
+
+*   **Zone label:** Center_overlay
+    *   **Position:** Occupies the horizontal center of the overall image, placed on a dedicated banner. Text is center-aligned.
+    *   **Verbatim text:**
+        EXFOLIATING
+        Coffee & Milk
+        SOAP IN UNDER 10 MINUTES!
+    *   **Font characteristics:** "EXFOLIATING" and "SOAP IN UNDER 10 MINUTES!" are a bold, all-caps slab serif font. "Coffee & Milk" is a formal, high-contrast script font in title case. The text size is hierarchical, with "Coffee & Milk" being the largest.
+    *   **Color:** Dark brown (approximately #6B4F35).
+    *   **Text effects:** None.
+
+## Decorative Elements
+*   **Type:** A wide horizontal banner used as a container for text.
+    *   **Color:** Solid light cream (approximately #F5E6D3).
+    *   **Position:** Stretches across the full width of the image, dividing the top and bottom photo sections.
+*   **Type:** Twine.
+    *   **Color:** Natural, undyed light brown.
+    *   **Position:** Wrapped vertically around the stack of three soap bars and tied in a knot on top.
+
+No splashes, sparkles, borders, or other graphic elements are present.
+
+## Background
+*   **Structure:** The background is an environmental photo of a wooden surface, likely a table or floor.
+*   **Color(s):** Dominated by warm, medium-brown tones with darker brown and tan variations in the wood grain.
+*   **Texture:** A distinct, linear wood grain is visible, providing a rustic and natural texture. The texture is sharpest near the subject and blurs softly into the background.
+*   **Depth:** The image has a shallow depth of field, keeping the subject in focus while the background is softly blurred.
+*   **Background objects:** A simple, plain white ceramic plate with a raised rim sits under the soap stack. It has a matte to satin finish.
+
+## Lighting
+*   **Key light direction:** The primary light source is positioned at approximately 10 o'clock (front-left) and slightly above the subject.
+*   **Quality:** Soft and diffused. There are no harsh lines; shadows are gentle and gradated.
+*   **Fill:** There is no discernible fill light; the shadows on the right side of the soap are natural and not filled in.
+*   **Rim/backlight:** No rim or backlight is present.
+*   **Highlights:** Soft, broad highlights appear on the top-left edges of the soap bars and the rounded surfaces of the coffee beans. A clean specular highlight follows the curve of the white plate's rim. Highlights are well-managed and not blown out.
+*   **Shadows:** The soap stack casts a soft, diffused shadow to its right and slightly behind. Each coffee bean casts a small, soft shadow. The shadows are not opaque, allowing background texture to show through.
+*   **Overall exposure:** The image is well-exposed with a bright, warm, and inviting feel.
+
+## Mood
+*   Artisanal
+*   Rustic
+*   Homemade
+*   Natural
+*   Aromatic
+*   Warm
+*   Comforting
+*   Simple
+
+=== STRUCTURED AD JSON ===
+{
+  "ad_type": "social_media_ad",
+  "aspect_ratio": "4:5",
+  "brand_name": "Cinco H Ranch Naturals",
+  "mood": [
+    "Rustic",
+    "Honest",
+    "Handcrafted",
+    "Natural",
+    "Masculine"
+  ],
+  "layout": {
+    "type": "diptych",
+    "description": "A vertical 4:5 diptych layout featuring two photo panels (top and bottom) separated by a central horizontal banner. This structure directly adapts the provided reference image."
+  },
+  "elements": [
+    {
+      "type": "background",
+      "description": "A dark, rustic wooden surface with a visible grain, consistent with an old ranch table or barn wood. The background has a shallow depth of field, with the area around the subject in focus and the rest softly blurred. The overall color grade is warm, emphasizing the brand's dark brown (#301800) and cream (#F0E0B0) tones."
+    },
+    {
+      "type": "product_stack",
+      "products": [
+        {
+          "product_name": "Texas Campfire",
+          "product_type": "soap-bar",
+          "details": {
+            "claims": [
+              "Bold campfire scent",
+              "Deep cleanse",
+              "Ranch-inspired"
+            ],
+            "ingredients": [
+              "Tallow base",
+              "Activated charcoal",
+              "Essential oils"
+            ]
+          },
+          "display": "Top bar in the stack, wrapped in its paper label."
+        },
+        {
+          "product_name": "Texas Campfire",
+          "product_type": "soap-bar",
+          "details": {
+            "claims": [
+              "Bold campfire scent",
+              "Deep cleanse",
+              "Ranch-inspired"
+            ],
+            "ingredients": [
+              "Tallow base",
+              "Activated charcoal",
+              "Essential oils"
+            ]
+          },
+          "display": "Middle bar in the stack, wrapped in its paper label."
+        },
+        {
+          "product_name": "Texas Campfire",
+          "product_type": "soap-bar",
+          "details": {
+            "claims": [
+              "Bold campfire scent",
+              "Deep cleanse",
+              "Ranch-inspired"
+            ],
+            "ingredients": [
+              "Tallow base",
+              "Activated charcoal",
+              "Essential oils"
+            ]
+          },
+          "display": "Bottom bar in the stack, wrapped in its paper label."
+        }
+      ],
+      "description": "A stack of three 'Texas Campfire' soap bars, each showing its paper label as per brand rules. The stack is tied with a piece of simple, rugged twine. The stack is shown in two views: a medium shot in the top photo panel, and a larger, more prominent close-up in the bottom panel.",
+      "position": "The stack sits on a small plate, positioned slightly right-of-center in the top photo and centered in the bottom photo."
+    },
+    {
+      "type": "props",
+      "items": [
+        {
+          "item": "Small plate",
+          "description": "A simple, off-white stoneware plate with a matte finish. The soap stack rests on this plate."
+        },
+        {
+          "item": "Twine",
+          "description": "Natural, light brown twine is wrapped vertically around the soap stack and tied in a simple knot on top, replicating the styling from the reference."
+        }
+      ]
+    },
+    {
+      "type": "banner",
+      "position": "Horizontally across the center of the frame, dividing the top and bottom photo sections.",
+      "background_color": "cream #F0E0B0",
+      "content": [
+        {
+          "type": "headline",
+          "text": "THE RANCH STANDARD",
+          "font_style": "A bold, classic, all-caps slab-serif font.",
+          "font_color": "dark brown #301800",
+          "alignment": "center"
+        }
+      ]
+    },
+    {
+      "type": "logo",
+      "asset": "Cinco H Ranch Naturals logo",
+      "position": "Bottom-right corner of the overall ad.",
+      "size": "Small",
+      "effects": "None. No box or banner."
+    },
+    {
+      "type": "lighting",
+      "description": "Soft, directional light from the front-left creates gentle highlights on the top and left edges of the soap stack and casts soft, diffused shadows to the right. The lighting is warm and natural, enhancing the rustic and handcrafted feel of the products."
+    }
+  ]
+}
+
+=== ASSEMBLED IMAGE PROMPT ===
+Photorealistic 4:5 portrait ad. {"ad_type": "social_media_ad", "aspect_ratio": "4:5", "brand_name": "Cinco H Ranch Naturals", "mood": ["Rustic", "Honest", "Handcrafted", "Natural", "Masculine"], "layout": {"type": "diptych", "description": "A vertical 4:5 diptych layout featuring two photo panels (top and bottom) separated by a central horizontal banner. This structure directly adapts the provided reference image."}, "elements": [{"type": "background", "description": "A dark, rustic wooden surface with a visible grain, consist
+
+PRODUCT: Texas skincare product in a jar or tube -- paste the EXACT product label, never redraw it — paste the EXACT product image, never redraw it.
+
+HARD VISUAL RULES — VIOLATING THESE RUINS THE AD:
+- THE ONLY PRODUCTS IN FRAME: Cinco H Ranch soap bars and jars listed in the product config. No boxes, no books, no pamphlets, no tubes, no bottles, no spray bottles unless that exact product is selected for this ad.
+- NO PROMOTIONAL OFFERS: No discounts, no bundle deals, no 'buy X get Y', no 'FREE', no 'GIFT', no '$' pricing, no limited-time offers, no 'ORDER NOW' CTAs.
+- NON-PRODUCT OBJECTS: Decorative props (fabric, rope, wood, stone, plants) are allowed but must be CLEARLY DECORATIVE — never styled to look like a product. If an object has the brand logo on it, viewers will think it's for sale. Do not place the logo on anything except the actual product.
+- TEXT SOURCING: Every word of visible text must come from ONE of these three sources — (1) the EXACT product label artwork pasted from the INPUT image, (2) the TEXT section of this prompt, or (3) the logo image. Invent zero text.
+- COMPETITOR ELEMENTS: No green boxes, no red banners, no white mesh bags, no competitor logos, no competitor product shapes, no competitor text.
+- SOAP LABELS: Soap bars sitting on a surface ALWAYS show their paper label. Soap bars being held/lathered in a hand or shown in active use have NO label — plain tallow texture only.
+

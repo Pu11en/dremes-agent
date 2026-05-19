@@ -1,0 +1,240 @@
+BRAND: cinco-h-ranch (Cinco H Ranch Naturals)
+REF: /data/refs/public/images/refs/cinco-h-ranch/soap/approved/soap_ref_43.jpg
+OUTPUT: /data/refs/output/cinco-h-ranch_20260518_041101_936.png
+PRODUCTS: Detox, La Blanca, Texas Air
+TIMESTAMP: 2026-05-18T04:12:50.044040
+
+=== REVERSE ANALYSIS ===
+## Subject
+The subjects are three round bars of soap, a slice of loofah, and a scattering of coconut flakes arranged in a cluster. The soap bars are a creamy, off-white color with a smooth, matte finish. One bar is positioned towards the top center, resting at a slight angle on two other bars below it. The second bar is to the left, lying mostly flat on the surface and partially underneath the top bar. The third bar is to the right of the top bar, mostly obscured by it. To the right of the soap pile, a circular slice of a dried loofah, light beige with a fibrous texture and visible holes, leans against the soap bars. A small pile of large, white, dried, shaved coconut flakes is scattered on the surface around the base of the soap bars and the loofah. The entire arrangement is centrally located in the upper half of the frame.
+
+## Product Count
+PRODUCT COUNT: 3
+
+## Product Details
+**Product 1: Soap Bar**
+- Container type and shape: A solid, cylindrical bar of soap with a slightly inset circular top face.
+- Exact position in frame: Centered at 50% from left, 25% from top.
+- Angle: Tilted slightly, resting on products 2 and 3.
+- Size relative to frame: Medium, approximately 20% of the frame's height in diameter.
+- Cap/lid state: Not applicable.
+- Label: None.
+- Surface: Smooth, matte, opaque, off-white.
+
+**Product 2: Soap Bar**
+- Container type and shape: A solid, cylindrical bar of soap.
+- Exact position in frame: Centered at 35% from left, 40% from top.
+- Angle: Lying flat, viewed from a high angle.
+- Size relative to frame: Medium, approximately 20% of the frame's height in diameter.
+- Cap/lid state: Not applicable.
+- Label: None.
+- Surface: Smooth, matte, opaque, off-white.
+
+**Product 3: Soap Bar**
+- Container type and shape: A solid, cylindrical bar of soap.
+- Exact position in frame: Centered at 60% from left, 35% from top.
+- Angle: Angled, mostly obscured behind Product 1 and the loofah.
+- Size relative to frame: Medium, though only partially visible.
+- Cap/lid state: Not applicable.
+- Label: None.
+- Surface: Smooth, matte, opaque, off-white.
+
+## Composition
+- **Aspect ratio:** Portrait, appears to be approximately 2:3.
+- **Framing:** A tight, slightly angled overhead shot (flat lay style).
+- **Visual hierarchy:** The eye is drawn first to the text overlay in the lower half due to its contrast and structured placement. The second point of focus is the cluster of soap bars and ingredients in the upper-middle, which is the primary subject. The third is the textured background.
+- **3×3 grid:**
+    - Top-left: Upper left edge of a soap bar against the wooden background.
+    - Top-center: The topmost soap bar and coconut flakes.
+    - Top-right: The loofah slice, a partially visible soap bar, and the wooden background.
+    - Middle-left: The leftmost soap bar and the beginning of the text overlay.
+    - Center: Coconut flakes at the base of the soap pile and the central portion of the text overlay.
+    - Middle-right: The right edge of the loofah and the end of the script text.
+    - Bottom-left: The text overlay on the wooden background.
+    - Bottom-center: The text overlay, including the attribution line, on the wooden background.
+    - Bottom-right: The text overlay on the wooden background.
+- **Negative space:** The wooden background surrounding the central product arrangement, primarily in the corners and the lower half of the frame (visible through the text overlay), constitutes roughly 50% of the image. It serves to frame the subject and provide a clean, uncluttered area for the text.
+- **Depth layers:**
+    - Foreground: The text and its semi-transparent white overlay.
+    - Midground: The cluster of soap bars, coconut flakes, and loofah slice.
+    - Background: The distressed white wooden surface.
+
+## Produce / Ingredients
+- **Coconut Flakes:** A scattered handful of large, dried, shaved coconut flakes. They are positioned in the center of the image, at the base of the pile of soap bars. They appear dry and crisp.
+- **Loofah:** A single, circular cross-section slice of a dried loofah gourd. It is light beige and its porous, fibrous internal structure is clearly visible. It is positioned on the right side of the soap cluster, leaning against it.
+
+## Text
+**Zone 1: center_overlay**
+- Position: Occupies the lower half of the frame, centered horizontally. Top of the zone starts at approximately 60% from top.
+- Full verbatim text:
+SWEET COCONUT
+exfoliating
+SOAP BARS
+- Font characteristics:
+    - "SWEET COCONUT" and "SOAP BARS": Sans-serif family, regular weight, all-caps, large size.
+    - "exfoliating": Cursive script family, thin weight, all-lowercase, large size, visually wider than the lines above and below it.
+- Color: Dark grey, close to charcoal (#333333).
+- Any text effects: None.
+
+**Zone 2: bottom_strip**
+- Position: Centered horizontally, at approximately 95% from the top.
+- Full verbatim text: by essentially eclectic
+- Font characteristics: Sans-serif family, light weight, all-lowercase, small size.
+- Color: Dark grey, same as Zone 1.
+- Any text effects: None.
+
+## Decorative Elements
+- **Overlays:** A rectangular overlay covers the bottom 45% of the frame, from edge to edge. It is solid white with a high level of transparency, allowing the background texture to show through clearly. The text is placed on top of this overlay.
+- **Shadows:** Natural cast shadows from the products are present. There are no artificial drop shadows on text or other elements.
+- All other decorative elements (splashes, sparkles, borders, icons, etc.) are absent.
+
+## Background
+- **Structure:** A photographic image of a wooden surface composed of vertical planks.
+- **Color(s):** The wood is painted or whitewashed with a matte white finish. The paint is distressed, with areas of grey and dark brown wood grain showing through, along with small flecks and cracks. The overall palette is neutral and cool-toned.
+- **Texture:** The texture is rough and rustic, with visible wood grain, cracks, and peeling paint.
+- **Depth:** The background is flat, serving as the surface on which the midground elements rest, creating a very shallow depth of field.
+- **Background objects:** None, other than the wooden planks themselves.
+
+## Lighting
+- **Key light direction:** Soft, diffused light originating from the upper left, around 10 o'clock.
+- **Quality:** Soft, resulting in gentle gradients and soft-edged shadows.
+- **Fill:** A subtle fill light is present, likely from the front, preventing the shadows from being too dark.
+- **Rim/backlight:** Absent.
+- **Highlights:** Broad, soft highlights appear on the top-left curved surfaces of the soap bars. They are not specular or harsh.
+- **Shadows:** Soft, diffused shadows are cast by all objects to the lower right. The shadows are light grey and translucent, indicating a bright, well-lit environment.
+- **Overall exposure:** Bright and airy, with a clean, high-key feel without clipping the whites.
+
+## Mood
+- Handmade artisanal
+- Clean and natural
+- Rustic farmhouse
+- Gentle wellness
+- Simple and bright
+- Airy morning light
+
+=== STRUCTURED AD JSON ===
+{
+  "id": "ad_3141592653",
+  "campaign_name": "Cinco H Ranch - The Ranch Standard",
+  "ad_format": "social_media_ad",
+  "aspect_ratio": "4:5",
+  "frame": {
+    "background": {
+      "description": "A flat lay composition on a rustic, dark brown wooden plank surface, consistent with the brand's ranch aesthetic.",
+      "color_palette": [
+        {
+          "name": "dark brown",
+          "hex": "#301800"
+        },
+        {
+          "name": "cream",
+          "hex": "#F0E0B0"
+        },
+        {
+          "name": "navy",
+          "hex": "#204050"
+        }
+      ]
+    },
+    "lighting": {
+      "description": "Soft, diffused natural light originates from the upper left, casting gentle, warm shadows to the lower right of the products, creating a handcrafted, artisanal mood."
+    },
+    "elements": [
+      {
+        "type": "product",
+        "product_name": "Detox",
+        "description": "A rectangular, dark grey bar of 'Detox' soap with its kraft paper label visible. It is positioned in the upper center of the frame, angled slightly and resting on the other two bars. Claims: 'Deep detoxifying cleanse', 'Draws out impurities', 'Fresh, clean feel'. Ingredients: Tallow base, Activated charcoal, Essential oils.",
+        "position": {
+          "top": "25%",
+          "left": "50%",
+          "anchor": "center"
+        }
+      },
+      {
+        "type": "product",
+        "product_name": "La Blanca",
+        "description": "A rectangular, creamy white bar of 'La Blanca' soap with its kraft paper label visible. It sits to the left of and slightly underneath the 'Detox' bar. Claims: 'Pure and simple', 'Clean white lather', 'Nothing extra'. Ingredients: Tallow base, Essential oils.",
+        "position": {
+          "top": "40%",
+          "left": "35%",
+          "anchor": "center"
+        }
+      },
+      {
+        "type": "product",
+        "product_name": "Texas Air",
+        "description": "A rectangular, off-white bar of 'Texas Air' soap with its kraft paper label visible. It is positioned to the right of the 'Detox' bar, partially obscured by it and a prop. Claims: 'Gentle everyday cleansing', 'Fresh ranch scent', 'Soft, hydrated skin'. Ingredients: Tallow base, Essential oils, Natural fragrance.",
+        "position": {
+          "top": "35%",
+          "left": "65%",
+          "anchor": "center"
+        }
+      },
+      {
+        "type": "prop",
+        "description": "A small, artful scattering of activated charcoal powder at the base of the soap bars, visually representing the key ingredient of the 'Detox' soap.",
+        "position": {
+          "top": "48%",
+          "left": "50%",
+          "anchor": "center"
+        }
+      },
+      {
+        "type": "prop",
+        "description": "A small, rustic sprig of dried Texas grass resting to the right of the soap cluster, replacing the loofah from the reference to enhance the ranch theme.",
+        "position": {
+          "top": "40%",
+          "left": "75%",
+          "anchor": "center"
+        }
+      },
+      {
+        "type": "overlay",
+        "description": "A rectangular overlay covers the bottom 45% of the frame, providing a clean background for the text while allowing the wood texture to show through.",
+        "style": "semi-transparent",
+        "color": {
+          "name": "cream",
+          "hex": "#F0E0B0"
+        },
+        "opacity": 0.85
+      },
+      {
+        "type": "text",
+        "text_content": "BUILT FOR THE RANCH",
+        "font_style": "A bold, rustic, all-caps sans-serif font, styled to mimic the visual hierarchy of the reference image. The text is broken into three conceptual lines: 'BUILT FOR' on the first line, a contrasting style for 'THE', and 'RANCH' on the third line, creating a dynamic headline.",
+        "color": {
+          "name": "dark brown",
+          "hex": "#301800"
+        },
+        "position": {
+          "top": "75%",
+          "left": "50%",
+          "anchor": "center"
+        }
+      },
+      {
+        "type": "logo",
+        "description": "The 'Cinco H Ranch Naturals' logo is placed in the bottom-right corner of the frame. It is small, clean, and has no box or banner, as per brand guidelines.",
+        "position": {
+          "bottom": "3%",
+          "right": "5%",
+          "anchor": "bottom_right"
+        }
+      }
+    ]
+  }
+}
+
+=== ASSEMBLED IMAGE PROMPT ===
+Photorealistic 4:5 portrait ad. {"id": "ad_3141592653", "campaign_name": "Cinco H Ranch - The Ranch Standard", "ad_format": "social_media_ad", "aspect_ratio": "4:5", "frame": {"background": {"description": "A flat lay composition on a rustic, dark brown wooden plank surface, consistent with the brand's ranch aesthetic.", "color_palette": [{"name": "dark brown", "hex": "#301800"}, {"name": "cream", "hex": "#F0E0B0"}, {"name": "navy", "hex": "#204050"}]}, "lighting": {"description": "Soft, diffused natural light originates from 
+
+PRODUCT: Texas skincare product in a jar or tube -- paste the EXACT product label, never redraw it — paste the EXACT product image, never redraw it.
+
+HARD VISUAL RULES — VIOLATING THESE RUINS THE AD:
+- THE ONLY PRODUCTS IN FRAME: Cinco H Ranch soap bars and jars listed in the product config. No boxes, no books, no pamphlets, no tubes, no bottles, no spray bottles unless that exact product is selected for this ad.
+- NO PROMOTIONAL OFFERS: No discounts, no bundle deals, no 'buy X get Y', no 'FREE', no 'GIFT', no '$' pricing, no limited-time offers, no 'ORDER NOW' CTAs.
+- NON-PRODUCT OBJECTS: Decorative props (fabric, rope, wood, stone, plants) are allowed but must be CLEARLY DECORATIVE — never styled to look like a product. If an object has the brand logo on it, viewers will think it's for sale. Do not place the logo on anything except the actual product.
+- TEXT SOURCING: Every word of visible text must come from ONE of these three sources — (1) the EXACT product label artwork pasted from the INPUT image, (2) the TEXT section of this prompt, or (3) the logo image. Invent zero text.
+- COMPETITOR ELEMENTS: No green boxes, no red banners, no white mesh bags, no competitor logos, no competitor product shapes, no competitor text.
+- SOAP LABELS: Soap bars sitting on a surface ALWAYS show their paper label. Soap bars being held/lathered in a hand or shown in active use have NO label — plain tallow texture only.
+

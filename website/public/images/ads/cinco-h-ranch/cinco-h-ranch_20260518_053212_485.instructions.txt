@@ -1,0 +1,226 @@
+BRAND: cinco-h-ranch (Cinco H Ranch Naturals)
+REF: /data/refs/public/images/refs/cinco-h-ranch/soap/approved/soap_ref_54.jpg
+OUTPUT: /data/refs/output/cinco-h-ranch_20260518_053212_485.png
+PRODUCTS: Detox
+TIMESTAMP: 2026-05-18T05:33:30.369055
+
+=== REVERSE ANALYSIS ===
+## Subject
+The subject is a stack of four rectangular bars of handmade-style soap. The soap is an off-white, creamy color, with small flecks of dried green and yellowish-brown botanicals, consistent in appearance with dried lavender buds, distributed throughout. The bars are stacked vertically in the lower-middle portion of the frame. The stack is not perfectly aligned; each bar is slightly offset from the one below it, creating a casual, slightly irregular silhouette. The bars have clean-cut edges and a matte surface. They are positioned in the center of the horizontal axis, facing the viewer.
+
+## Product Count
+PRODUCT COUNT: 1
+
+## Product Details
+**1. Soap Bar**
+- **Container type and shape:** Solid, rectangular bar of soap. It is not in a container.
+- **Exact position in frame:** The stack of four bars is centered horizontally. The base of the stack begins at approximately 75% from the top of the frame, and the top of the stack reaches approximately 50% from the top.
+- **Angle:** The stack is viewed from a straight-on, eye-level perspective. The bars are mostly flat, with a very slight turn towards the right.
+- **Size relative to frame:** The stack is medium in size, occupying roughly 40% of the total frame height.
+- **Cap/lid state:** Not applicable.
+- **Label:** There is no label on the product itself.
+- **Surface:** The soap has a solid, matte, and opaque surface. It is not glossy or wet. Small, dried botanical pieces are visibly suspended within the soap, creating a textured appearance.
+
+## Composition
+- **Aspect ratio:** Vertical portrait orientation, approximately 2:3.
+- **Framing:** Medium close-up, focusing on the product stack while retaining significant negative space above it.
+- **Visual hierarchy:** The eye is drawn first to the high-contrast black text overlay in the upper portion of the frame. Second, the eye moves down to the stack of soap, which is the primary subject and largest physical object. Third, the eye notices the textured surfaces on which the soap rests.
+- **3×3 grid:**
+    - **Top-left:** Empty, solid light grey background.
+    - **Top-center:** Black text overlay ("LAVENDER HONEY soap").
+    - **Top-right:** Empty, solid light grey background.
+    - **Mid-left:** The left edge of the soap stack and the light grey background.
+    - **Mid-center:** The main body of the four stacked soap bars.
+    - **Mid-right:** The right edge of the soap stack and the light grey background.
+    - **Bottom-left:** The textured brown paper and the whitewashed wood surface below it.
+    - **Bottom-center:** The base of the soap stack resting on the brown paper.
+    - **Bottom-right:** The textured brown paper, a faint watermark, and the whitewashed wood surface below it.
+- **Negative space:** Approximately 50% of the frame, concentrated in the upper half. This area is a plain, light-colored background that serves to isolate the subject and provide a clean canvas for the text overlay, reinforcing a minimalist aesthetic.
+- **Depth layers:**
+    - **Foreground:** A whitewashed wooden surface with visible vertical grain at the very bottom of the frame.
+    - **Midground:** A piece of textured, light brown paper upon which the stack of soap bars sits.
+    - **Background:** A flat, solid, out-of-focus light grey wall.
+
+## Produce / Ingredients
+- **Ingredient:** Dried botanical specks, consistent in appearance with lavender buds.
+- **Quantity:** A scattered handful, suspended within the four soap bars.
+- **Position in frame:** Embedded throughout the soap bars in the midground.
+- **State:** Dried, possibly crushed or broken.
+
+## Text
+**1. center_overlay**
+- **Position:** Centered horizontally, beginning approximately 15% from the top of the frame.
+- **Verbatim text:**
+LAVENDER
+HONEY
+soap
+- **Font characteristics:**
+    - "LAVENDER" and "HONEY" are in a thin, clean, sans-serif font in all-caps.
+    - "soap" is in a delicate, lowercase, flowing script font.
+- **Color:** Black.
+- **Text effects:** None.
+
+**2. watermark**
+- **Position:** In the bottom right corner, at approximately 90% from the top and 90% from the left.
+- **Verbatim text:** LIVE / LAUGH / ROWE
+- **Font characteristics:** A simple, small, all-caps sans-serif font. The text is contained within a thin circular outline.
+- **Color:** Faint, semi-transparent white.
+- **Text effects:** The text is enclosed in a circle.
+
+## Decorative Elements
+DECORATIVE: NONE
+
+## Background
+- **Structure:** The scene is composed of two flat surfaces set against a plain vertical wall, creating a shallow studio or tabletop environment.
+- **Color(s):** The back wall is a solid, neutral light grey. The surface directly under the soap is a matte, kraft paper brown. The surface at the bottom of the frame is a whitewashed or very pale wood color.
+- **Texture:** The back wall is smooth and matte. The brown paper has a slightly rough, crinkled texture. The wood in the foreground has a visible, linear grain texture.
+- **Depth:** Shallow depth of field. The soap and the brown paper are in sharp focus, while the background wall and the foreground wood grain are softly blurred.
+- **Background objects:** There are no other objects in the background.
+
+## Lighting
+- **Key light direction:** The primary light source is positioned to the front and left, at approximately 10 o'clock and slightly above the subject.
+- **Quality:** The lighting is soft and diffused, resulting in gentle gradients and soft-edged shadows. There are no harsh specular highlights.
+- **Fill:** A subtle fill light is present, preventing deep shadows on the right side of the soap stack and ensuring the entire product is clearly visible.
+- **Rim/backlight:** No rim light or backlight is present.
+- **Highlights:** Broad, soft highlights appear on the top surface of the uppermost soap bar and along the front-left edges of the stack.
+- **Shadows:** A soft cast shadow is visible to the right of the soap stack on the brown paper. Each bar also casts a very thin, soft shadow on the bar directly beneath it. The shadows are light and low in contrast.
+- **Overall exposure:** Bright and airy with a high-key feel. The exposure is clean and even across the frame.
+
+## Mood
+- Minimalist
+- Artisanal
+- Natural
+- Calming
+- Clean
+- Rustic
+- Handmade
+
+=== STRUCTURED AD JSON ===
+{
+  "ad_type": "social_media_ad",
+  "aspect_ratio": "4:5",
+  "scene_description": {
+    "background": {
+      "description": "A minimalist studio tabletop scene. The vertical back wall is a solid brand cream (#F0E0B0) with a subtle, matte texture. The horizontal foreground surface is a rustic, dark wood plank in brand dark brown (#301800)."
+    },
+    "product": [
+      {
+        "name": "[Product 1]",
+        "details": {
+          "description": "A stack of four rectangular 'Detox' soap bars. The soap is a matte, dark charcoal grey. Each bar is wrapped in its kraft paper label featuring the 'Cinco H Ranch Naturals' branding, as seen in the provided artwork. The top surface of the uppermost bar shows the brand's circular logo embossed into the soap. The bars are stacked slightly offset from one another, creating a casual, artisanal look.",
+          "placement": "The stack of four bars is positioned in the lower-middle of the frame, resting on the dark brown wooden surface. The composition directly mirrors the reference image.",
+          "label_state": "labeled"
+        }
+      }
+    ],
+    "composition": {
+      "type": "studio_shot",
+      "shot_type": "medium_close_up",
+      "angle": "Eye-level, straight-on view of the product stack.",
+      "visual_hierarchy": "The viewer's eye is drawn first to the text overlay, then down to the contrasting stack of dark soap bars, and finally to the rustic textures of the scene.",
+      "negative_space": "Significant negative space is maintained in the upper half of the frame, providing a clean area for the text overlay."
+    },
+    "text_overlays": [
+      {
+        "verbatim_text": "ACTIVATED\nCHARCOAL\nsoap",
+        "position": "Centered horizontally in the upper third of the frame.",
+        "font_style": {
+          "line_1_and_2": "A clean, weighted, all-caps sans-serif font for 'ACTIVATED' and 'CHARCOAL'.",
+          "line_3": "An elegant, flowing, lowercase script font for 'soap', mirroring the font style contrast in the reference image."
+        },
+        "color": "brand dark brown (#301800)"
+      }
+    ],
+    "logo": {
+      "brand": "Cinco H Ranch Naturals",
+      "position": "The circular brand logo is placed discreetly in the bottom-right corner.",
+      "style": "Small, flat, with no special effects, box, or banner."
+    },
+    "lighting": {
+      "description": "Soft, diffused key light from the front-left (approx. 10 o'clock) creates gentle highlights on the product and casts soft, subtle shadows to the right. The overall exposure is bright and clean, emphasizing the product's form and texture.",
+      "style": "Natural and high-quality."
+    },
+    "color_and_mood": {
+      "palette": "The ad strictly uses the brand color palette. The background is brand cream (#F0E0B0), the text and wood surface are brand dark brown (#301800). The navy (#204050) and accent red (#B03030) are present in the product labels and logo.",
+      "mood": [
+        "Rustic",
+        "Handmade",
+        "Natural",
+        "Clean",
+        "Masculine"
+      ]
+    }
+  }
+}
+
+=== ASSEMBLED IMAGE PROMPT ===
+Photorealistic 4:5 portrait ad. Generate a Cinco H Ranch Naturals ad. Creative brief:
+{
+  "ad_type": "social_media_ad",
+  "aspect_ratio": "4:5",
+  "scene_description": {
+    "background": {
+      "description": "A minimalist studio tabletop scene. The vertical back wall is a solid brand cream (#F0E0B0) with a subtle, matte texture. The horizontal foreground surface is a rustic, dark wood plank in brand dark brown (#301800)."
+    },
+    "product": [
+      {
+        "name": "[Product 1]",
+        "details": {
+          "description": "A stack of four rectangular 'Detox' soap bars. The soap is a matte, dark charcoal grey. Each bar is wrapped in its kraft paper label featuring the 'Cinco H Ranch Naturals' branding, as seen in the provided artwork. The top surface of the uppermost bar shows the brand's circular logo embossed into the soap. The bars are stacked slightly offset from one another, creating a casual, artisanal look.",
+          "placement": "The stack of four bars is positioned in the lower-middle of the frame, resting on the dark brown wooden surface. The composition directly mirrors the reference image.",
+          "label_state": "labeled"
+        }
+      }
+    ],
+    "composition": {
+      "type": "studio_shot",
+      "shot_type": "medium_close_up",
+      "angle": "Eye-level, straight-on view of the product stack.",
+      "visual_hierarchy": "The viewer's eye is drawn first to the text overlay, then down to the contrasting stack of dark soap bars, and finally to the rustic textures of the scene.",
+      "negative_space": "Significant negative space is maintained in the upper half of the frame, providing a clean area for the text overlay."
+    },
+    "text_overlays": [
+      {
+        "verbatim_text": "ACTIVATED\nCHARCOAL\nsoap",
+        "position": "Centered horizontally in the upper third of the frame.",
+        "font_style": {
+          "line_1_and_2": "A clean, weighted, all-caps sans-serif font for 'ACTIVATED' and 'CHARCOAL'.",
+          "line_3": "An elegant, flowing, lowercase script font for 'soap', mirroring the font style contrast in the reference image."
+        },
+        "color": "brand dark brown (#301800)"
+      }
+    ],
+    "logo": {
+      "brand": "Cinco H Ranch Naturals",
+      "position": "The circular brand logo is placed discreetly in the bottom-right corner.",
+      "style": "Small, flat, with no special effects, box, or banner."
+    },
+    "lighting": {
+      "description": "Soft, diffused key light from the front-left (approx. 10 o'clock) creates gentle highlights on the product and casts soft, subtle shadows to the right. The overall exposure is bright and clean, emphasizing the product's form and texture.",
+      "style": "Natural and high-quality."
+    },
+    "color_and_mood": {
+      "palette": "The ad strictly uses the brand color palette. The background is brand cream (#F0E0B0), the text and wood surface are brand dark brown (#301800). The navy (#204050) and accent red (#B03030) are present in the product labels and logo.",
+      "mood": [
+        "Rustic",
+        "Handmade",
+        "Natural",
+        "Clean",
+        "Masculine"
+      ]
+    }
+  }
+}
+
+Paste product images exactly. Never redraw labels. Use ONLY the brand colors listed above.
+
+PRODUCT: Texas skincare product in a jar or tube -- paste the EXACT product label, never redraw it — paste the EXACT product image, never redraw it.
+
+HARD VISUAL RULES — VIOLATING THESE RUINS THE AD:
+- THE ONLY PRODUCTS IN FRAME: Cinco H Ranch soap bars and jars listed in the product config. No boxes, no books, no pamphlets, no tubes, no bottles, no spray bottles unless that exact product is selected for this ad.
+- NO PROMOTIONAL OFFERS: No discounts, no bundle deals, no 'buy X get Y', no 'FREE', no 'GIFT', no '$' pricing, no limited-time offers, no 'ORDER NOW' CTAs.
+- NON-PRODUCT OBJECTS: Decorative props (fabric, rope, wood, stone, plants) are allowed but must be CLEARLY DECORATIVE — never styled to look like a product. If an object has the brand logo on it, viewers will think it's for sale. Do not place the logo on anything except the actual product.
+- - TEXT SOURCING: Every visible word must come from the product label artwork, the text specified in this prompt, or the logo. Zero invented text.
+- COMPETITOR ELEMENTS: No green boxes, no red banners, no white mesh bags, no competitor logos, no competitor product shapes, no competitor text.
+- SOAP LABELS: Soap bars sitting on a surface ALWAYS show their paper label. Soap bars being held/lathered in a hand or shown in active use have NO label — plain tallow texture only.
+

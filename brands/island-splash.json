@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "slug": "island-splash",
+  "display_name": "Island Splash",
+  "scheduling": {
+    "posts_per_day": 2,
+    "time_slots": [
+      "09:00",
+      "17:00"
+    ],
+    "platforms": [
+      "instagram"
+    ],
+    "instagram_account_id": "27011",
+    "carousel_max_slides": 10
+  },
+  "paths": {
+    "logo_path": "/home/drewp/dremes-agent/brand_assets/island-splash/logo/logo.png",
+    "products_dir": "/home/drewp/dremes-agent/brand_assets/island-splash/products",
+    "tally_path": "/data/refs/flavor_usage.json",
+    "pool_dir": "/home/drewp/dremes-agent/brand_assets/island-splash/references",
+    "rules_path": "/data/refs/formula_learning.json"
+  },
+  "identity": {
+    "vibe": "Florida Caribbean juice \u2014 fun, laid-back, tropical, island time",
+    "palette": {
+      "hex": [
+        "#243C3C",
+        "#F0A86C",
+        "#E4843C",
+        "#A89078"
+      ],
+      "description": "dark teal #243C3C, warm golden orange #F0A86C, deep coral orange #E4843C, warm sand/tan #A89078"
+    },
+    "prop_themes": [
+      "tropical",
+      "Caribbean",
+      "beach",
+      "palm",
+      "island"
+    ],
+    "forbidden_prop_themes": [
+      "gym equipment",
+      "dumbbells",
+      "sports gear",
+      "office",
+      "corporate"
+    ],
+    "allowed_headlines": [],
+    "allowed_vibe_phrases": [
+      "Island Time",
+      "Tropical",
+      "Caribbean",
+      "family recipe"
+    ],
+    "format": "Caribbean juice drink in a bottle -- paste the EXACT product label, never redraw it"
+  },
+  "global_forbidden_text": [
+    {
+      "pattern": "www.",
+      "severity": "error",
+      "reason": "no URLs"
+    },
+    {
+      "pattern": ".com",
+      "severity": "error",
+      "reason": "no URLs"
+    },
+    {
+      "pattern": "@",
+      "severity": "error",
+      "reason": "no social handles"
+    },
+    {
+      "pattern": "FREE",
+      "severity": "error",
+      "reason": "no fake promotions"
+    },
+    {
+      "pattern": "% OFF",
+      "severity": "error",
+      "reason": "no fake promotions"
+    },
+    {
+      "pattern": "GIVEAWAY",
+      "severity": "error",
+      "reason": "no fake promotions"
+    },
+    {
+      "pattern": "$",
+      "severity": "warning",
+      "reason": "no pricing"
+    }
+  ],
+  "ad_creative_rules": [
+    "Every bottle label MUST come EXACTLY from the provided product image. Do NOT redraw, recolor, modify, or invent labels.",
+    "No mascots, cartoon characters, smiley fruits, or personified objects.",
+    "Logo appears once only, small, in a corner \u2014 no effects, no boxes, no oversized placement.",
+    "Background and color grade must use ONLY the brand palette. Replace ALL reference colors with brand colors.",
+    "Style overlay applies as final unifying step over the entire image."
+  ],
+  "products": [
+    {
+      "name": "Mango Passion",
+      "label_file": "upgraded_MangoPassion.jpg",
+      "container": "bottle",
+      "cap_rule": "matte BLACK cap \u2014 always, with no exceptions; never inherit cap color from reference",
+      "keywords": [
+        "mango",
+        "passion fruit",
+        "passionfruit"
+      ],
+      "allowed_claims": [],
+      "forbidden_text": []
+    },
+    {
+      "name": "Mauby",
+      "label_file": "upgraded_Mauby.jpg",
+      "container": "bottle",
+      "cap_rule": "matte BLACK cap \u2014 always, with no exceptions; never inherit cap color from reference",
+      "keywords": [
+        "mauby",
+        "bark"
+      ],
+      "allowed_claims": [],
+      "forbidden_text": []
+    },
+    {
+      "name": "Peanut Punch",
+      "label_file": "upgraded_peanutpunch.jpg",
+      "container": "bottle",
+      "cap_rule": "matte BLACK cap \u2014 always, with no exceptions; never inherit cap color from reference",
+      "keywords": [
+        "peanut"
+      ],
+      "allowed_claims": [],
+      "forbidden_text": []
+    },
+    {
+      "name": "Lime",
+      "label_file": "upgraded_Lime.jpg",
+      "container": "bottle",
+      "cap_rule": "matte BLACK cap \u2014 always, with no exceptions; never inherit cap color from reference",
+      "keywords": [
+        "lime",
+        "citrus"
+      ],
+      "allowed_claims": [],
+      "forbidden_text": []
+    },
+    {
+      "name": "Guava Pine",
+      "label_file": "upgraded_GuavaPine.jpg",
+      "container": "bottle",
+      "cap_rule": "matte BLACK cap \u2014 always, with no exceptions; never inherit cap color from reference",
+      "keywords": [
+        "guava",
+        "pineapple"
+      ],
+      "allowed_claims": [],
+      "forbidden_text": []
+    },
+    {
+      "name": "Sorrel",
+      "label_file": "upgraded_sorrel.jpg",
+      "container": "bottle",
+      "cap_rule": "matte BLACK cap \u2014 always, with no exceptions; never inherit cap color from reference",
+      "keywords": [
+        "sorrel",
+        "hibiscus"
+      ],
+      "allowed_claims": [],
+      "forbidden_text": []
+    },
+    {
+      "name": "Pine Ginger",
+      "label_file": "upgraded_pineginger.jpg",
+      "container": "bottle",
+      "cap_rule": "matte BLACK cap \u2014 always, with no exceptions; never inherit cap color from reference",
+      "keywords": [
+        "pineapple",
+        "ginger"
+      ],
+      "allowed_claims": [],
+      "forbidden_text": []
+    }
+  ]
+}

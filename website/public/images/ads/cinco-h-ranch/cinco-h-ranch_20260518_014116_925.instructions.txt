@@ -1,0 +1,224 @@
+BRAND: cinco-h-ranch (Cinco H Ranch Naturals)
+REF: /data/refs/public/images/refs/cinco-h-ranch/soap/approved/soap_ref_3.jpg
+OUTPUT: /data/refs/output/cinco-h-ranch_20260518_014116_925.png
+PRODUCTS: Chamomile Soothing, Detox, La Blanca, Texas Air, Texas Campfire, Honey Vanilla Soap, Chamomile Soothing
+TIMESTAMP: 2026-05-18T01:42:42.904465
+
+=== REVERSE ANALYSIS ===
+## Subject
+The subject is a still life arrangement of a product box and multiple bars of soap. The box is a green, rectangular, book-style container standing vertically on its base. To its right is a pile of nine light-green, rectangular soap bars with rounded corners. The bars are arranged in a casual, stacked pile; some are lying flat, others are leaning against each other. The entire arrangement sits on a dark, wet, reflective surface. Wisps of white smoke or vapor envelop the products from behind and around the sides.
+
+## Product Count
+PRODUCT COUNT: 10 (1 box, 9 bars of soap)
+
+## Product Details
+**Product 1: Box**
+-   **Container type and shape:** Rectangular, book-style box, standing vertically.
+-   **Exact position in frame:** Left side of the frame, with its left edge at approximately 15% from the left and its base at 75% from the top.
+-   **Angle:** Facing the viewer, turned slightly to its right by about 10 degrees.
+-   **Size relative to frame:** Large, its height is approximately 45% of the frame height.
+-   **Cap/lid state:** N/A (closed box).
+-   **Label:** The design is printed directly on the box. The background is solid medium green.
+-   **Surface:** Matte finish.
+
+**Product 2-10: Soap Bars**
+-   **Container type and shape:** Solid rectangular bars of soap with rounded corners and edges.
+-   **Exact position in frame:** Arranged in a pile occupying the center and right-midground, from approximately 35% to 85% from the left edge of the frame.
+-   **Angle:** Various angles. Some are lying flat, some are stacked horizontally, and several are tilted, leaning against others. One in the foreground is propped up at a 45-degree angle.
+-   **Size relative to frame:** Small. Each bar is approximately 10-12% of the frame's width.
+-   **Cap/lid state:** N/A.
+-   **Label:** No label. The brand name and a logo are debossed (stamped into) the surface of each bar.
+-   **Surface:** Matte, smooth solid. One bar on the right is partially covered by a fine white mesh bag.
+
+## Composition
+-   **Aspect ratio:** 1:1 (Square).
+-   **Framing:** Medium close-up on the product arrangement.
+-   **Visual hierarchy:** The eye is drawn first to the large, high-contrast white headline text at the top. Second, to the brightly lit pile of green soap bars in the center. Third, to the product box on the left which provides context.
+-   **3×3 grid:**
+    -   **Top-left:** Headline text ("5 YEARS OF...").
+    -   **Top-center:** Headline text ("...JOCK ITCH...").
+    -   **Top-right:** Headline text ("...GONE IN...").
+    -   **Mid-left:** The top half of the product box.
+    -   **Mid-center:** The sub-headline text ("BUY 3..."), the top of the soap pile, and background smoke.
+    -   **Mid-right:** The upper right portion of the soap pile and background smoke.
+    -   **Bottom-left:** The base of the product box and the reflective, wet surface.
+    -   **Bottom-center:** The foreground soap bars and their reflections on the wet surface.
+    -   **Bottom-right:** The foreground soap bars on the right and their reflections.
+-   **Negative space:** The top third of the frame is primarily dark negative space, which serves to frame the headline and create high contrast.
+-   **Depth layers:**
+    -   **Foreground:** The dark, wet surface with water droplets and reflections.
+    -   **Midground:** The product box and the pile of soap bars.
+    -   **Background:** A dark green to black radial gradient with wisps of smoke.
+
+## Produce / Ingredients
+PRODUCE: NONE
+
+## Text
+**Zone 1: top_banner (Headline)**
+-   **Position:** Centered horizontally, starting at approx. 10% from the top.
+-   **Verbatim text:** 5 YEARS OF JOCK ITCH / GONE IN 2 WEEKS
+-   **Font characteristics:** Sans-serif, heavy or black weight, all-caps, hero size.
+-   **Color:** White.
+-   **Text effects:** None.
+
+**Zone 2: center_overlay (Sub-headline)**
+-   **Position:** Centered horizontally, at approx. 30% from the top.
+-   **Verbatim text:** BUY 3 GET 5 FREE GIFTS
+-   **Font characteristics:** Sans-serif, bold weight, all-caps, medium size. The text is contained within a red rectangular banner with a thin white outline.
+-   **Color:** White text on a red background.
+-   **Text effects:** None.
+
+**Zone 3: product_label (Box Front)**
+-   **Position:** On the front of the box.
+-   **Verbatim text:** [LOGO] / THE JOCK ITCH / SOLUTION / A GUIDE TO RELIEF & PREVENTION
+-   **Font characteristics:** "THE JOCK ITCH SOLUTION" is a sans-serif, bold, all-caps font. "A GUIDE TO..." is a smaller, lighter weight sans-serif font in title case.
+-   **Color:** "THE JOCK ITCH / SOLUTION" is white. "A GUIDE TO..." is a dark green, nearly black.
+-   **Text effects:** None.
+
+**Zone 4: product_label (Box Spine)**
+-   **Position:** Running vertically down the spine of the box.
+-   **Verbatim text:** THE JOCK ITCH SOLUTION
+-   **Font characteristics:** Sans-serif, bold, all-caps.
+-   **Color:** White.
+-   **Text effects:** None.
+
+**Zone 5: product_label (Soap Debossing)**
+-   **Position:** Stamped into the top surface of each soap bar.
+-   **Verbatim text:** [LOGO] / Veloma
+-   **Font characteristics:** A stylized, slightly script-like sans-serif font.
+-   **Color:** Same light green as the soap itself (debossed, not colored).
+-   **Text effects:** Debossed/impressed into the soap.
+
+## Decorative Elements
+-   **Smoke/Vapor:** Translucent white/grey vapor billows up from behind the products, concentrated in the midground and partially obscuring the background.
+-   **Droplets:** Small, clear water droplets are scattered on the dark surface in the foreground.
+-   **Icons/Symbols:** A stylized, symmetrical, floral-like icon with eight petals or points is present on the top of the box and debossed into each soap bar above the brand name.
+-   **Graphic Element:** On the front of the box, a graphic of a single soap bar rests on a white, lace-like paper doily.
+-   **Other:** A small, white, translucent mesh bag is draped over the soap bar in the front right of the pile.
+
+## Background
+-   **Structure:** A simple studio shot with a gradient background and a reflective foreground surface.
+-   **Color(s):** The background is a radial gradient, transitioning from a muted, dark green behind the products to black towards the edges and corners of the frame.
+-   **Texture:** The background itself is smooth and textureless. The foreground surface is glossy and smooth but appears textured due to ripples and water droplets, creating complex reflections of the products and light sources.
+-   **Depth:** Shallow. The focus is tightly on the midground products, with the immediate background being a soft, out-of-focus gradient.
+-   **Background objects:** None.
+
+## Lighting
+-   **Key light direction:** Soft light from above and slightly in front (from 12 o'clock).
+-   **Quality:** Soft and diffused, resulting in gentle transitions from light to shadow.
+-   **Fill:** Very low or no fill light, creating a moody, high-contrast scene with deep shadows.
+-   **Rim/backlight:** A subtle backlight seems to be present, which helps separate the products from the dark background and illuminates the smoke.
+-   **Highlights:** Broad, soft highlights appear on the top-facing surfaces of the soap bars and the top edge of the box. Small, sharp specular highlights are visible on the water droplets in the foreground.
+-   **Shadows:** Soft-edged contact shadows are cast directly beneath the box and soap bars on the reflective surface. The overall scene is dark with shadows defining the product forms.
+-   **Overall exposure:** Moody and dark, with the products selectively lit to make them the focal point.
+
+## Mood
+-   Clinical relief
+-   Mysterious potency
+-   Nocturnal atmosphere
+-   Damp and cleansing
+-   Targeted solution
+-   Dramatic reveal
+-   Medicinal efficacy
+
+=== STRUCTURED AD JSON ===
+{
+  "creative_brief": {
+    "project_name": "Cinco H Ranch - Detox Cleanse Ad",
+    "campaign_objective": "Generate awareness and drive sales for Cinco H Ranch natural tallow soaps, highlighting the detoxifying benefits.",
+    "format": "Static Social Media Ad",
+    "platform": "Instagram, Facebook",
+    "dimensions": "4:5 Portrait",
+    "ad_type": "Product-focused, dramatic still life",
+    "reference_ad": "INPUT_1.jpg",
+    "brand_assets": {
+      "products": [
+        "INPUT_2.jpg",
+        "INPUT_3.jpg",
+        "INPUT_4.jpg",
+        "INPUT_5.jpg",
+        "INPUT_6.jpg",
+        "INPUT_7.jpg"
+      ],
+      "logo": "INPUT_9.jpg"
+    }
+  },
+  "execution_plan": {
+    "PRESERVE": {
+      "comment": "Maintain the core compositional structure, lighting, and mood of the reference ad to capture its dramatic and effective feel.",
+      "composition": "Medium close-up shot. A hero product stands vertically on the left third of the frame. A casual pile of nine additional product units is arranged in the center-right midground. The entire arrangement sits on a dark, wet, reflective foreground surface. Text is dominant in the upper third of the frame.",
+      "lighting": "Dramatic, high-contrast lighting. A single, soft, diffused key light source from directly above and slightly in front (12 o'clock). This creates soft highlights on the top surfaces of the products and deep, soft-edged contact shadows underneath. The scene is moody and dark, with the products as the focal point.",
+      "camera": "Eye-level camera angle with a shallow depth of field. The focus is sharp on the midground products, with the foreground and background softly blurred.",
+      "mood": "Natural potency. Rugged clean. Authentic relief. Dramatic reveal."
+    },
+    "REPLACE": {
+      "comment": "Replace all competitor elements with Cinco H Ranch brand assets and color palette. All text must be replaced with approved copy.",
+      "products": [
+        {
+          "reference_element": "Green product box on the left.",
+          "replacement_element": "One bar of 'Detox' soap (INPUT_3.jpg) standing vertically on its long edge, label facing the camera, positioned to mimic the reference box.",
+          "notes": "This bar will serve as the hero product for the ad's claims."
+        },
+        {
+          "reference_element": "Pile of 9 green soap bars.",
+          "replacement_element": "A pile of 9 Cinco H Ranch soap bars, label-on, in a visually appealing mix. Use the following products: 'Chamomile Soothing' (INPUT_2.jpg), 'La Blanca' (INPUT_4.jpg), 'Texas Air' (INPUT_5.jpg), 'Texas Campfire' (INPUT_6.jpg), and 'Honey Vanilla' (INPUT_7.jpg). Arrange them in a casual, stacked pile mirroring the reference layout.",
+          "notes": "Ensure a good variety of colors and labels are visible."
+        }
+      ],
+      "text": [
+        {
+          "zone": "Top Headline",
+          "reference_text": "5 YEARS OF JOCK ITCH / GONE IN 2 WEEKS",
+          "replacement_text": "DEEP DETOXIFYING CLEANSE",
+          "font_style": "Sans-serif, heavy/black weight, all-caps, hero size.",
+          "color": "#F0E0B0"
+        },
+        {
+          "zone": "Center Sub-headline/Banner",
+          "reference_text": "BUY 3 GET 5 FREE GIFTS",
+          "replacement_text": "THE RANCH STANDARD",
+          "font_style": "Sans-serif, bold weight, all-caps, medium size. Contained within a solid rectangular banner.",
+          "color": "#F0E0B0 text on a #B03030 banner."
+        }
+      ],
+      "logo": {
+        "placement": "Bottom right corner, small and unobtrusive.",
+        "asset": "INPUT_9.jpg",
+        "effects": "None. Flat placement."
+      },
+      "colors": {
+        "reference_palette": "Green, Red, White, Black",
+        "replacement_palette": {
+          "background_gradient": "A radial gradient from Dark Brown (#301800) at the center to Navy (#204050) at the edges.",
+          "text": "Cream (#F0E0B0)",
+          "banner": "Accent Red (#B03030)",
+          "surface": "Dark, reflective, wet-look surface combining tones of #301800 and #204050."
+        }
+      }
+    },
+    "ADAPT": {
+      "comment": "Adapt non-branded decorative elements to fit the Cinco H Ranch aesthetic while preserving their function in the composition.",
+      "background": "Adapt the generic smoky background to a more evocative atmosphere. The wisps of white/grey vapor should be retained, suggesting steam or smoke from a campfire, enhancing the dramatic and cleansing mood.",
+      "surface": "The generic wet reflective surface is adapted to a dark, wet-look wooden plank or natural slate surface. Small, clear water droplets should still be scattered across it to convey a sense of freshness and cleansing.",
+      "decorative_elements": {
+        "reference_element": "White translucent mesh bag on a soap bar.",
+        "adapted_element": "A small, loosely woven piece of natural burlap fabric draped over one of the soap bars in the foreground pile. This adds a rustic, ranch-appropriate texture to the scene.",
+        "notes": "The burlap should be subtle and not obscure the product label."
+      },
+      "aspect_ratio": {
+        "reference_ratio": "1:1 Square",
+        "adapted_ratio": "4:5 Portrait",
+        "notes": "The composition must be adjusted vertically to fit the 4:5 frame. Extend the dark gradient background and reflective foreground to fill the extra height at the top and bottom, while keeping the product and text arrangement centered as in the reference."
+      }
+    }
+  }
+}
+
+=== ASSEMBLED IMAGE PROMPT ===
+Photorealistic 4:5 portrait ad. {}
+
+BACKGROUND: {}
+Use ONLY brand color palette: navy #204050, dark brown #301800, cream #F0E0B0, accent red #B03030 (arrows/highlights only, NOT pink). Apply 60-30-10 rule.
+
+PRODUCT: Texas skincare product in a jar or tube -- paste the EXACT product label, never redraw it — paste the EXACT product image, never redraw it.
+

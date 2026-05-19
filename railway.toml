@@ -1,0 +1,16 @@
+[Settings]
+HERMES_HOME = "/tmp/.hermes"
+HOME = "/tmp"
+MESSAGING_CWD = "/home/drewp/dremes-agent"
+REFS_VOLUME = "/data/refs"
+DATA_DIR = "/data/refs"
+
+[Environments.production]
+drainingSeconds = 300
+
+[deploy]
+healthcheckPath = "/"
+healthcheckTimeout = 30
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
+drainingSeconds = 30

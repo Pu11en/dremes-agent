@@ -1,0 +1,11 @@
+{
+  "brand": "cinco-h-ranch",
+  "category": "cream",
+  "unapproved": 9,
+  "approved": 0,
+  "rejected": 0,
+  "used": 0,
+  "trigger_threshold": 3,
+  "triggered": false,
+  "last_updated": "2026-05-19T23:19:34.380469"
+}

@@ -1,0 +1,6 @@
+hermes-agent
+pillow
+requests
+colorthief
+pyyaml
+python-dotenv

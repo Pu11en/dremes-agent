@@ -1,0 +1,651 @@
+{
+  "schema_version": 1,
+  "slug": "cinco-h-ranch",
+  "display_name": "Cinco H Ranch Naturals",
+  "product_required": true,
+  "scheduling": {
+    "posts_per_day": 2,
+    "time_slots": [
+      "12:00",
+      "17:00"
+    ],
+    "platforms": [
+      "instagram",
+      "facebook"
+    ],
+    "instagram_account_id": "",
+    "facebook_account_id": "",
+    "carousel_max_slides": 10
+  },
+  "paths": {
+    "logo_path": "/home/drewp/dremes-agent/brand_assets/cinco-h-ranch/logo/logo.png",
+    "products_dir": "/home/drewp/dremes-agent/brand_assets/cinco-h-ranch/products",
+    "tally_path": "/data/refs/cinco-h-ranch.usage.json",
+    "pool_dir": "/home/drewp/dremes-agent/brand_assets/cinco-h-ranch/references",
+    "rules_path": null
+  },
+  "identity": {
+    "vibe": "Texas ranch skincare \u2014 honest, no fluff, historic homestead recipes, built for real life",
+    "palette": {
+      "hex": [
+        "#204050",
+        "#301800",
+        "#F0E0B0",
+        "#B03030"
+      ],
+      "description": "navy #204050, dark brown #301800, cream #F0E0B0, accent red #B03030 (arrows/highlights only, NOT pink)"
+    },
+    "prop_themes": [
+      "ranch",
+      "Texas",
+      "leather",
+      "wood",
+      "natural fibers",
+      "horseback",
+      "honey",
+      "tallow",
+      "open range",
+      "homestead"
+    ],
+    "forbidden_prop_themes": [
+      "clinical",
+      "lab coat",
+      "spa",
+      "competitor branding",
+      "pharmacy aisle",
+      "gym"
+    ],
+    "allowed_headlines": [
+      "THE RANCH STANDARD",
+      "BUILT FOR THE RANCH",
+      "HONEST SKINCARE",
+      "100% NATURAL"
+    ],
+    "allowed_vibe_phrases": [
+      "THE RANCH STANDARD",
+      "BUILT FOR THE RANCH",
+      "REAL INGREDIENTS",
+      "TEXAS MADE",
+      "SMALL BATCH"
+    ],
+    "voice": "Cinco H Ranch Naturals \u2014 ranch, honest, no fluff. Short declarative headlines like 'THE RANCH STANDARD', 'BUILT FOR THE RANCH'. Never clinical, never spa-fluff, never corporate. Texas pride, natural ingredients, small-batch. No competitor names, no clinical trial language.",
+    "format": "Texas skincare product in a jar or tube -- paste the EXACT product label, never redraw it"
+  },
+  "global_forbidden_text": [
+    {
+      "pattern": "#",
+      "severity": "error",
+      "reason": "no hashtags"
+    },
+    {
+      "pattern": "www.",
+      "severity": "error",
+      "reason": "no URLs"
+    },
+    {
+      "pattern": ".com",
+      "severity": "error",
+      "reason": "no URLs"
+    },
+    {
+      "pattern": "@",
+      "severity": "error",
+      "reason": "no social handles"
+    },
+    {
+      "pattern": "FREE",
+      "severity": "error",
+      "reason": "no fake promotions"
+    },
+    {
+      "pattern": "% OFF",
+      "severity": "error",
+      "reason": "no fake promotions"
+    },
+    {
+      "pattern": "GIVEAWAY",
+      "severity": "error",
+      "reason": "no fake promotions"
+    },
+    {
+      "pattern": "$",
+      "severity": "warning",
+      "reason": "no pricing"
+    }
+  ],
+  "ad_creative_rules": [
+    "Every element in a reference layout STAYS \u2014 replace with CINCO brand equivalent",
+    "Reference controls layout; brand controls colors/text/product",
+    "4:5 ratio for all social ads",
+    "Never invent label text \u2014 preserve provided label artwork",
+    "Short declarative headlines like 'THE RANCH STANDARD', 'BUILT FOR THE RANCH'",
+    "No competitor text leaks \u2014 audit every generation",
+    "Background and color grade use brand palette: Navy #204050, Dark Brown #301800, Cream #F0E0B0, Accent Red #B03030",
+    "Logo small in corner \u2014 no effects, no boxes, no oversized placement",
+    "Soap bars sitting on a surface ALWAYS show their paper label. Soap bars being held/lathered in a hand or shown in active use have NO label — plain tallow texture only."
+  ],
+  "global_visual_rules": [
+    "THE ONLY PRODUCTS IN FRAME: Cinco H Ranch soap bars and jars listed in the product config. No boxes, no books, no pamphlets, no tubes, no bottles, no spray bottles unless that exact product is selected for this ad.",
+    "NO PROMOTIONAL OFFERS: No discounts, no bundle deals, no 'buy X get Y', no 'FREE', no 'GIFT', no '$' pricing, no limited-time offers, no 'ORDER NOW' CTAs.",
+    "NON-PRODUCT OBJECTS: Decorative props (fabric, rope, wood, stone, plants) are allowed but must be CLEARLY DECORATIVE — never styled to look like a product. If an object has the brand logo on it, viewers will think it's for sale. Do not place the logo on anything except the actual product.",
+    "- TEXT SOURCING: Every visible word must come from the product label artwork, the text specified in this prompt, or the logo. Zero invented text.",
+    "COMPETITOR ELEMENTS: No green boxes, no red banners, no white mesh bags, no competitor logos, no competitor product shapes, no competitor text.",
+    "SOAP LABELS: Soap bars sitting on a surface ALWAYS show their paper label. Soap bars being held/lathered in a hand or shown in active use have NO label — plain tallow texture only."
+  ],
+  "products": [
+    {
+      "name": "Honey Vanilla Soap",
+      "label_file": "honey-vanilla-soap.png",
+      "pool_slug": "soap",
+      "container": "soap-bar",
+      "cap_rule": "N/A \u2014 bar soap, no cap",
+      "triggers": [
+        "soap",
+        "honey",
+        "vanilla",
+        "bar"
+      ],
+      "keywords": [
+        "honey",
+        "vanilla",
+        "soap",
+        "lather",
+        "bath"
+      ],
+      "forbidden_text": [
+        {
+          "pattern": "antibacterial",
+          "severity": "error",
+          "reason": "no antibacterial claims"
+        },
+        {
+          "pattern": "kills bacteria",
+          "severity": "error",
+          "reason": "no antibacterial claims"
+        },
+        {
+          "pattern": "germ-killing",
+          "severity": "error",
+          "reason": "no antibacterial claims"
+        },
+        {
+          "pattern": "treats",
+          "severity": "error",
+          "reason": "no medical claims"
+        },
+        {
+          "pattern": "cures",
+          "severity": "error",
+          "reason": "no medical claims"
+        },
+        {
+          "pattern": "prevents",
+          "severity": "error",
+          "reason": "no medical/preventative claims"
+        },
+        {
+          "pattern": "medicated",
+          "severity": "error",
+          "reason": "no medical claims"
+        },
+        {
+          "pattern": "clinically",
+          "severity": "error",
+          "reason": "no clinical trial language"
+        },
+        {
+          "pattern": "organic",
+          "severity": "warning",
+          "reason": "no USDA certification"
+        },
+        {
+          "pattern": "unclogs",
+          "severity": "error",
+          "reason": "no pore claim"
+        },
+        {
+          "pattern": "restores pH",
+          "severity": "error",
+          "reason": "no pH claim without evidence"
+        }
+      ],
+      "voice_note": "Honey Vanilla Soap: real Texas honey, lavender + vanilla essential oils. Claims: Gentle everyday cleansing / Nourishing lather / Soft, hydrated skin. Format: bar soap, all natural. NO medical claims, no clinical language.",
+      "real_claims": [
+        "Gentle everyday cleansing",
+        "Nourishing lather",
+        "Soft, hydrated skin"
+      ],
+      "real_ingredients": "Tallow base / Real Texas Honey / Lavender essential oil / Vanilla essential oil"
+    },
+    {
+      "name": "Rejuvenating Face + Body Cream",
+      "label_file": "rejuvenating.png",
+      "pool_slug": "cream",
+      "container": "jar",
+      "cap_rule": "cream/off-white screw lid \u2014 stays as shown in product image; do NOT make it black or any other color",
+      "triggers": [
+        "cream",
+        "rejuv",
+        "rejuvenating",
+        "moisturizer",
+        "jar",
+        "tallow"
+      ],
+      "keywords": [
+        "cream",
+        "face",
+        "body",
+        "moisturizer",
+        "tallow",
+        "frankincense",
+        "geranium"
+      ],
+      "forbidden_text": [
+        {
+          "pattern": "SPF",
+          "severity": "error",
+          "reason": "this is not a sunscreen"
+        },
+        {
+          "pattern": "treats",
+          "severity": "error",
+          "reason": "no medical claims"
+        },
+        {
+          "pattern": "anti-aging cure",
+          "severity": "error",
+          "reason": "no medical claims"
+        }
+      ],
+      "voice_note": "Rejuvenating Face + Body Cream: Beef Tallow + Lard base (mimics natural sebum). Frankincense, Helichrysum, Geranium, Carrot Seed oils. Claims: Deep Hydration / Barrier Support / Nourishing Feel. Format: 2 oz or 8 oz jars, unwhipped. NO SPF claims, no medical claims, no clinical language.",
+      "real_claims": [
+        "Deep Hydration",
+        "Barrier Support",
+        "Nourishing Feel",
+        "Rebuilds and reinforces natural skin barrier"
+      ]
+    },
+    {
+      "name": "Sunscreen Stick",
+      "label_file": "sunscreen.png",
+      "pool_slug": "sunscreen-stick",
+      "container": "twist-up stick",
+      "cap_rule": "twist-up stick with light/neutral cap \u2014 keep cap on as shown; do NOT make cap black",
+      "triggers": [
+        "sunscreen",
+        "stick",
+        "sun",
+        "spf",
+        "mineral"
+      ],
+      "keywords": [
+        "sunscreen",
+        "mineral",
+        "zinc",
+        "stick",
+        "outdoor",
+        "ranch",
+        "sun"
+      ],
+      "forbidden_text": [
+        {
+          "pattern": "SPF",
+          "severity": "error",
+          "reason": "no SPF number"
+        },
+        {
+          "pattern": "SPF rated",
+          "severity": "error",
+          "reason": "no SPF number"
+        },
+        {
+          "pattern": "prevents skin cancer",
+          "severity": "error",
+          "reason": "no medical claims"
+        },
+        {
+          "pattern": "broad spectrum",
+          "severity": "warning",
+          "reason": "no testing"
+        },
+        {
+          "pattern": "waterproof",
+          "severity": "warning",
+          "reason": "no testing"
+        }
+      ],
+      "voice_note": "Sunscreen Stick: Beef Tallow + Lard base, Beeswax, Non-nano Zinc Oxide, Carrot Seed Oil. Claims: Mineral-based protection / Nourishing protection / Moisturizing. Format: 2 oz twist-up stick for face, lips, nose, ears, shoulders. NO SPF number claims (no testing done), no 'prevents skin cancer', say 'mineral-based' not 'SPF rated'.",
+      "real_claims": [
+        "Mineral-based protection",
+        "Nourishing protection",
+        "Moisturizing"
+      ]
+    },
+    {
+      "name": "Texas Air",
+      "label_file": "texas-air.png",
+      "pool_slug": "soap",
+      "container": "soap-bar",
+      "cap_rule": "N/A \u2014 bar soap, no cap",
+      "triggers": [
+        "texas",
+        "air",
+        "soap",
+        "bar"
+      ],
+      "keywords": [
+        "texas",
+        "air",
+        "soap",
+        "fresh",
+        "ranch"
+      ],
+      "voice_note": "Texas Air Soap: fresh, clean scent inspired by open Texas skies. Gentle everyday cleansing.",
+      "real_claims": [
+        "Gentle everyday cleansing",
+        "Fresh ranch scent",
+        "Soft, hydrated skin"
+      ],
+      "real_ingredients": "Tallow base / Essential oils / Natural fragrance"
+    },
+    {
+      "name": "Chamomile Soothing",
+      "label_file": "chamomile-soothing.png",
+      "pool_slug": "soap",
+      "container": "soap-bar",
+      "cap_rule": "N/A \u2014 bar soap, no cap",
+      "triggers": [
+        "chamomile",
+        "soothing",
+        "soap",
+        "calm"
+      ],
+      "keywords": [
+        "chamomile",
+        "soothing",
+        "soap",
+        "calm",
+        "gentle"
+      ],
+      "voice_note": "Chamomile Soothing Soap: calming chamomile for sensitive skin. Gentle, natural cleansing.",
+      "real_claims": [
+        "Calming cleanse",
+        "Gentle on sensitive skin",
+        "Natural chamomile infusion"
+      ],
+      "real_ingredients": "Tallow base / Chamomile / Essential oils"
+    },
+    {
+      "name": "Texas Campfire",
+      "label_file": "texas-campfire.png",
+      "pool_slug": "soap",
+      "container": "soap-bar",
+      "cap_rule": "N/A \u2014 bar soap, no cap",
+      "triggers": [
+        "texas",
+        "campfire",
+        "soap",
+        "smoky"
+      ],
+      "keywords": [
+        "texas",
+        "campfire",
+        "soap",
+        "smoky",
+        "ranch"
+      ],
+      "voice_note": "Texas Campfire Soap: smoky, warm scent reminiscent of Texas campfire nights. Bold, masculine.",
+      "real_claims": [
+        "Bold campfire scent",
+        "Deep cleanse",
+        "Ranch-inspired"
+      ],
+      "real_ingredients": "Tallow base / Activated charcoal / Essential oils"
+    },
+    {
+      "name": "Detox",
+      "label_file": "detox.png",
+      "pool_slug": "soap",
+      "container": "soap-bar",
+      "cap_rule": "N/A \u2014 bar soap, no cap",
+      "triggers": [
+        "detox",
+        "soap",
+        "charcoal",
+        "cleanse"
+      ],
+      "keywords": [
+        "detox",
+        "soap",
+        "charcoal",
+        "deep clean",
+        "ranch"
+      ],
+      "voice_note": "Detox Soap: deep cleansing with activated charcoal. Pulls impurities, leaves skin fresh.",
+      "real_claims": [
+        "Deep detoxifying cleanse",
+        "Draws out impurities",
+        "Fresh, clean feel"
+      ],
+      "real_ingredients": "Tallow base / Activated charcoal / Essential oils"
+    },
+    {
+      "name": "La Blanca",
+      "label_file": "la-blanca.png",
+      "pool_slug": "soap",
+      "container": "soap-bar",
+      "cap_rule": "N/A \u2014 bar soap, no cap",
+      "triggers": [
+        "blanca",
+        "soap",
+        "white",
+        "pure"
+      ],
+      "keywords": [
+        "blanca",
+        "soap",
+        "pure",
+        "white",
+        "clean"
+      ],
+      "voice_note": "La Blanca Soap: pure, clean white soap. Simple, honest, nothing extra.",
+      "real_claims": [
+        "Pure and simple",
+        "Clean white lather",
+        "Nothing extra"
+      ],
+      "real_ingredients": "Tallow base / Essential oils"
+    },
+    {
+      "name": "Unscented Luxury",
+      "label_file": "unscented-luxury.png",
+      "pool_slug": "cream",
+      "container": "jar",
+      "cap_rule": "cream/off-white screw lid \u2014 stays as shown in product image",
+      "triggers": [
+        "unscented",
+        "luxury",
+        "cream",
+        "sensitive"
+      ],
+      "keywords": [
+        "unscented",
+        "luxury",
+        "cream",
+        "sensitive",
+        "tallow",
+        "moisturizer"
+      ],
+      "voice_note": "Unscented Luxury Face + Body Cream: pure tallow cream, no fragrance. For the most sensitive skin. Deep hydration without irritation.",
+      "real_claims": [
+        "Fragrance-free hydration",
+        "Deep moisture",
+        "Ideal for sensitive skin"
+      ],
+      "real_ingredients": "Tallow base / Lard"
+    },
+    {
+      "name": "Purifying and Balancing",
+      "label_file": "purifying-and-balancing.png",
+      "pool_slug": "cream",
+      "container": "jar",
+      "cap_rule": "cream/off-white screw lid \u2014 stays as shown in product image",
+      "triggers": [
+        "purifying",
+        "balancing",
+        "cream",
+        "balance"
+      ],
+      "keywords": [
+        "purifying",
+        "balancing",
+        "cream",
+        "tallow",
+        "moisturizer"
+      ],
+      "voice_note": "Purifying and Balancing Face + Body Cream: helps balance and purify skin with natural tallow. For combination skin types.",
+      "real_claims": [
+        "Balances skin",
+        "Purifying hydration",
+        "Natural moisture balance"
+      ],
+      "real_ingredients": "Tallow base / Essential oils / Natural clays"
+    },
+    {
+      "name": "Serenity",
+      "label_file": "serenity.png",
+      "pool_slug": "cream",
+      "container": "jar",
+      "cap_rule": "cream/off-white screw lid \u2014 stays as shown in product image",
+      "triggers": [
+        "serenity",
+        "cream",
+        "calm",
+        "relax"
+      ],
+      "keywords": [
+        "serenity",
+        "cream",
+        "calm",
+        "relaxing",
+        "tallow"
+      ],
+      "voice_note": "Serenity Face + Body Cream: calming, relaxing tallow cream. For winding down and restoring skin overnight.",
+      "real_claims": [
+        "Calming hydration",
+        "Restores overnight",
+        "Relaxing feel"
+      ],
+      "real_ingredients": "Tallow base / Lavender / Chamomile / Essential oils"
+    },
+    {
+      "name": "Ultra Healing",
+      "label_file": "ultra-healing.png",
+      "pool_slug": "cream",
+      "container": "jar",
+      "cap_rule": "cream/off-white screw lid \u2014 stays as shown in product image",
+      "triggers": [
+        "ultra",
+        "healing",
+        "cream",
+        "repair"
+      ],
+      "keywords": [
+        "ultra",
+        "healing",
+        "cream",
+        "repair",
+        "tallow",
+        "moisturizer"
+      ],
+      "voice_note": "Ultra Healing Face + Body Cream: intensive repair for dry, damaged, or hard-working skin. Deep nourishment.",
+      "real_claims": [
+        "Intensive repair",
+        "Deep nourishment",
+        "For dry damaged skin"
+      ],
+      "real_ingredients": "Tallow base / Lard / Essential oils / Vitamin E"
+    },
+    {
+      "name": "Bug Repellent",
+      "label_file": "bug-repellent.png",
+      "pool_slug": "bug-repellent",
+      "container": "spray-bottle",
+      "cap_rule": "dark cap on spray bottle \u2014 keep cap and spray nozzle as shown",
+      "triggers": [
+        "bug",
+        "repellent",
+        "spray",
+        "outdoor",
+        "citronella"
+      ],
+      "keywords": [
+        "bug",
+        "repellent",
+        "spray",
+        "outdoor",
+        "citronella",
+        "cedar",
+        "eucalyptus",
+        "natural",
+        "ranch"
+      ],
+      "forbidden_text": [
+        {
+          "pattern": "DEET",
+          "severity": "error",
+          "reason": "no synthetic chemicals"
+        },
+        {
+          "pattern": "kills bugs",
+          "severity": "error",
+          "reason": "repels, does not kill"
+        },
+        {
+          "pattern": "insecticide",
+          "severity": "error",
+          "reason": "natural repellent, not insecticide"
+        }
+      ],
+      "voice_note": "Bug Repellent: Beef Tallow base with Citronella, Cedarwood, Eucalyptus, and Lemongrass essential oils. Claims: Natural outdoor protection, Ranch-tested defense, Chemical-free.",
+      "real_claims": [
+        "Natural outdoor protection",
+        "Ranch-tested defense",
+        "Chemical-free",
+        "Keeps bugs at bay"
+      ],
+      "real_ingredients": "Tallow base / Citronella / Cedarwood / Eucalyptus / Lemongrass"
+    },
+    {
+      "name": "Irritated Itchy Skin",
+      "label_file": "irritated-itchy-skin.png",
+      "pool_slug": "itchy-cream",
+      "container": "jar",
+      "cap_rule": "cream/off-white screw lid \u2014 stays as shown in product image",
+      "triggers": [
+        "irritated",
+        "itchy",
+        "skin",
+        "cream",
+        "balm",
+        "relief"
+      ],
+      "keywords": [
+        "irritated",
+        "itchy",
+        "skin",
+        "cream",
+        "relief",
+        "tallow",
+        "soothing"
+      ],
+      "voice_note": "Irritated Itchy Skin Face + Body Cream: targeted relief for irritated, itchy skin. Soothing tallow formula calms and restores.",
+      "real_claims": [
+        "Soothes irritated skin",
+        "Relieves itch",
+        "Calming relief"
+      ],
+      "real_ingredients": "Tallow base / Chamomile / Calendula / Essential oils"
+    }
+  ]
+}

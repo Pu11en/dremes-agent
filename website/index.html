@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dremes — Ad Pipeline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif; background: #0a0a0f; color: #e1e1e6; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+.container { text-align: center; padding: 2rem; max-width: 720px; width: 100%; }
+.logo { width: 48px; height: 48px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, #6366f1, #a855f7); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 700; color: #fff; box-shadow: 0 8px 32px rgba(99,102,241,.3); }
+h1 { font-size: 2rem; font-weight: 700; letter-spacing: -.03em; margin-bottom: .3rem; background: linear-gradient(135deg, #f0f0ff, #a5b4fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.subtitle { color: #71717a; font-size: 1rem; margin-bottom: 2.5rem; }
+.brands { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.brand { background: #121218; border: 1px solid #1f1f2a; border-radius: 16px; padding: 1.75rem 2rem; width: 300px; text-decoration: none; color: inherit; transition: all .2s; display: flex; flex-direction: column; align-items: center; gap: .75rem; }
+.brand:hover { border-color: #383850; transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,.4); }
+.brand-icon { width: 64px; height: 64px; border-radius: 12px; object-fit: contain; background: #181825; padding: 8px; }
+.brand h2 { font-size: 1.15rem; font-weight: 600; color: #f0f0ff; }
+.brand .desc { color: #71717a; font-size: .85rem; }
+.brand .counts { display: flex; gap: .75rem; font-size: .8rem; color: #52525b; }
+.brand .counts span { color: #a1a1aa; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="logo">D</div>
+  <h1>Dremes</h1>
+  <p class="subtitle">Ad Generation Pipeline</p>
+  <div class="brands" id="brands"></div>
+</div>
+<script>
+async function load() {
+  const container = document.getElementById('brands');
+  try {
+    const r = await fetch('/api/brands');
+    const brands = await r.json();
+    container.innerHTML = '';
+    for (const [slug, data] of Object.entries(brands)) {
+      let refCount = '?', adCount = '?';
+      try {
+        const pools = Object.keys(data.pools || {});
+        if (pools.length) {
+          const gr = await fetch(`/api/gallery/${slug}/${pools[0]}`);
+          const gd = await gr.json();
+          refCount = (gd.pending?.length||0) + (gd.approved?.length||0);
+        }
+        const ar = await fetch(`/api/ads/${slug}`);
+        const ad = await ar.json();
+        adCount = ad.pending?.length || 0;
+      } catch(e) {}
+      const div = document.createElement('a');
+      div.href = `/${slug}/refs.html`;
+      div.className = 'brand';
+      div.innerHTML = `
+        <img class="brand-icon" src="/brand_assets/${slug}/logo/logo.png" alt="" onerror="this.style.display='none'">
+        <h2>${data.name || slug.replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase())}</h2>
+        <div class="desc">${slug === 'island-splash' ? 'Florida Caribbean juice' : 'Texas tallow skincare'}</div>
+        <div class="counts"><span>${refCount} refs</span> · <span>${adCount} ads</span></div>
+      `;
+      container.appendChild(div);
+    }
+  } catch(e) {
+    container.innerHTML = `
+      <a href="/island-splash/refs.html" class="brand">
+        <img class="brand-icon" src="/brand_assets/island-splash/logo/logo.png" alt="" onerror="this.style.display='none'">
+        <h2>Island Splash</h2>
+        <div class="desc">Florida Caribbean juice</div>
+      </a>
+      <a href="/cinco-h-ranch/refs.html" class="brand">
+        <img class="brand-icon" src="/brand_assets/cinco-h-ranch/logo/logo.png" alt="" onerror="this.style.display='none'">
+        <h2>Cinco H Ranch</h2>
+        <div class="desc">Texas tallow skincare</div>
+      </a>
+    `;
+  }
+}
+load();
+</script>
+</body>
+</html>

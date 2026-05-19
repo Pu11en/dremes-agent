@@ -1,0 +1,57 @@
+# Dremes Agent — AI Coding Rules
+# These rules prevent the bugs we've already fought. Follow them strictly.
+
+## PATHS — CRITICAL
+- Everything persistent goes to /data/refs/ on Railway (REFS_VOLUME, DATA_DIR)
+- Never write refs or ads to brand_assets/ or website/public/ — those are git-tracked, wiped on deploy
+- REFS_VOLUME and DATA_DIR MUST be in config.yaml → terminal → env_passthrough
+- Use dremes_common.py for path resolution — never hardcode paths
+- PINTEREST_DL_BIN uses shutil.which() with fallback, never hardcode /home/drewp/
+- ALL scripts must resolve OUTPUT_DIR from DATA_DIR env var (volume), not REPO_ROOT
+- ad-approval JSON lives at OUTPUT_DIR/ad-approval/ — NEVER at REPO_ROOT/output/ad-approval/
+- config.yaml is YAML — use yaml.safe_load(), never json.loads()
+
+## DEPLOYMENT
+- Railway is single-service. Dockerfile runs start.sh → gallery + hermes
+- Volume at /data/refs — all persistent state lives there
+- drainingSeconds must be ≥300 for ad generation to not get killed mid-task
+- Never remove USER hermes from Dockerfile — run as root causes permission issues
+- start.sh must: chown volume, mkdir all subdirs, write .env to $HERMES_HOME/.env
+- start.sh mkdir must be a SINGLE line — escaped newlines in shell are literal chars
+
+## AGENT CONFIG
+- background_process_notifications must be "errors", "silent", or "all" — invalid values cause warnings
+- MESSAGING_CWD must be /home/drewp/dremes-agent (not /tmp/workspace)
+- personality: default (not kawaii — adds Hermes branding)
+- max_output_tokens MUST be set — DeepSeek v4 Pro defaults to ~4096, code audits get truncated to 48 chars
+
+## GALLERY SERVER
+- Must use ThreadingMixIn + try/except on do_GET/do_POST — no crashes
+- get_ads_state() must filter to existing files — stale entries auto-cleaned
+- discover_pools() must scan REFS_PUBLIC_DIR (volume), not just brand_assets
+- Server serves ads from OUTPUT_DIR (volume), not website/public/
+
+## PIPELINE FLOW
+1. Drain board → refs land in REFS_PUBLIC_DIR/brand/pool/pending/
+2. Approve in gallery → moves to approved/
+3. Generate ads → reads from approved/, writes PNG to OUTPUT_DIR, approval JSON to OUTPUT_DIR/ad-approval/
+4. Ads appear in gallery → reads approval from OUTPUT_DIR/ad-approval/, images from OUTPUT_DIR/
+
+## SCRIPT RULES
+- EVERY script must import os if it uses os.environ
+- Path("brands") is relative — use REPO_ROOT / "brands"
+- schedule_post.py load_ad/get_image_path: check OUTPUT_DIR first, git-tracked as fallback
+- sync_ads_to_website.py: scan OUTPUT_DIR (volume) first, not just website/public/
+- refs.html image onerror fallback must include ${currentTab} in path
+- Always verify Python files compile after editing indentation
+
+## KNOWN GOTCHAS
+- refs.html gallery shows 0 refs if pool name doesn't match — check discover_pools()
+- pinterest-dl exits code 1 even on partial success — check downloaded files, not exit code
+- Playwright Chromium needs --with-deps in Dockerfile
+- dremes_agent.py --pool is boolean flag, --category is pool name
+- Never run clear-refs in production unless user explicitly asks
+- server.py BOT_TOKEN line is fragile — verify it's not truncated on deploy
+- auto-sync.sh: if .git directory is missing (cold Railway boot), init it first. GITHUB_TOKEN must be a real token, never literal `***`
+- STT uses OpenAI whisper-1 API (not local whisper) — requires OPENAI_API_KEY in env
+- JINA_API_KEY, NOTIFY_CHAT_ID, HINDSIGHT_LLM_API_KEY, HERMES_SUPPRESS_SHUTDOWN_NOTIFY must be in terminal.env_passthrough
