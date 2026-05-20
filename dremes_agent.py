@@ -65,12 +65,12 @@ POOL_PROCESSED_DIRNAME = "used"
 POOL_EXTS = (".jpg", ".jpeg", ".png", ".webp")
 POOL_PACING_SECONDS = 20
 
-TEXT_MODEL = "gemini-2.5-pro"
-VISION_MODEL = "gemini-2.5-pro"
+TEXT_MODEL = "gemini-3.1-pro-preview"
+VISION_MODEL = "gemini-3.1-pro-preview"
 IMAGE_MODEL = "gemini-3-pro-image-preview"
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-OR_TEXT_MODEL = "google/gemini-2.5-pro"
+OR_TEXT_MODEL = "google/gemini-3.1-pro-preview"
 OR_IMAGE_MODEL = "google/gemini-3.1-flash-image-preview"
 
 DEFAULT_BRAND = "island-splash"
@@ -346,15 +346,26 @@ def _image_part(path: str) -> Part:
 
 # ── Tally + product picking ──────────────────────────────────────────────────
 
+def _resolve_persistent_path(raw_path: str) -> Path:
+    """If DATA_DIR is set and raw_path starts with /data/refs/, remap to DATA_DIR.
+    Allows local testing without a Railway volume mount."""
+    p = Path(raw_path)
+    if DATA_DIR and str(p).startswith("/data/refs"):
+        return Path(DATA_DIR) / str(p).replace("/data/refs", "", 1).lstrip("/")
+    if REFS_VOLUME and str(p).startswith("/data/refs"):
+        return Path(REFS_VOLUME) / str(p).replace("/data/refs", "", 1).lstrip("/")
+    return p
+
+
 def load_tally(brand: dict) -> dict:
-    path = Path(brand["paths"]["tally_path"])
+    path = _resolve_persistent_path(brand["paths"]["tally_path"])
     if path.exists():
         return json.loads(path.read_text())
     return {p["name"]: 0 for p in brand["products"]}
 
 
 def save_tally(brand: dict, tally: dict) -> None:
-    path = Path(brand["paths"]["tally_path"])
+    path = _resolve_persistent_path(brand["paths"]["tally_path"])
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(tally, indent=2))
 
@@ -586,26 +597,33 @@ RESEARCH CONTEXT (on-demand research results — use to ground the ad in real-wo
 {research_context}
 """
 
-    return f"""You write prompts for an image model that transforms competitor ads into ads for {name}.
-You are literal and precise. You ONLY use product names, claims, headlines, colors, and ingredients
-EXACTLY as listed in the user's message. Never invent, never summarize, never paraphrase.
+    return f"""You are the creative director for {name}. Given a competitor ad analysis and brand assets, you write the exact image-generation brief.
 
-CRITICAL RULES:
-- Use exactly the product count from the product list in the user's message. If the user lists 7 variants, use all 7.
-- TEXT LAYOUT: Match the reference's typography pattern (line count, font contrast, positioning). TEXT WORDS: Must be verbatim from the HEADLINE OPTIONS list. Never substitute product-descriptive words like ingredients or claims as a headline.
-- Every visible word must match the label artwork, the HEADLINE OPTIONS list, or the logo. Zero invented text.
+RULES:
+- Use ONLY product names, claims, headlines, colors from the user's message. Never invent.
+- Product count must match the SELECTED PRODUCTS list exactly.
+- TEXT: Verbatim from HEADLINE OPTIONS list only. Claims and ingredients go in body copy (small text / callouts), never as the headline. Zero invented text.
+- COLORS: Every color in the scene must come from the BRAND COLORS list. Replace every color from the reference.
+- LIGHTING: Describe how the reference's lighting direction and quality should apply to our product — so it looks naturally integrated, not pasted on.
 
-Output ONLY a flat JSON object — no markdown, no explanation:
+Output ONLY a flat JSON object using EXACTLY these field names — no markdown, no explanation:
 {{
-  "scene": "one sentence describing the final ad",
-  "products": [{{"product": "Exact product name from user's list", "input": "INPUT N", "position": "where in frame"}}],
-  "text": [{{"zone": "headline or label position", "text": "Verbatim from the HEADLINE OPTIONS list — product claims are NEVER headlines", "style": "font and color"}}],
-  "background": "background description using ONLY listed colors",
-  "lighting": "lighting description",
+  "scene": "One sentence describing the final {name} ad",
+  "product_placement": [
+    {{"product": "Exact product name from SELECTED PRODUCTS", "input_ref": "the product image", "position": "exact position in frame", "scale": "small|medium|large|hero", "container_state": "closed|open|capped|uncapped"}}
+  ],
+  "text_zones": [
+    {{"zone": "headline|subhead|body|fine_print|product_label", "text": "Verbatim from HEADLINE OPTIONS or product claims", "style": "font weight, color, size"}}
+  ],
+  "background": "description using ONLY brand colors",
+  "lighting": "direction + quality matching the reference",
   "decorative": ["adapted decorative elements"],
-  "logo": "corner placement and size",
-  "do_not": ["what must NOT appear"]
-}}"""
+  "mood": ["3-5 mood keywords"],
+  "logo": "small bottom-right corner, no box",
+  "negative": ["what must NOT appear"]
+}}
+
+CRITICAL: Use the field names EXACTLY as shown above. scene, product_placement, text_zones, background, lighting, decorative, mood, logo, negative. No other top-level fields."""
 
 
 # ── Analysis calls ───────────────────────────────────────────────────────────
@@ -775,32 +793,92 @@ def _assemble_prompt_from_json(brand: dict, ad: dict) -> str:
         lighting = lighting_ref[0]
         logo = logo_ref[0]
 
-    # Format 4: Universal fallback — pass JSON as clean creative brief
+    # Format 4: products array + brand_elements format
+    elif "products" in ad and isinstance(ad.get("products"), list):
+        scene = ad.get("composition", ad.get("scene", f"{display_name} product ad"))
+        bg = ad.get("background", "")
+        lighting = ad.get("lighting", "")
+        mood = [ad["mood"]] if isinstance(ad.get("mood"), str) else ad.get("mood", [])
+        # Extract products
+        for p in ad.get("products", []):
+            if isinstance(p, dict):
+                placements.append({
+                    "product": p.get("description", "product")[:80],
+                    "input_ref": "the product image",
+                    "position": p.get("position", "center")[:120],
+                    "scale": "medium",
+                })
+        # Extract brand elements
+        brand_el = ad.get("brand_elements", {})
+        if isinstance(brand_el, dict):
+            headline = brand_el.get("headline", {})
+            if isinstance(headline, dict) and headline.get("text"):
+                zones.append({"zone": "headline", "text": headline["text"], "style": f"{headline.get('color','')} {headline.get('placement','')}"})
+            logo_data = brand_el.get("logo", {})
+            if isinstance(logo_data, dict):
+                logo = str(logo_data.get("placement", logo_data.get("description", "bottom-right corner")))
+        # Extract props
+        props = ad.get("props", [])
+        if isinstance(props, list):
+            for p in props:
+                if isinstance(p, str):
+                    deco.append(p)
+        # Extract any text_elements or text fields
+        text_el = ad.get("text_elements", ad.get("text_zones", []))
+        if isinstance(text_el, list):
+            for t in text_el:
+                if isinstance(t, dict):
+                    zones.append({"zone": t.get("zone", "body"), "text": t.get("text", "")[:200], "style": t.get("style", "")})
+
+    # Format 5: Flat product_N / text_N format
+    elif any(k.startswith("product_") or k.startswith("text_") for k in ad):
+        # Build scene from background + mood + lighting
+        scene_parts = []
+        if ad.get("background"):
+            scene_parts.append(ad["background"])
+        scene = ". ".join(scene_parts) if scene_parts else f"{display_name} product ad"
+        bg = ad.get("background", "")
+        lighting = ad.get("lighting", "")
+        mood = [ad["mood"]] if isinstance(ad.get("mood"), str) else ad.get("mood", [])
+        logo = ad.get("logo", "")
+        # Extract product_N → placement
+        for k, v in sorted(ad.items()):
+            if k.startswith("product_"):
+                placements.append({"product": "product", "position": str(v)[:200], "input_ref": "the product image", "scale": "medium"})
+            elif k.startswith("text_"):
+                zones.append({"zone": "overlay", "text": str(v)[:200], "style": ""})
+        # Extract negative from any do_not / negative field
+        neg = ad.get("negative", ad.get("do_not", []))
+        if isinstance(neg, list):
+            negative.extend(neg)
+        elif isinstance(neg, str):
+            negative.append(neg)
+
+    # Format 5: Universal fallback — pass JSON as clean creative brief
     if not scene and not placements and not zones:
         import json as _json
         json_text = _json.dumps(ad, indent=2)
         scene = f"Generate a {display_name} ad. Creative brief:\n{json_text}\n\nPaste product images exactly. Never redraw labels. Use ONLY the brand colors listed above."
 
     # ── Assemble final prompt ──
-    lines = [f"Photorealistic 4:5 portrait ad. {scene}"]
+    lines = [f"PHOTOREALISTIC ad, 4:5 portrait. {scene}"]
     lines.append("")
 
     if placements:
-        lines.append("PRODUCT PLACEMENT:")
+        lines.append("PRODUCTS IN SCENE:")
         for pp in placements:
             if isinstance(pp, dict):
                 name = pp.get("product", "Product")
-                inp = pp.get("input_ref", "INPUT 2")
+                inp = pp.get("input_ref", "the product image")
                 pos = pp.get("position", "center")
                 scale = pp.get("scale", "medium")
                 state = pp.get("container_state", "")
                 extra = f", {state}" if state else ""
-                lines.append(f"- {name} ({inp}): {pos}, {scale}{extra}")
-                lines.append(f"  PASTE {inp} image exactly — never redraw, recolor, or reinterpret the label.")
+                lines.append(f"- {name}: place it {pos}, {scale} scale{extra}. Use {inp} as the authentic source — match its exact label and packaging, do not redesign.")
         lines.append("")
 
     if zones:
-        lines.append("TEXT:")
+        lines.append("TEXT TO RENDER:")
         for tz in zones:
             if isinstance(tz, dict):
                 zone = tz.get("zone", "overlay")
@@ -812,17 +890,17 @@ def _assemble_prompt_from_json(brand: dict, ad: dict) -> str:
 
     if bg:
         lines.append(f"BACKGROUND: {bg}")
-        lines.append(f"Use ONLY brand color palette: {palette}. Apply 60-30-10 rule.")
+        lines.append(f"COLORS: use ONLY {palette}. Apply 60-30-10 color distribution.")
         lines.append("")
 
     if deco:
-        lines.append("DECORATIVE ELEMENTS:")
+        lines.append("DECORATIVE:")
         for d in deco:
             lines.append(f"- {d}")
         lines.append("")
 
     if lighting:
-        lines.append(f"LIGHTING: {lighting}")
+        lines.append(f"LIGHTING: match the reference — {lighting}")
         lines.append("")
 
     if mood:
@@ -844,9 +922,12 @@ def _assemble_prompt_from_json(brand: dict, ad: dict) -> str:
             lines.append(f"- {rule}")
         lines.append("")
 
-    for n in negative:
-        if isinstance(n, str):
-            lines.append(n)
+    if negative:
+        lines.append("AVOID:")
+        for n in negative:
+            if isinstance(n, str) and n.strip():
+                lines.append(f"- {n}")
+    lines.append("")
 
     return "\n".join(lines)
 
@@ -1038,6 +1119,17 @@ def _extract_sections(ad, scene_out, placements, zones, bg_out, deco, lighting_o
                     logo_out[0] = e.get("placement", "bottom-right corner")
 
 
+def _valid_composer_format(ad: dict) -> bool:
+    """Check that composer output has the required structure.
+    Must have 'scene' field. Must not use flat numbered field names."""
+    if "scene" not in ad:
+        return False
+    has_flat = any(k.startswith("product_") or k.startswith("text_") for k in ad if "_" in k and k.split("_")[-1].isdigit())
+    if has_flat:
+        return False
+    return True
+
+
 def compose_prompt(
     brand: dict,
     selected: list[dict],
@@ -1123,7 +1215,26 @@ Build a flat JSON describing the ad. Use ONLY the product names, claims, headlin
         return _or_text_call(OR_TEXT_MODEL, system, user_parts)
 
     raw_text = _with_fallback("compose_prompt", gemini, openrouter)
-    return _parse_composer_json(raw_text, brand)
+    result = _parse_composer_json(raw_text, brand)
+    
+    # Validate format — retry once with stricter instructions if wrong
+    if not _valid_composer_format(result):
+        retry_user = user_parts + [
+            "\n\nYOUR OUTPUT DID NOT MATCH THE REQUIRED FORMAT. You MUST use exactly these top-level fields: "
+            "scene, product_placement (array), text_zones (array), background, lighting, decorative (array), mood (array), logo, negative (array). "
+            "No other top-level fields. product_placement is an array of objects with product/input_ref/position/scale/container_state. "
+            "text_zones is an array of objects with zone/text/style. Output ONLY valid JSON with these exact field names."
+        ]
+        def retry_gemini():
+            client = _client()
+            resp = client.models.generate_content(model=TEXT_MODEL, contents=retry_user)
+            return resp.candidates[0].content.parts[0].text.strip()
+        def retry_openrouter():
+            return _or_text_call(OR_TEXT_MODEL, system, retry_user)
+        retry_text = _with_fallback("compose_prompt/retry", retry_gemini, retry_openrouter)
+        result = _parse_composer_json(retry_text, brand)
+    
+    return result
 
 
 # ── Pre-generation forbidden-text scan ───────────────────────────────────────
@@ -1246,29 +1357,32 @@ def scan_forbidden(text: str, patterns: list[dict]) -> list[dict]:
 # ── Image generation ─────────────────────────────────────────────────────────
 
 def _build_input_index(brand: dict, selected: list[dict], has_logo: bool, include_ref: bool = True) -> str:
-    """Build a simple instruction block — no 'INPUT N' labels that the model might render as text."""
+    """Build the image-model instruction block — clear, structured, directive."""
     name = brand["display_name"]
-    product_list = ", ".join(p["name"] for p in selected)
+    palette = brand["identity"]["palette"]["description"]
+    
+    # Build per-product fidelity instructions
+    fidelity_lines = []
+    for p in selected:
+        cap = p.get("cap_rule", "")
+        container = p.get("container", "")
+        fidelity_lines.append(f"- {p['name']}: {container}. {cap}")
+    fidelity_block = "\n".join(fidelity_lines) if fidelity_lines else ""
     
     lines = []
     if include_ref:
-        lines.append(
-            f"Transform the first image (competitor ad) into a {name} ad. "
-            f"Replace all competitor products with the {name} product images that follow. "
-            f"Replace all text with the approved text below. "
-            f"Replace all colors with the {name} palette. "
-            f"Keep the composition, camera angle, and lighting from the first image."
-        )
-    lines.append(
-        f"Products to use: {product_list}. "
-        f"Paste each product image exactly — never redraw, recolor, or reinterpret any label. "
-        f"The label artwork on each product image IS the final label."
-    )
+        lines.append(f"IMAGE 1 is a competitor ad to transform into a {name} ad.")
+        lines.append("COPY from IMAGE 1: composition, framing, camera angle, depth of field, lighting direction and quality, shadow behavior.")
+        lines.append("COPY from IMAGE 1: surface textures (wood grain, fabric weave, cream swirls, paper, stone), material qualities (glossy, matte, rough, smooth), and overall visual style. The background and surfaces should FEEL like the reference — same tactile quality, same material language.")
+        lines.append("DELETE from IMAGE 1: ALL competitor products, ALL competitor text, ALL competitor branding, ALL competitor colors.")
+    lines.append(f"The next image(s) are the ACTUAL {name} product(s). These are NOT reference — they are the FINAL product.")
+    lines.append("The product image IS the product. Do NOT redraw, recolor, reshape, or redesign ANY part of it — jar shape, cap, label, all of it must appear EXACTLY as shown.")
+    if fidelity_block:
+        lines.append(f"PRODUCT SPECS (must match exactly):\n{fidelity_block}")
+    lines.append("Place the product into the scene so it sits naturally on surfaces — match the scene's lighting, add realistic cast shadows, match specular highlights on glass/metal. The product must look PHYSICALLY PRESENT, not pasted on.")
+    lines.append(f"COLORS: Replace every color in the scene with ONLY: {palette}.")
     if has_logo:
-        lines.append(
-            f"The {name} logo appears last. Place it small in the bottom-right corner — "
-            f"no box, no banner, no oversized placement."
-        )
+        lines.append(f"ADD the {name} logo (last image) — small, bottom-right corner, no box or banner.")
     return "\n".join(lines) + "\n\n"
 
 
@@ -1672,7 +1786,7 @@ def main() -> int:
         print(f"ERROR: ref not found: {args.ref}", file=sys.stderr)
         return 2
 
-    out_path = run_one(brand, args.ref, locked_product=args.product, research=args.research)
+    out_path = run_one(brand, args.ref, locked_product=args.product, category=args.category, research=args.research)
     print(str(out_path))
     return 0
 
